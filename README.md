@@ -116,6 +116,6 @@ $ cd RoboND-DeepRL-Project/build/aarch64/bin
 $ ./gazebo-arm.sh
 ```
 
-<img src="https://github.com/dusty-nv/jetson-reinforcement/raw/master/docs/images/gazebo.png">
+<img src="https://github.com/dusty-nv/jetson-reinforcement/raw/master/docs/images/gazebo_arm.jpg">
 
 The plugins which hook the learning into the simulation are located in the `gazebo/` directory of the repo. The RL agent and the reward functions are to be defined in [`ArmPlugin.cpp`](gazebo/ArmPlugin.cpp).
