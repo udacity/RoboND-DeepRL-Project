@@ -6,7 +6,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")	# -std=gnu++11
 
 set(BUILD_DEPS "YES" CACHE BOOL "If YES, will install dependencies into sandbox.  Automatically reset to NO after dependencies are installed.")
 set(BUILD_OPENBLAS "YES" CACHE BOOL "If YES, will download & build OpenBLAS (for Torch) into sandbox")
-set(USE_PYTHON "YES" CACHE BOOL "If YES, will build PyTorch and PyTorch examples")
+set(BUILD_PYTORCH "NO" CACHE BOOL "If YES, will build PyTorch and PyTorch examples in sandbox")
+set(USE_PYTHON "YES" CACHE BOOL "If YES, will link to PyTorch and PyTorch examples in sandbox")
 set(USE_LUA "NO" CACHE BOOL "If YES, will build LUA, Torch, and Torch examples")
 
 	
@@ -29,7 +30,7 @@ set(
 if( ${BUILD_DEPS} )
 	message("Launching pre-build dependency installer script...")
 
-	execute_process(COMMAND sh ../CMakePreBuild.sh ${BUILD_OPENBLAS} ${USE_PYTHON} ${USE_LUA}
+	execute_process(COMMAND sh ../CMakePreBuild.sh ${BUILD_OPENBLAS} ${BUILD_PYTORCH} ${USE_LUA}
 				WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
 				RESULT_VARIABLE PREBUILD_SCRIPT_RESULT)
 
@@ -63,11 +64,10 @@ endif()
 
 if( ${USE_PYTHON} )
 	add_definitions(-DUSE_PYTHON)
-	include_directories(/usr/include/python2.7 ${PROJECT_BINARY_DIR}/pytorch/torch/lib/include ${PROJECT_BINARY_DIR}/pytorch/torch/csrc ${PROJECT_BINARY_DIR}/pytorch/torch/csrc/cuda ${PROJECT_BINARY_DIR}/pytorch ${PROJECT_BINARY_DIR}/pytorch/torch/lib/include/TH ${PROJECT_INCLUDE_DIR})
-	link_directories(${PROJECT_BINARY_DIR}/pytorch/torch/lib ${PROJECT_BINARY_DIR}/pytorch/torch)
+	include_directories(/usr/include/python2.7 /opt/pytorch/torch/lib/include /opt/pytorch/torch/csrc /opt/pytorch/torch/csrc/cuda /opt/pytorch /opt/pytorch/torch/lib/include/TH ${PROJECT_INCLUDE_DIR})
+	link_directories(/opt/pytorch/torch/lib /opt/pytorch/torch)
 	link_directories(${CUDA_TOOLKIT_ROOT_DIR}/lib64)
 endif()
-
 
 
 
