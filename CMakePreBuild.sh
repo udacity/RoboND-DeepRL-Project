@@ -21,19 +21,21 @@ echo "[Pre-build]  installing Torch/LUA into:  $TORCH_PREFIX"
 
 # 
 # (prompt) install Gazebo7
+# DO NOT PROMPT FOR UDACITY WORKSPACE
 #
-while true; do
-    read -p "[Pre-build]  Do you wish to install Gazebo robotics simulator (y/N)? " yn
-    case $yn in
-        [Yy]* ) sudo apt-get update; sudo apt-get install -y gazebo7 libgazebo7-dev; break;;
-        [Nn]* ) echo "[Pre-build]  skipping Gazebo installation"; break;;
-        * ) echo "[Pre-build]  Please answer yes or no.";;
-    esac
-done
+# while true; do
+#     read -p "[Pre-build]  Do you wish to install Gazebo robotics simulator (y/N)? " yn
+#     case $yn in
+#         [Yy]* ) sudo apt-get update; sudo apt-get install -y gazebo7 libgazebo7-dev; break;;
+#         [Nn]* ) echo "[Pre-build]  skipping Gazebo installation"; break;;
+#         * ) echo "[Pre-build]  Please answer yes or no.";;
+#     esac
+# done
 
 
 #
 # build pyTorch?
+# DO NOT BUILD FOR UDACITY WORKSPACE
 #
 if [ $BUILD_PYTORCH = "ON" ] || [ $BUILD_PYTORCH = "YES" ] || [ $BUILD_PYTORCH = "Y" ]; then
 
