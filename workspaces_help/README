@@ -1,0 +1,6 @@
+After any refresh of the workspace including
+   - the MENU Reset Data selection
+   - the MENU Refresh Workspace selection
+   - automatic refresh due to idle workspace
+please open a terminal and run the library refresh to restore missing system library dependencies as follows
+$ ./refresh_libs.sh
