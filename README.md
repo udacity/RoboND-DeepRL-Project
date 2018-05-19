@@ -113,6 +113,7 @@ To get started with the project environment, run the following:
 
 ``` bash
 $ cd RoboND-DeepRL-Project/build/aarch64/bin
+$ chmod u+x gazebo-arm.sh
 $ ./gazebo-arm.sh
 ```
 
