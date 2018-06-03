@@ -51,6 +51,7 @@
 
 #define REWARD_WIN  0.0f
 #define REWARD_LOSS -0.0f
+#define ALPHA 0.8f
 
 // Define Object Names
 #define WORLD_NAME "arm_world"
@@ -134,21 +135,21 @@ void ArmPlugin::Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
 	cameraNode->Init();
 	
 	/*
-	/ TODO - Subscribe to camera topic
+	/ Done - Subscribe to camera topic
 	/
 	*/
 	
-	//cameraSub = None;
+	gazebo::transport::SubscriberPtr cameraSub = cameraNode->Subscribe("/gazebo/arm_world/camera/link/camera/image", ArmPlugin::onCameraMsg, this);
 
 	// Create our node for collision detection
 	collisionNode->Init();
 		
 	/*
-	/ TODO - Subscribe to prop collision topic
+	/ Done - Subscribe to prop collision topic
 	/
 	*/
 	
-	//collisionSub = None;
+	gazebo::transport::SubscriberPtr collisionSub = collisionNode->Subscribe("/gazebo/arm_world/tube/tube_link/my_contact", ArmPlugin::onCollisionMsg, this);
 
 	// Listen to the update event. This event is broadcast every simulation iteration.
 	this->updateConnection = event::Events::ConnectWorldUpdateBegin(boost::bind(&ArmPlugin::OnUpdate, this, _1));
@@ -163,11 +164,14 @@ bool ArmPlugin::createAgent()
 
 			
 	/*
-	/ TODO - Create DQN Agent
+	/ Done - Create DQN Agent
 	/
 	*/
 	
-	agent = NULL;
+	dqnAgent* agent = dqnAgent::Create(gameWidth, gameHeight, NUM_CHANNELS, NUM_ACTIONS, 
+					   OPTIMIZER, LEARNING_RATE, REPLAY_MEMORY,
+					   BATCH_SIZE, GAMMA, EPS_START, EPS_END, EPS_DECAY,
+					   USE_LSTM, LSTM_SIZE, ALLOW_RANDOM, DEBUG_DQN);
 
 	if( !agent )
 	{
@@ -262,19 +266,21 @@ void ArmPlugin::onCollisionMsg(ConstContactsPtr &contacts)
 		/ TODO - Check if there is collision between the arm and object, then issue learning reward
 		/
 		*/
-		
-		/*
+
+		collisionCheck = FALSE;
+		//return true if at least one of the objects being contacted is the tube
+		//bool collisionCheck = (strcmp(contacts->contact(i).collision1().c_str(), COLLISION_POINT))
+		//		      || (strcmp(contacts->contact(i).collision2().c_str(), COLLISION_POINT));
 		
 		if (collisionCheck)
 		{
 			rewardHistory = None;
 
-			newReward  = None;
-			endEpisode = None;
+			newReward  = true;
+			endEpisode = true;
 
 			return;
 		}
-		*/
 		
 	}
 }
@@ -319,11 +325,15 @@ bool ArmPlugin::updateAgent()
 
 		
 	/*
-	/ TODO - Increase or decrease the joint velocity based on whether the action is even or odd
+	/ Done - Increase or decrease the joint velocity based on whether the action is even or odd
 	/
 	*/
 	
 	float velocity = 0.0; // TODO - Set joint velocity based on whether action is even or odd.
+
+	//if even, add vel delta to current velocity
+	//otherwise, subtract vel delta from current velocity
+	velocity = vel[action/2] + (action%2==0 ? actionVelDelta : -actionVelDelta);
 
 	if( velocity < VELOCITY_MIN )
 		velocity = VELOCITY_MIN;
@@ -351,10 +361,14 @@ bool ArmPlugin::updateAgent()
 #else
 	
 	/*
-	/ TODO - Increase or decrease the joint position based on whether the action is even or odd
+	/ Done - Increase or decrease the joint position based on whether the action is even or odd
 	/
 	*/
 	float joint = 0.0; // TODO - Set joint position based on whether action is even or odd.
+
+	//if even, add joint delta to current position
+	//otherwise, subtract joint delta from current position
+	joint = ref[action/2] + (action%2 == 0 ? actionJointDelta : -actionJointDelta);
 
 	// limit the joint to the specified range
 	if( joint < JOINT_MIN )
@@ -574,31 +588,33 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 		const float groundContact = 0.05f;
 		
 		/*
-		/ TODO - set appropriate Reward for robot hitting the ground.
+		/ Done - set appropriate Reward for robot hitting the ground.
 		/
 		*/
 		
-		
-		/*if(checkGroundContact)
+		//check if gripper hitting ground (min z position of bounding box within small buffer)
+		bool checkGroundContact = gripBBox.z < groundContact		
+
+		if(checkGroundContact)
 		{
 						
 			if(DEBUG){printf("GROUND CONTACT, EOE\n");}
 
-			rewardHistory = None;
-			newReward     = None;
-			endEpisode    = None;
+			rewardHistory = REWARD_LOSS;
+			newReward     = true;
+			endEpisode    = true;
 		}
-		*/
+		
 		
 		/*
-		/ TODO - Issue an interim reward based on the distance to the object
+		/ Done - Issue an interim reward based on the distance to the object
 		/
 		*/ 
 		
-		/*
+	
 		if(!checkGroundContact)
 		{
-			const float distGoal = 0; // compute the reward from distance to the goal
+			const float distGoal = BoxDistance(gripBBox, propBBox); // compute the reward from distance to the goal
 
 			if(DEBUG){printf("distance('%s', '%s') = %f\n", gripper->GetName().c_str(), prop->model->GetName().c_str(), distGoal);}
 
@@ -608,13 +624,13 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 				const float distDelta  = lastGoalDistance - distGoal;
 
 				// compute the smoothed moving average of the delta of the distance to the goal
-				avgGoalDelta  = 0.0;
-				rewardHistory = None;
-				newReward     = None;	
+				avgGoalDelta  = avgGoalDelta*ALPHA + distDelta*(1-ALPHA);
+				rewardHistory = avgGoalDelta;
+				newReward     = true;	
 			}
 
 			lastGoalDistance = distGoal;
-		} */
+		}
 	}
 
 	// issue rewards and train DQN
