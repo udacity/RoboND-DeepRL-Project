@@ -37,6 +37,7 @@
 
 #define INPUT_WIDTH   512
 #define INPUT_HEIGHT  512
+#define NUM_ACTIONS DOF*3
 #define OPTIMIZER "RMSprop"
 #define LEARNING_RATE 0.001f
 #define REPLAY_MEMORY 10000
@@ -139,7 +140,7 @@ void ArmPlugin::Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
 	/
 	*/
 	
-	gazebo::transport::SubscriberPtr cameraSub = cameraNode->Subscribe("/gazebo/arm_world/camera/link/camera/image", ArmPlugin::onCameraMsg, this);
+	gazebo::transport::SubscriberPtr cameraSub = cameraNode->Subscribe("/gazebo/arm_world/camera/link/camera/image", &ArmPlugin::onCameraMsg, this);
 
 	// Create our node for collision detection
 	collisionNode->Init();
@@ -149,7 +150,7 @@ void ArmPlugin::Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
 	/
 	*/
 	
-	gazebo::transport::SubscriberPtr collisionSub = collisionNode->Subscribe("/gazebo/arm_world/tube/tube_link/my_contact", ArmPlugin::onCollisionMsg, this);
+	gazebo::transport::SubscriberPtr collisionSub = collisionNode->Subscribe("/gazebo/arm_world/tube/tube_link/my_contact", &ArmPlugin::onCollisionMsg, this);
 
 	// Listen to the update event. This event is broadcast every simulation iteration.
 	this->updateConnection = event::Events::ConnectWorldUpdateBegin(boost::bind(&ArmPlugin::OnUpdate, this, _1));
@@ -168,7 +169,7 @@ bool ArmPlugin::createAgent()
 	/
 	*/
 	
-	dqnAgent* agent = dqnAgent::Create(gameWidth, gameHeight, NUM_CHANNELS, NUM_ACTIONS, 
+	dqnAgent* agent = dqnAgent::Create(INPUT_WIDTH, INPUT_HEIGHT, NUM_CHANNELS, NUM_ACTIONS, 
 					   OPTIMIZER, LEARNING_RATE, REPLAY_MEMORY,
 					   BATCH_SIZE, GAMMA, EPS_START, EPS_END, EPS_DECAY,
 					   USE_LSTM, LSTM_SIZE, ALLOW_RANDOM, DEBUG_DQN);
@@ -267,14 +268,14 @@ void ArmPlugin::onCollisionMsg(ConstContactsPtr &contacts)
 		/
 		*/
 
-		collisionCheck = FALSE;
+		bool collisionCheck = FALSE;
 		//return true if at least one of the objects being contacted is the tube
 		//bool collisionCheck = (strcmp(contacts->contact(i).collision1().c_str(), COLLISION_POINT))
 		//		      || (strcmp(contacts->contact(i).collision2().c_str(), COLLISION_POINT));
 		
 		if (collisionCheck)
 		{
-			rewardHistory = None;
+			rewardHistory = 0;
 
 			newReward  = true;
 			endEpisode = true;
@@ -593,7 +594,7 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 		*/
 		
 		//check if gripper hitting ground (min z position of bounding box within small buffer)
-		bool checkGroundContact = gripBBox.z < groundContact		
+		bool checkGroundContact = gripBBox.min.z < groundContact;		
 
 		if(checkGroundContact)
 		{
@@ -667,4 +668,3 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 }
 
 }
-
