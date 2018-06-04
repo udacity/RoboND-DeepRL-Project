@@ -35,13 +35,13 @@
 /
 */
 
-#define INPUT_WIDTH   512
-#define INPUT_HEIGHT  512
-#define NUM_ACTIONS DOF*3
+#define INPUT_WIDTH   64
+#define INPUT_HEIGHT  64
+#define NUM_ACTIONS DOF*2
 #define OPTIMIZER "RMSprop"
-#define LEARNING_RATE 0.001f
+#define LEARNING_RATE 0.01f
 #define REPLAY_MEMORY 10000
-#define BATCH_SIZE 32
+#define BATCH_SIZE 8
 #define USE_LSTM false
 #define LSTM_SIZE 32
 
@@ -52,7 +52,7 @@
 
 #define REWARD_WIN  1.0f
 #define REWARD_LOSS -1.0f
-#define ALPHA 0.8f
+#define ALPHA 0.3f
 
 // Define Object Names
 #define WORLD_NAME "arm_world"
@@ -62,7 +62,8 @@
 // Define Collision Parameters
 #define COLLISION_FILTER "ground_plane::link::collision"
 #define COLLISION_ITEM   "tube::tube_link::tube_collision"
-#define COLLISION_POINT  "arm::gripperbase::gripper_link"
+#define COLLISION_GRIPPER  "arm::gripperbase::gripper_link"
+#define COLLISION_ARM "arm::link2::collision2"
 
 // Animation Steps
 #define ANIMATION_STEPS 1000
@@ -140,7 +141,7 @@ void ArmPlugin::Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
 	/
 	*/
 	
-	gazebo::transport::SubscriberPtr cameraSub = cameraNode->Subscribe("/gazebo/arm_world/camera/link/camera/image", &ArmPlugin::onCameraMsg, this);
+	cameraSub = cameraNode->Subscribe("/gazebo/arm_world/camera/link/camera/image", &ArmPlugin::onCameraMsg, this);
 
 	// Create our node for collision detection
 	collisionNode->Init();
@@ -150,7 +151,7 @@ void ArmPlugin::Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
 	/
 	*/
 	
-	gazebo::transport::SubscriberPtr collisionSub = collisionNode->Subscribe("/gazebo/arm_world/tube/tube_link/my_contact", &ArmPlugin::onCollisionMsg, this);
+	collisionSub = collisionNode->Subscribe("/gazebo/arm_world/tube/tube_link/my_contact", &ArmPlugin::onCollisionMsg, this);
 
 	// Listen to the update event. This event is broadcast every simulation iteration.
 	this->updateConnection = event::Events::ConnectWorldUpdateBegin(boost::bind(&ArmPlugin::OnUpdate, this, _1));
@@ -169,7 +170,7 @@ bool ArmPlugin::createAgent()
 	/
 	*/
 	
-	dqnAgent* agent = dqnAgent::Create(INPUT_WIDTH, INPUT_HEIGHT, INPUT_CHANNELS, NUM_ACTIONS, 
+	agent = dqnAgent::Create(INPUT_WIDTH, INPUT_HEIGHT, INPUT_CHANNELS, NUM_ACTIONS, 
 					   OPTIMIZER, LEARNING_RATE, REPLAY_MEMORY,
 					   BATCH_SIZE, GAMMA, EPS_START, EPS_END, EPS_DECAY,
 					   USE_LSTM, LSTM_SIZE, ALLOW_RANDOM, DEBUG_DQN);
@@ -256,33 +257,34 @@ void ArmPlugin::onCollisionMsg(ConstContactsPtr &contacts)
 
 	for (unsigned int i = 0; i < contacts->contact_size(); ++i)
 	{
-		if( strcmp(contacts->contact(i).collision2().c_str(), COLLISION_FILTER) == 0 )
+		const char * object1 = contacts->contact(i).collision1().c_str();
+		const char * object2 = contacts->contact(i).collision2().c_str();
+		
+		//if the contact is with the ground, don't mention it here
+		if( strcmp(object1, COLLISION_FILTER)==0 || strcmp(object2, COLLISION_FILTER)==0 )
 			continue;
 
-		if(DEBUG){std::cout << "Collision between[" << contacts->contact(i).collision1()
-			     << "] and [" << contacts->contact(i).collision2() << "]\n";}
-
+		if(DEBUG){std::cout << "Collision between[" << object1
+			     << "] and [" << object2 << "]\n";}
 	
 		/*
 		/ TODO - Check if there is collision between the arm and object, then issue learning reward
 		/
 		*/
-
-		bool collisionCheck = FALSE;
-		//return true if at least one of the objects being contacted is the tube
-		//bool collisionCheck = (strcmp(contacts->contact(i).collision1().c_str(), COLLISION_POINT))
-		//		      || (strcmp(contacts->contact(i).collision2().c_str(), COLLISION_POINT));
 		
-		if (collisionCheck)
+		if(strcmp(object1, COLLISION_ITEM)==0 || strcmp(object2, COLLISION_ITEM)==0)
 		{
-			rewardHistory = 0;
-
-			newReward  = true;
-			endEpisode = true;
-
-			return;
+			if(strcmp(object1, COLLISION_ARM)==0 || strcmp(object2, COLLISION_ARM)==0)
+			{
+				rewardHistory = REWARD_WIN*10.0;
+				newReward  = true;
+				endEpisode = true;
+			}else if(strcmp(object1, COLLISION_GRIPPER)==0 || strcmp(object2, COLLISION_GRIPPER)==0){
+				rewardHistory = REWARD_WIN*50.0;
+				newReward  = true;
+				endEpisode = true;
+			}
 		}
-		
 	}
 }
 
