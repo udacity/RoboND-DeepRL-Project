@@ -67,6 +67,8 @@ private:
 	bool     newState;			// true if a new frame needs processed
 	bool     newReward;			// true if a new reward's been issued
 	bool     endEpisode;		// true if this episode is over
+	bool     gripperContact;        // true if gripper contacts the target
+	bool     armContact;            // true if gripper or link contacts target
 	float    rewardHistory;		// value of the last reward issued
 	Tensor*  inputState;		// pyTorch input object to the agent
 	void*    inputBuffer[2];		// [0] for CPU and [1] for GPU
@@ -85,6 +87,8 @@ private:
 	float    lastGoalDistance;
 	float    avgGoalDelta;
 	int	    successfulGrabs;
+	int      gripperContacts;
+        int      armContacts;
 	int	    totalRuns;
 	int      runHistoryIdx;
 	int	    runHistoryMax;

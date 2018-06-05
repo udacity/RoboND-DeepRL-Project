@@ -28,20 +28,20 @@
 #define GAMMA 0.9f
 #define EPS_START 0.9f
 #define EPS_END 0.05f
-#define EPS_DECAY 200
+#define EPS_DECAY 100
 
 /*
 / TODO - Tune the following hyperparameters
 /
 */
 
-#define INPUT_WIDTH   64
-#define INPUT_HEIGHT  64
+#define INPUT_WIDTH   128
+#define INPUT_HEIGHT  128
 #define NUM_ACTIONS DOF*2
 #define OPTIMIZER "RMSprop"
-#define LEARNING_RATE 0.01f
+#define LEARNING_RATE 0.005f
 #define REPLAY_MEMORY 10000
-#define BATCH_SIZE 8
+#define BATCH_SIZE 32
 #define USE_LSTM false
 #define LSTM_SIZE 32
 
@@ -50,8 +50,10 @@
 /
 */
 
-#define REWARD_WIN  1.0f
-#define REWARD_LOSS -1.0f
+#define TIMEOUT_REWARD -1.0f
+#define GROUND_COLLISION_REWARD -10.0f
+#define ARM_COLLISION_REWARD 5.0f
+#define GRIPPER_COLLISION_REWARD 50.0f
 #define ALPHA 0.3f
 
 // Define Object Names
@@ -113,6 +115,8 @@ ArmPlugin::ArmPlugin() : ModelPlugin(), cameraNode(new gazebo::transport::Node()
 	newState         = false;
 	newReward        = false;
 	endEpisode       = false;
+	gripperContact   = false;
+	armContact       = false;
 	rewardHistory    = 0.0f;
 	testAnimation    = true;
 	loopAnimation    = false;
@@ -120,6 +124,8 @@ ArmPlugin::ArmPlugin() : ModelPlugin(), cameraNode(new gazebo::transport::Node()
 	lastGoalDistance = 0.0f;
 	avgGoalDelta     = 0.0f;
 	successfulGrabs = 0;
+	armContacts     = 0;
+	gripperContacts = 0;
 	totalRuns       = 0;
 }
 
@@ -268,7 +274,7 @@ void ArmPlugin::onCollisionMsg(ConstContactsPtr &contacts)
 			     << "] and [" << object2 << "]\n";}
 	
 		/*
-		/ TODO - Check if there is collision between the arm and object, then issue learning reward
+		/ DONE - Check if there is collision between the arm and object, then issue learning reward
 		/
 		*/
 		
@@ -276,13 +282,18 @@ void ArmPlugin::onCollisionMsg(ConstContactsPtr &contacts)
 		{
 			if(strcmp(object1, COLLISION_ARM)==0 || strcmp(object2, COLLISION_ARM)==0)
 			{
-				rewardHistory = REWARD_WIN*10.0;
+				printf("ARM CONTACT, EOE\n");				
+				rewardHistory = ARM_COLLISION_REWARD;
 				newReward  = true;
 				endEpisode = true;
+				armContact = true;
 			}else if(strcmp(object1, COLLISION_GRIPPER)==0 || strcmp(object2, COLLISION_GRIPPER)==0){
-				rewardHistory = REWARD_WIN*50.0;
+				printf("GRIPPER CONTACT, EOE\n");
+				rewardHistory = GRIPPER_COLLISION_REWARD;
 				newReward  = true;
 				endEpisode = true;
+				gripperContact = true;
+				armContact = true;
 			}
 		}
 	}
@@ -560,7 +571,7 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 	if( maxEpisodeLength > 0 && episodeFrames > maxEpisodeLength )
 	{
 		printf("ArmPlugin - triggering EOE, episode has exceeded %i frames\n", maxEpisodeLength);
-		rewardHistory = REWARD_LOSS;
+		rewardHistory = TIMEOUT_REWARD;
 		newReward     = true;
 		endEpisode    = true;
 	}
@@ -596,14 +607,14 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 		*/
 		
 		//check if gripper hitting ground (min z position of bounding box within small buffer)
-		bool checkGroundContact = gripBBox.min.z < groundContact;		
+		bool checkGroundContact = gripBBox.min.z <= 0;//groundContact;		
 
 		if(checkGroundContact)
 		{
 						
-			if(DEBUG){printf("GROUND CONTACT, EOE\n");}
+			printf("GROUND CONTACT, EOE\n");
 
-			rewardHistory = REWARD_LOSS;
+			rewardHistory = GROUND_COLLISION_REWARD;
 			newReward     = true;
 			endEpisode    = true;
 		}
@@ -656,11 +667,29 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 			avgGoalDelta     = 0.0f;
 
 			// track the number of wins and agent accuracy
-			if( rewardHistory >= REWARD_WIN )
+			if( rewardHistory > 0.0 )
 				successfulGrabs++;
 
+			if( armContact )
+			{
+				armContact = false;				
+				armContacts++;
+			}
+
+			if( gripperContact )
+			{
+				gripperContact = false;				
+				gripperContacts++;
+			}	
+
 			totalRuns++;
-			printf("Current Accuracy:  %0.4f (%03u of %03u)  (reward=%+0.2f %s)\n", float(successfulGrabs)/float(totalRuns), successfulGrabs, totalRuns, rewardHistory, (rewardHistory >= REWARD_WIN ? "WIN" : "LOSS"));
+
+			printf("Current Accuracy: %0.4f (%03u of %03u) Arm Contacts,\n"
+			       "                  %0.4f (%03u of %03u) Gripper Contacts,\n"
+			       "                  (reward=%+0.2f %s)\n",
+				float(armContacts)/float(totalRuns), armContacts, totalRuns,
+				float(gripperContacts)/float(totalRuns), gripperContacts, totalRuns,
+				rewardHistory, (rewardHistory > 0.0 ? "WIN" : "LOSS"));
 
 
 			for( uint32_t n=0; n < DOF; n++ )
