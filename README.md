@@ -112,7 +112,7 @@ Internally, [`catch`](samples/catch/catch.cpp) is using the [`dqnAgent`](c/dqnAg
 To get started with the project environment, run the following:
 
 ``` bash
-$ cd RoboND-DeepRL-Project/build/aarch64/bin
+$ cd RoboND-DeepRL-Project/build/x86_64/bin
 $ ./gazebo-arm.sh
 ```
 
