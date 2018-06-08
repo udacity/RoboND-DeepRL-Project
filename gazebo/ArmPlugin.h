@@ -31,6 +31,7 @@
 #include <string.h>
 #include <syslog.h>
 #include <time.h>
+#include <fstream>
 
 
 namespace gazebo
@@ -69,6 +70,8 @@ private:
 	bool     endEpisode;		// true if this episode is over
 	bool     gripperContact;        // true if gripper contacts the target
 	bool     armContact;            // true if gripper or link contacts target
+	bool     groundContact;
+	bool     timeout;
 	float    rewardHistory;		// value of the last reward issued
 	Tensor*  inputState;		// pyTorch input object to the agent
 	void*    inputBuffer[2];		// [0] for CPU and [1] for GPU
@@ -87,12 +90,16 @@ private:
 	float    lastGoalDistance;
 	float    avgGoalDelta;
 	int	    successfulGrabs;
+    int 	failedGrabs;
 	int      gripperContacts;
         int      armContacts;
+	int      timeouts;
+	int      groundContacts;
 	int	    totalRuns;
 	int      runHistoryIdx;
 	int	    runHistoryMax;
 	bool     runHistory[20];
+	
 
 	physics::ModelPtr model;
 	event::ConnectionPtr updateConnection;
@@ -103,6 +110,8 @@ private:
 
 	gazebo::transport::NodePtr collisionNode;
 	gazebo::transport::SubscriberPtr collisionSub;
+
+	std::ofstream outfile;
 };
 
 }

@@ -35,15 +35,15 @@
 /
 */
 
-#define INPUT_WIDTH   128
-#define INPUT_HEIGHT  128
+#define INPUT_WIDTH   64
+#define INPUT_HEIGHT  64
 #define NUM_ACTIONS DOF*2
 #define OPTIMIZER "RMSprop"
 #define LEARNING_RATE 0.005f
 #define REPLAY_MEMORY 10000
-#define BATCH_SIZE 32
-#define USE_LSTM false
-#define LSTM_SIZE 32
+#define BATCH_SIZE 16
+#define USE_LSTM true
+#define LSTM_SIZE 64
 
 /*
 / TODO - Define Reward Parameters
@@ -117,6 +117,8 @@ ArmPlugin::ArmPlugin() : ModelPlugin(), cameraNode(new gazebo::transport::Node()
 	endEpisode       = false;
 	gripperContact   = false;
 	armContact       = false;
+	timeout          = false;
+	groundContact    = false;
 	rewardHistory    = 0.0f;
 	testAnimation    = true;
 	loopAnimation    = false;
@@ -124,9 +126,18 @@ ArmPlugin::ArmPlugin() : ModelPlugin(), cameraNode(new gazebo::transport::Node()
 	lastGoalDistance = 0.0f;
 	avgGoalDelta     = 0.0f;
 	successfulGrabs = 0;
+  	failedGrabs     = 0;
 	armContacts     = 0;
 	gripperContacts = 0;
 	totalRuns       = 0;
+	timeouts        = 0;
+	groundContacts  = 0;
+  	
+  	outfile.open("results.csv", std::ofstream::trunc);
+  	outfile << "Run," << "Wins," << "Win Percent," << "Losses," << "Loss Percent," << "Arm Contacts,"
+      		<< "Arm Contact Percent," << "Gripper Contacts," << "Gripper Contact Percent," << "Ground Contacts,"
+      		<< "Ground Contact Percent," << "Timeouts," << "Timeout Percent," << std::endl;
+  	outfile.close();
 }
 
 
@@ -460,7 +471,8 @@ bool ArmPlugin::updateJoints()
 		}
 		else if( animationStep == ANIMATION_STEPS / 2 )
 		{	
-			ResetPropDynamics();
+			//ResetPropDynamics(); //original code to set object in same spot
+			RandomizeProps(); //move object x position randomly
 		}
 
 		return true;
@@ -631,7 +643,7 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 			const float distGoal = BoxDistance(gripBBox, propBBox); // compute the reward from distance to the goal
 
 			if(DEBUG){printf("distance('%s', '%s') = %f\n", gripper->GetName().c_str(), prop->model->GetName().c_str(), distGoal);}
-
+			
 			
 			if( episodeFrames > 1 )
 			{
@@ -639,7 +651,7 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 
 				// compute the smoothed moving average of the delta of the distance to the goal
 				avgGoalDelta  = avgGoalDelta*ALPHA + distDelta*(1-ALPHA);
-				rewardHistory = avgGoalDelta;
+				rewardHistory = avgGoalDelta;				
 				newReward     = true;	
 			}
 
@@ -668,7 +680,11 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 
 			// track the number of wins and agent accuracy
 			if( rewardHistory > 0.0 )
-				successfulGrabs++;
+            {	
+            	successfulGrabs++;
+            } else {
+            	failedGrabs++;
+            }
 
 			if( armContact )
 			{
@@ -680,9 +696,38 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 			{
 				gripperContact = false;				
 				gripperContacts++;
+			}
+
+			if( timeout )
+			{
+				timeout = false;
+				timeouts++;
+			}
+			
+			if( groundContact )
+			{
+				groundContact = false;
+				groundContacts++;
 			}	
 
 			totalRuns++;
+
+			outfile.open("results.csv", std::ios_base::app);
+          	outfile << totalRuns - 1 << ","
+              		<< successfulGrabs << ","
+              		<< (float) successfulGrabs / (float) totalRuns << ","
+              		<< failedGrabs << ","
+              		<< (float) failedGrabs << ","
+              		<< armContacts << ","
+              		<< (float) armContacts / (float) totalRuns << ","
+              		<< gripperContacts << ","
+              		<< (float) gripperContacts / (float) totalRuns << ","
+              		<< groundContacts << ","
+              		<< (float) groundContacts / (float) totalRuns << ","
+              		<< timeouts << ","
+				    << (float) timeouts / (float) totalRuns << std::endl;
+
+          	outfile.close();
 
 			printf("Current Accuracy: %0.4f (%03u of %03u) Arm Contacts,\n"
 			       "                  %0.4f (%03u of %03u) Gripper Contacts,\n"
