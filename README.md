@@ -23,6 +23,46 @@ $ make
 
 During the `cmake` step, Torch will be installed so it can take awhile. It will download packages and ask you for your `sudo` password during the install.
 
+### Troubleshooting the Jetson Build Process
+
+To save time in the build process, which could take multiple hours, execute the jetson-clocks scripts beforehand:
+``` bash
+$ sudo ~/jetson_clocks.sh
+```
+
+If you notice that your jetson is running out of memory during the build process, try to create a swapfile to survive memory peaks (per suggestion of @douglassteeple):
+``` bash
+# Create a swapfile for Ubuntu at the current directory location                 
+$ sudo fallocate -l 4G swapfile                                                        
+# List out the file                                                              
+$ sudo ls -lh swapfile                                                                 
+# Change permissions so that only root can use it                               
+$ sudo chmod 600 swapfile                                                              
+# List out the file                                                              
+$ sudo ls -lh swapfile                                                                 
+# Set up the Linux swap area    
+$ sudo mkswap swapfile    
+# Now start using the swapfile    
+$ sudo swapon swapfile    
+# Show that it's now being used    
+$ sudo swapon -s    
+```
+
+If you notice pip related error messages in the build log, check your pip (`/usr/bin/pip`)installation. If it looks like the following snippet, change it (per suggestion of Konstantinos O.):
+
+``` python
+  from pip import main
+  if __name__ == '__main__':
+      sys.exit(main())
+```
+
+edited pip:
+``` python
+  from pip import __main__
+  if __name__ == '__main__':
+      sys.exit(__main__._main())
+```
+
 ## Testing the API
 
 To make sure that the reinforcement learners are still functioning properly from C++, a simple example of using the API called [`catch`](samples/catch/catch.cpp) is provided.  Similar in concept to pong, a ball drops from the top of the screen which the agent must catch before the ball reaches the bottom of the screen, by moving it's paddle left or right.
