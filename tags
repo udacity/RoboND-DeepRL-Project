@@ -1,0 +1,1219 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+1.0.0 (2016-06-07)	gazebo/gazebo-pkgs/gazebo_grasp_plugin/CHANGELOG.rst	/^1.0.0 (2016-06-07)$/;"	s	chapter:Changelog for package gazebo_grasp_plugin
+1.0.0 (2016-06-07)	gazebo/gazebo-pkgs/gazebo_test_tools/CHANGELOG.rst	/^1.0.0 (2016-06-07)$/;"	s	chapter:Changelog for package gazebo_test_tools
+1.0.0 (2016-06-07)	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/CHANGELOG.rst	/^1.0.0 (2016-06-07)$/;"	s	chapter:Changelog for package gazebo_world_plugin_loader
+1.0.1 (2016-06-08)	gazebo/gazebo-pkgs/gazebo_grasp_plugin/CHANGELOG.rst	/^1.0.1 (2016-06-08)$/;"	s	chapter:Changelog for package gazebo_grasp_plugin
+1.0.1 (2016-06-08)	gazebo/gazebo-pkgs/gazebo_test_tools/CHANGELOG.rst	/^1.0.1 (2016-06-08)$/;"	s	chapter:Changelog for package gazebo_test_tools
+1.0.1 (2016-06-08)	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/CHANGELOG.rst	/^1.0.1 (2016-06-08)$/;"	s	chapter:Changelog for package gazebo_world_plugin_loader
+1.0.2 (2018-01-06)	gazebo/gazebo-pkgs/gazebo_grasp_plugin/CHANGELOG.rst	/^1.0.2 (2018-01-06)$/;"	s	chapter:Changelog for package gazebo_grasp_plugin
+1.0.2 (2018-01-06)	gazebo/gazebo-pkgs/gazebo_test_tools/CHANGELOG.rst	/^1.0.2 (2018-01-06)$/;"	s	chapter:Changelog for package gazebo_test_tools
+1.0.2 (2018-01-06)	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/CHANGELOG.rst	/^1.0.2 (2018-01-06)$/;"	s	chapter:Changelog for package gazebo_world_plugin_loader
+ACTION_BACKWARD	samples/fruit/fruitEnv.h	/^	ACTION_BACKWARD,$/;"	e	enum:AgentAction
+ACTION_FORWARD	samples/fruit/fruitEnv.h	/^	ACTION_FORWARD = 0,$/;"	e	enum:AgentAction
+ACTION_FUNCTION	c/rlAgent.h	/^		ACTION_FUNCTION = 0,$/;"	e	enum:rlAgent::__anon4a935c9a0103
+ACTION_LEFT	samples/catch/catch.cpp	/^	ACTION_LEFT  = 1,$/;"	e	enum:catchAction	file:
+ACTION_LEFT	samples/fruit/fruitEnv.h	/^	ACTION_LEFT,$/;"	e	enum:AgentAction
+ACTION_NONE	samples/fruit/fruitEnv.h	/^	ACTION_NONE$/;"	e	enum:AgentAction
+ACTION_RIGHT	samples/catch/catch.cpp	/^	ACTION_RIGHT = 2,$/;"	e	enum:catchAction	file:
+ACTION_RIGHT	samples/fruit/fruitEnv.h	/^	ACTION_RIGHT,$/;"	e	enum:AgentAction
+ACTION_STAY	samples/catch/catch.cpp	/^	ACTION_STAY  = 0,$/;"	e	enum:catchAction	file:
+ALLOW_RANDOM	gazebo/ArmPlugin.cpp	/^#define ALLOW_RANDOM /;"	d	file:
+ALLOW_RANDOM	samples/catch/catch.cpp	/^#define ALLOW_RANDOM /;"	d	file:
+ALLOW_RANDOM	samples/fruit/fruit.cpp	/^#define ALLOW_RANDOM /;"	d	file:
+ANIMATION_STEPS	gazebo/ArmPlugin.cpp	/^#define ANIMATION_STEPS /;"	d	file:
+Action	samples/fruit/fruitEnv.cpp	/^bool FruitEnv::Action( AgentAction action, float* reward )$/;"	f	class:FruitEnv	typeref:typename:bool
+ActionToStr	samples/fruit/fruitEnv.cpp	/^const char* FruitEnv::ActionToStr( AgentAction action )$/;"	f	class:FruitEnv	typeref:typename:const char *
+AgentAction	samples/fruit/fruitEnv.h	/^enum AgentAction$/;"	g
+Alloc	c/pyTensor.cpp	/^pyTensor* pyTensor::Alloc( uint32_t elements )$/;"	f	class:pyTensor	typeref:typename:pyTensor *
+Alloc	c/pyTensor.cpp	/^pyTensor* pyTensor::Alloc( uint32_t width, uint32_t height=1, uint32_t depth )$/;"	f	class:pyTensor	typeref:typename:pyTensor *
+ArmPlugin	gazebo/ArmPlugin.h	/^class ArmPlugin : public ModelPlugin$/;"	c	namespace:gazebo
+BALL_SIZE	samples/catch/catch.cpp	/^#define BALL_SIZE	/;"	d	file:
+BALL_SIZE2	samples/catch/catch.cpp	/^#define BALL_SIZE2 /;"	d	file:
+BATCH_SIZE	gazebo/ArmPlugin.cpp	/^#define BATCH_SIZE /;"	d	file:
+BATCH_SIZE	python/gym-DQN.py	/^BATCH_SIZE = 128$/;"	v
+BATCH_SIZE	samples/catch/catch.cpp	/^#define BATCH_SIZE /;"	d	file:
+BATCH_SIZE	samples/fruit/fruit.cpp	/^#define BATCH_SIZE /;"	d	file:
+BUILD_DEPS	CMakeLists.txt	/^	set(BUILD_DEPS "NO" CACHE BOOL "If YES, will install dependencies into sandbox.  Automatically /;"	v
+BUILD_DEPS	CMakeLists.txt	/^set(BUILD_DEPS "YES" CACHE BOOL "If YES, will install dependencies into sandbox.  Automatically /;"	v
+BUILD_OPENBLAS	CMakeLists.txt	/^set(BUILD_OPENBLAS "YES" CACHE BOOL "If YES, will download & build OpenBLAS (for Torch) into san/;"	v
+BeginRender	utils/display/glDisplay.cpp	/^void glDisplay::BeginRender()$/;"	f	class:glDisplay	typeref:typename:void
+BidirectionalLSTM	python/CRNN.py	/^class BidirectionalLSTM(nn.Module):$/;"	c
+BoxDistance	gazebo/ArmPlugin.cpp	/^static float BoxDistance(const math::Box& a, const math::Box& b)$/;"	f	namespace:gazebo	typeref:typename:float	file:
+Building from Source (Nvidia Jetson TX2)	README.md	/^## Building from Source (Nvidia Jetson TX2)$/;"	s
+ByteTensor	python/DQN.py	/^ByteTensor = torch.cuda.ByteTensor if use_cuda else torch.ByteTensor$/;"	v
+ByteTensor	python/RL.py	/^ByteTensor = torch.cuda.ByteTensor if use_cuda else torch.ByteTensor$/;"	v
+ByteTensor	python/gym-DQN.py	/^ByteTensor = torch.cuda.ByteTensor if use_cuda else torch.ByteTensor$/;"	v
+ByteTensor	python/gym-RL.py	/^ByteTensor = torch.cuda.ByteTensor if use_cuda else torch.ByteTensor$/;"	v
+ByteTensor	python/gym-actorCritic.py	/^ByteTensor = torch.cuda.ByteTensor if use_cuda else torch.ByteTensor$/;"	v
+CAMERA_TOPIC	gazebo/ArmPlugin.cpp	/^#define CAMERA_TOPIC /;"	d	file:
+CMAKE_ARCHIVE_OUTPUT_DIRECTORY	CMakeLists.txt	/^set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_OUTPUT_DIR}\/lib)$/;"	v
+CMAKE_ARCHIVE_OUTPUT_DIRECTORY	utils/CMakeLists.txt	/^	set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_OUTPUT_DIR}\/lib)$/;"	v
+CMAKE_CXX_FLAGS	CMakeLists.txt	/^set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")	# -std=gnu++11$/;"	v
+CMAKE_CXX_FLAGS	gazebo/CMakeLists.txt	/^set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11") # -std=gnu++11$/;"	v
+CMAKE_CXX_FLAGS	gazebo/gazebo-pkgs/gazebo_grasp_plugin/CMakeLists.txt	/^    set(CMAKE_CXX_FLAGS "-std=c++0x")$/;"	v
+CMAKE_CXX_FLAGS	gazebo/gazebo-pkgs/gazebo_grasp_plugin/CMakeLists.txt	/^    set(CMAKE_CXX_FLAGS "-std=c++11")$/;"	v
+CMAKE_CXX_FLAGS	gazebo/gazebo-pkgs/gazebo_state_plugins/CMakeLists.txt	/^    set(CMAKE_CXX_FLAGS "-std=c++0x")$/;"	v
+CMAKE_CXX_FLAGS	gazebo/gazebo-pkgs/gazebo_state_plugins/CMakeLists.txt	/^    set(CMAKE_CXX_FLAGS "-std=c++11")$/;"	v
+CMAKE_CXX_FLAGS	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/CMakeLists.txt	/^    set(CMAKE_CXX_FLAGS "-std=c++0x")$/;"	v
+CMAKE_CXX_FLAGS	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/CMakeLists.txt	/^    set(CMAKE_CXX_FLAGS "-std=c++11")$/;"	v
+CMAKE_CXX_FLAGS	utils/CMakeLists.txt	/^	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")	$/;"	v
+CMAKE_LIBRARY_OUTPUT_DIRECTORY	CMakeLists.txt	/^set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_OUTPUT_DIR}\/lib)$/;"	v
+CMAKE_LIBRARY_OUTPUT_DIRECTORY	utils/CMakeLists.txt	/^	set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_OUTPUT_DIR}\/lib)$/;"	v
+CMAKE_RUNTIME_OUTPUT_DIRECTORY	CMakeLists.txt	/^set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_OUTPUT_DIR}\/bin)$/;"	v
+CMAKE_RUNTIME_OUTPUT_DIRECTORY	utils/CMakeLists.txt	/^	set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_OUTPUT_DIR}\/bin)$/;"	v
+COLLISION_FILTER	gazebo/ArmPlugin.cpp	/^#define COLLISION_FILTER /;"	d	file:
+COLLISION_ITEM	gazebo/ArmPlugin.cpp	/^#define COLLISION_ITEM /;"	d	file:
+COLLISION_POINT	gazebo/ArmPlugin.cpp	/^#define COLLISION_POINT /;"	d	file:
+COLLISION_TOPIC	gazebo/ArmPlugin.cpp	/^#define COLLISION_TOPIC /;"	d	file:
+COLOR_COMPONENT_BIT_SIZE	utils/cuda/cudaYUV-NV12.cu	/^#define COLOR_COMPONENT_BIT_SIZE /;"	d	file:
+COLOR_COMPONENT_MASK	utils/cuda/cudaYUV-NV12.cu	/^#define COLOR_COMPONENT_MASK /;"	d	file:
+CRNN	python/CRNN.py	/^class CRNN(nn.Module):$/;"	c
+CUDA	utils/cuda/cudaUtility.h	/^#define CUDA(/;"	d
+CUDA_FAILED	utils/cuda/cudaUtility.h	/^#define CUDA_FAILED(/;"	d
+CUDA_NVCC_FLAGS	CMakeLists.txt	/^	CUDA_NVCC_FLAGS$/;"	v
+CUDA_NVCC_FLAGS	utils/CMakeLists.txt	/^		CUDA_NVCC_FLAGS$/;"	v
+CUDA_SUCCESS	utils/cuda/cudaUtility.h	/^#define CUDA_SUCCESS(/;"	d
+CUDA_VERIFY	utils/cuda/cudaUtility.h	/^#define CUDA_VERIFY(/;"	d
+Capture	utils/camera/gstCamera.cpp	/^bool gstCamera::Capture( void** cpu, void** cuda, unsigned long timeout )$/;"	f	class:gstCamera	typeref:typename:bool
+Capture	utils/camera/v4l2Camera.cpp	/^void* v4l2Camera::Capture( size_t timeout )$/;"	f	class:v4l2Camera	typeref:typename:void *
+CatchEnvironment	lua/catchENV.lua	/^function CatchEnvironment(gridSize)$/;"	f
+Changelog for package gazebo_grasp_plugin	gazebo/gazebo-pkgs/gazebo_grasp_plugin/CHANGELOG.rst	/^Changelog for package gazebo_grasp_plugin$/;"	c
+Changelog for package gazebo_test_tools	gazebo/gazebo-pkgs/gazebo_test_tools/CHANGELOG.rst	/^Changelog for package gazebo_test_tools$/;"	c
+Changelog for package gazebo_world_plugin_loader	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/CHANGELOG.rst	/^Changelog for package gazebo_world_plugin_loader$/;"	c
+Close	utils/camera/gstCamera.cpp	/^void gstCamera::Close()$/;"	f	class:gstCamera	typeref:typename:void
+Close	utils/camera/v4l2Camera.cpp	/^bool v4l2Camera::Close()$/;"	f	class:v4l2Camera	typeref:typename:bool
+CollidingPoint	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    CollidingPoint(): sum(0) {}$/;"	f	class:GazeboGraspFix::CollidingPoint	file:
+CollidingPoint	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    CollidingPoint(const CollidingPoint& o):$/;"	f	class:GazeboGraspFix::CollidingPoint	file:
+CollidingPoint	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^class GazeboGraspFix::CollidingPoint{$/;"	c	class:GazeboGraspFix	file:
+CollisionMapRequest	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^    CollisionMapRequest(): threshold(MAX_MAP_VAL) {$/;"	f	class:GazeboMapPublisher::CollisionMapRequest	file:
+CollisionMapRequest	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^    CollisionMapRequest(const CollisionMapRequest& o):$/;"	f	class:GazeboMapPublisher::CollisionMapRequest	file:
+CollisionMapRequest	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^class GazeboMapPublisher::CollisionMapRequest {$/;"	c	class:GazeboMapPublisher	file:
+ConvertRGBA	utils/camera/gstCamera.cpp	/^bool gstCamera::ConvertRGBA( void* input, void** output, bool zeroCopy )$/;"	f	class:gstCamera	typeref:typename:bool
+Create	c/dqnAgent.cpp	/^dqnAgent* dqnAgent::Create(uint32_t width, uint32_t height, uint32_t channels, uint32_t numActio/;"	f	class:dqnAgent	typeref:typename:dqnAgent *
+Create	c/rlAgent.cpp	/^rlAgent* rlAgent::Create( uint32_t numInputs, uint32_t numActions, const char* module, const cha/;"	f	class:rlAgent	typeref:typename:rlAgent *
+Create	c/rlAgent.cpp	/^rlAgent* rlAgent::Create( uint32_t width, uint32_t height, uint32_t channels, uint32_t numAction/;"	f	class:rlAgent	typeref:typename:rlAgent *
+Create	samples/fruit/fruitEnv.cpp	/^FruitEnv* FruitEnv::Create( uint32_t world_width, uint32_t world_height, uint32_t episode_max_le/;"	f	class:FruitEnv	typeref:typename:FruitEnv *
+Create	samples/fruit/fruitEnv.cpp	/^FruitEnv* FruitEnv::Create( uint32_t world_width, uint32_t world_height, uint32_t render_width, /;"	f	class:FruitEnv	typeref:typename:FruitEnv *
+Create	utils/camera/gstCamera.cpp	/^gstCamera* gstCamera::Create( int v4l2_device )$/;"	f	class:gstCamera	typeref:typename:gstCamera *
+Create	utils/camera/gstCamera.cpp	/^gstCamera* gstCamera::Create( uint32_t width, uint32_t height, int v4l2_device )$/;"	f	class:gstCamera	typeref:typename:gstCamera *
+Create	utils/camera/v4l2Camera.cpp	/^v4l2Camera* v4l2Camera::Create( const char* device_path )$/;"	f	class:v4l2Camera	typeref:typename:v4l2Camera *
+Create	utils/cuda/cudaFont.cu	/^cudaFont* cudaFont::Create( const char* bitmap_path )$/;"	f	typeref:typename:cudaFont * cudaFont::
+Create	utils/display/glDisplay.cpp	/^glDisplay* glDisplay::Create( const char* title, float r, float g, float b, float a )$/;"	f	class:glDisplay	typeref:typename:glDisplay *
+Create	utils/display/glDisplay.cpp	/^glDisplay* glDisplay::Create( float r, float g, float b, float a )$/;"	f	class:glDisplay	typeref:typename:glDisplay *
+Create	utils/display/glTexture.cpp	/^glTexture* glTexture::Create( uint32_t width, uint32_t height, uint32_t format, void* data )$/;"	f	class:glTexture	typeref:typename:glTexture *
+Create	utils/input/devInput.cpp	/^InputDevices* InputDevices::Create()$/;"	f	class:InputDevices	typeref:typename:InputDevices *
+Create	utils/input/devJoystick.cpp	/^JoystickDevice* JoystickDevice::Create( const char* name )$/;"	f	class:JoystickDevice	typeref:typename:JoystickDevice *
+Create	utils/input/devKeyboard.cpp	/^KeyboardDevice* KeyboardDevice::Create( const char* path )$/;"	f	class:KeyboardDevice	typeref:typename:KeyboardDevice *
+DEBUG	gazebo/ArmPlugin.cpp	/^#define DEBUG /;"	d	file:
+DEBUG_DQN	gazebo/ArmPlugin.cpp	/^#define DEBUG_DQN /;"	d	file:
+DEBUG_DQN	samples/catch/catch.cpp	/^#define DEBUG_DQN /;"	d	file:
+DEBUG_DQN	samples/fruit/fruit.cpp	/^#define DEBUG_DQN /;"	d	file:
+DEFAULT_CFM	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_CFM /;"	d	file:
+DEFAULT_CONTACT_MAX_CORRECTING_VEL	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_CONTACT_MAX_CORRECTING_VEL /;"	d	file:
+DEFAULT_CONTACT_SURFACE_LAYER	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_CONTACT_SURFACE_LAYER /;"	d	file:
+DEFAULT_DISABLE_COLLISIONS_ON_ATTACH	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^#define DEFAULT_DISABLE_COLLISIONS_ON_ATTACH /;"	d	file:
+DEFAULT_DISABLE_COLLISIONS_ON_ATTACH	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^#define DEFAULT_DISABLE_COLLISIONS_ON_ATTACH /;"	d	file:
+DEFAULT_EPISODE_MAX_FRAMES	samples/fruit/fruit.cpp	/^#define DEFAULT_EPISODE_MAX_FRAMES /;"	d	file:
+DEFAULT_ERP	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_ERP /;"	d	file:
+DEFAULT_FORCES_ANGLE_TOLERANCE	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^#define DEFAULT_FORCES_ANGLE_TOLERANCE /;"	d	file:
+DEFAULT_FORCES_ANGLE_TOLERANCE	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^#define DEFAULT_FORCES_ANGLE_TOLERANCE /;"	d	file:
+DEFAULT_GAME_HEIGHT	samples/catch/catch.cpp	/^#define DEFAULT_GAME_HEIGHT /;"	d	file:
+DEFAULT_GAME_HEIGHT	samples/fruit/fruit.cpp	/^#define DEFAULT_GAME_HEIGHT /;"	d	file:
+DEFAULT_GAME_WIDTH	samples/catch/catch.cpp	/^#define DEFAULT_GAME_WIDTH /;"	d	file:
+DEFAULT_GAME_WIDTH	samples/fruit/fruit.cpp	/^#define DEFAULT_GAME_WIDTH /;"	d	file:
+DEFAULT_ITERS	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_ITERS /;"	d	file:
+DEFAULT_LOAD_MODEL	c/rlAgent.h	/^#define DEFAULT_LOAD_MODEL /;"	d
+DEFAULT_MAP_PUB_FREQ	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define DEFAULT_MAP_PUB_FREQ /;"	d	file:
+DEFAULT_MAX_CONTACTS	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_MAX_CONTACTS /;"	d	file:
+DEFAULT_MAX_GRIP_COUNT	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^#define DEFAULT_MAX_GRIP_COUNT /;"	d	file:
+DEFAULT_MAX_GRIP_COUNT	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^#define DEFAULT_MAX_GRIP_COUNT /;"	d	file:
+DEFAULT_MAX_STEP_SIZE	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_MAX_STEP_SIZE /;"	d	file:
+DEFAULT_MAX_UPDATE_RATE	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_MAX_UPDATE_RATE /;"	d	file:
+DEFAULT_NEXT_ACTION	c/rlAgent.h	/^#define DEFAULT_NEXT_ACTION /;"	d
+DEFAULT_NEXT_REWARD	c/rlAgent.h	/^#define DEFAULT_NEXT_REWARD /;"	d
+DEFAULT_OBJECTS_TOPIC	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^#define DEFAULT_OBJECTS_TOPIC /;"	d	file:
+DEFAULT_PRECON_ITERS	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_PRECON_ITERS /;"	d	file:
+DEFAULT_PUBLISH_OBJECTS	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^#define DEFAULT_PUBLISH_OBJECTS /;"	d	file:
+DEFAULT_PUBLISH_RECOGNISED_OBJECT_RATE	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^#define DEFAULT_PUBLISH_RECOGNISED_OBJECT_RATE /;"	d	file:
+DEFAULT_RAD	samples/fruit/fruitEnv.h	/^	static const int DEFAULT_RAD = 4;	\/\/ default radius of agent\/fruit (in pixels)$/;"	m	class:FruitEnv	typeref:typename:const int
+DEFAULT_RECOGNIZE_OBJECT_TOPIC	gazebo/gazebo-pkgs/gazebo_test_tools/test/fake_object_recognizer_cmd.cpp	/^#define DEFAULT_RECOGNIZE_OBJECT_TOPIC /;"	d	file:
+DEFAULT_RELEASE_TOLERANCE	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^#define DEFAULT_RELEASE_TOLERANCE /;"	d	file:
+DEFAULT_RELEASE_TOLERANCE	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^#define DEFAULT_RELEASE_TOLERANCE /;"	d	file:
+DEFAULT_REQUEST_MAP_SERVICE	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define DEFAULT_REQUEST_MAP_SERVICE /;"	d	file:
+DEFAULT_REQUEST_OBJECTS_TOPIC	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^#define DEFAULT_REQUEST_OBJECTS_TOPIC /;"	d	file:
+DEFAULT_REQUEST_OBJECTS_TOPIC	gazebo/gazebo-pkgs/gazebo_state_plugins/test/object_info_request.cpp	/^#define DEFAULT_REQUEST_OBJECTS_TOPIC /;"	d	file:
+DEFAULT_RL_MODULE	c/rlAgent.h	/^#define DEFAULT_RL_MODULE /;"	d
+DEFAULT_RMS_ERROR_TOL	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_RMS_ERROR_TOL /;"	d	file:
+DEFAULT_ROOT_FRAME_ID	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^#define DEFAULT_ROOT_FRAME_ID /;"	d	file:
+DEFAULT_SAVE_MODEL	c/rlAgent.h	/^#define DEFAULT_SAVE_MODEL /;"	d
+DEFAULT_SERVICE_RECOGNISE_OBJECT_TOPIC	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^#define DEFAULT_SERVICE_RECOGNISE_OBJECT_TOPIC /;"	d	file:
+DEFAULT_SERVICE_REGISTER_OBJECT_TF_TOPIC	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^#define DEFAULT_SERVICE_REGISTER_OBJECT_TF_TOPIC /;"	d	file:
+DEFAULT_SERVICE_REQUEST_OBJECT_TOPIC	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^#define DEFAULT_SERVICE_REQUEST_OBJECT_TOPIC /;"	d	file:
+DEFAULT_TITLE	utils/display/glDisplay.cpp	/^#define DEFAULT_TITLE /;"	d	file:
+DEFAULT_UPDATE_RATE	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^#define DEFAULT_UPDATE_RATE /;"	d	file:
+DEFAULT_UPDATE_RATE	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^#define DEFAULT_UPDATE_RATE /;"	d	file:
+DEFAULT_W	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^#define DEFAULT_W /;"	d	file:
+DEFAULT_WORLD_OBJECTS_TOPIC	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^#define DEFAULT_WORLD_OBJECTS_TOPIC /;"	d	file:
+DEG_TO_RAD	utils/pi.h	/^#define DEG_TO_RAD /;"	d
+DEV_PATH	utils/input/devInput.cpp	/^#define DEV_PATH /;"	d	file:
+DOF	gazebo/ArmPlugin.h	/^	static const uint32_t DOF  = 3;	\/\/ active degrees of freedom in the arm$/;"	m	class:gazebo::ArmPlugin	typeref:typename:const uint32_t
+DQN	python/DQN.py	/^class DQN(nn.Module):$/;"	c
+DQN	python/gym-DQN.py	/^class DQN(nn.Module):$/;"	c
+DRQN	python/DQN.py	/^class DRQN(nn.Module):$/;"	c
+Debug	utils/input/devInput.cpp	/^void InputDevices::Debug( bool enable )$/;"	f	class:InputDevices	typeref:typename:void
+Debug	utils/input/devJoystick.cpp	/^void JoystickDevice::Debug( bool enable )$/;"	f	class:JoystickDevice	typeref:typename:void
+Debug	utils/input/devKeyboard.cpp	/^void KeyboardDevice::Debug( bool enable )$/;"	f	class:KeyboardDevice	typeref:typename:void
+Deep RL Arm Manipulation	README.md	/^# Deep RL Arm Manipulation$/;"	c
+DefaultHeight	utils/camera/gstCamera.h	/^	static const uint32_t DefaultHeight = 720;$/;"	m	class:gstCamera	typeref:typename:const uint32_t
+DefaultWidth	utils/camera/gstCamera.h	/^	static const uint32_t DefaultWidth  = 1280;$/;"	m	class:gstCamera	typeref:typename:const uint32_t
+DeviceList	utils/input/devInput.h	/^typedef std::vector< std::pair<std::string, std::string> > DeviceList;$/;"	t	typeref:typename:std::vector<std::pair<std::string,std::string>>
+EPS_DECAY	gazebo/ArmPlugin.cpp	/^#define EPS_DECAY /;"	d	file:
+EPS_DECAY	python/gym-DQN.py	/^EPS_DECAY = 200$/;"	v
+EPS_DECAY	samples/catch/catch.cpp	/^#define EPS_DECAY /;"	d	file:
+EPS_DECAY	samples/fruit/fruit.cpp	/^#define EPS_DECAY /;"	d	file:
+EPS_END	gazebo/ArmPlugin.cpp	/^#define EPS_END /;"	d	file:
+EPS_END	python/gym-DQN.py	/^EPS_END = 0.05$/;"	v
+EPS_END	samples/catch/catch.cpp	/^#define EPS_END /;"	d	file:
+EPS_END	samples/fruit/fruit.cpp	/^#define EPS_END /;"	d	file:
+EPS_START	gazebo/ArmPlugin.cpp	/^#define EPS_START /;"	d	file:
+EPS_START	python/gym-DQN.py	/^EPS_START = 0.9$/;"	v
+EPS_START	samples/catch/catch.cpp	/^#define EPS_START /;"	d	file:
+EPS_START	samples/fruit/fruit.cpp	/^#define EPS_START /;"	d	file:
+EndRender	utils/display/glDisplay.cpp	/^void glDisplay::EndRender()$/;"	f	class:glDisplay	typeref:typename:void
+Enumerate	utils/input/devInput.cpp	/^void InputDevices::Enumerate( DeviceList& devices )$/;"	f	class:InputDevices	typeref:typename:void
+F	python/DQN.py	/^import torch.nn.functional as F$/;"	I
+F	python/RL.py	/^import torch.nn.functional as F$/;"	I
+F	python/gym-DQN.py	/^import torch.nn.functional as F$/;"	I
+F	python/gym-RL.py	/^import torch.nn.functional as F$/;"	I
+F	python/gym-actorCritic.py	/^import torch.nn.functional as F$/;"	I
+FIXED_COLOR_COMPONENT_MASK	utils/cuda/cudaYUV-NV12.cu	/^#define FIXED_COLOR_COMPONENT_MASK /;"	d	file:
+FIXED_DECIMAL_POINT	utils/cuda/cudaYUV-NV12.cu	/^#define FIXED_DECIMAL_POINT /;"	d	file:
+FIXED_POINT_MULTIPLIER	utils/cuda/cudaYUV-NV12.cu	/^#define FIXED_POINT_MULTIPLIER /;"	d	file:
+FakeObjectRecognizer	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^class FakeObjectRecognizer {$/;"	c	namespace:gazebo_test_tools
+FakeObjectRecognizer	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^FakeObjectRecognizer::FakeObjectRecognizer() {$/;"	f	class:FakeObjectRecognizer
+FindPathByName	utils/input/devInput.cpp	/^std::string InputDevices::FindPathByName( const char* name )$/;"	f	class:InputDevices	typeref:typename:std::string
+FloatTensor	python/DQN.py	/^FloatTensor = torch.cuda.FloatTensor if use_cuda else torch.FloatTensor$/;"	v
+FloatTensor	python/RL.py	/^FloatTensor = torch.cuda.FloatTensor if use_cuda else torch.FloatTensor$/;"	v
+FloatTensor	python/gym-DQN.py	/^FloatTensor = torch.cuda.FloatTensor if use_cuda else torch.FloatTensor$/;"	v
+FloatTensor	python/gym-RL.py	/^FloatTensor = torch.cuda.FloatTensor if use_cuda else torch.FloatTensor$/;"	v
+FloatTensor	python/gym-actorCritic.py	/^FloatTensor = torch.cuda.FloatTensor if use_cuda else torch.FloatTensor$/;"	v
+FruitEnv	samples/fruit/fruitEnv.cpp	/^FruitEnv::FruitEnv()$/;"	f	class:FruitEnv
+FruitEnv	samples/fruit/fruitEnv.h	/^class FruitEnv$/;"	c
+GAME_HISTORY	samples/catch/catch.cpp	/^#define GAME_HISTORY /;"	d	file:
+GAME_HISTORY	samples/fruit/fruit.cpp	/^#define GAME_HISTORY /;"	d	file:
+GAMMA	gazebo/ArmPlugin.cpp	/^#define GAMMA /;"	d	file:
+GAMMA	python/gym-DQN.py	/^GAMMA = 0.999$/;"	v
+GAMMA	samples/catch/catch.cpp	/^#define GAMMA /;"	d	file:
+GAMMA	samples/fruit/fruit.cpp	/^#define GAMMA /;"	d	file:
+GAZEBO_GAZEBOGRASPFIX_H	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^#define GAZEBO_GAZEBOGRASPFIX_H$/;"	d
+GAZEBO_GAZEBOGRASPGRIPPER_H	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^#define GAZEBO_GAZEBOGRASPGRIPPER_H$/;"	d
+GAZEBO_GAZEBOMAPPUBLISHER_H	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^#define GAZEBO_GAZEBOMAPPUBLISHER_H$/;"	d
+GAZEBO_GAZEBOOBJECTINFO_H	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^#define GAZEBO_GAZEBOOBJECTINFO_H$/;"	d
+GAZEBO_GAZEBOPLUGINLOADER_H	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/include/gazebo_world_plugin_loader/GazeboPluginLoader.h	/^#define GAZEBO_GAZEBOPLUGINLOADER_H$/;"	d
+GAZEBO_TEST_TOOLS_FAKEOBJECTRECOGNISER_H	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^#define GAZEBO_TEST_TOOLS_FAKEOBJECTRECOGNISER_H$/;"	d
+GAZEBO_TEST_TOOLS_GAZEBOCUBESPAWNER	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/gazebo_cube_spawner.h	/^#define GAZEBO_TEST_TOOLS_GAZEBOCUBESPAWNER$/;"	d
+GL	utils/display/glUtility.h	/^#define GL(/;"	d
+GL_CHECK	utils/display/glUtility.h	/^#define GL_CHECK(/;"	d
+GL_GPU_MEM_INFO_CURRENT_AVAILABLE_MEM_NVX	utils/display/glUtility.h	/^#define GL_GPU_MEM_INFO_CURRENT_AVAILABLE_MEM_NVX /;"	d
+GL_GPU_MEM_INFO_TOTAL_AVAILABLE_MEM_NVX	utils/display/glUtility.h	/^#define GL_GPU_MEM_INFO_TOTAL_AVAILABLE_MEM_NVX /;"	d
+GL_VERIFY	utils/display/glUtility.h	/^#define GL_VERIFY(/;"	d
+GL_VERIFYN	utils/display/glUtility.h	/^#define GL_VERIFYN(/;"	d
+GRIP_NAME	gazebo/ArmPlugin.cpp	/^#define GRIP_NAME /;"	d	file:
+GZ_REGISTER_MODEL_PLUGIN	gazebo/ArmPlugin.cpp	/^GZ_REGISTER_MODEL_PLUGIN(ArmPlugin)$/;"	f	namespace:gazebo
+GZ_REGISTER_MODEL_PLUGIN	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^GZ_REGISTER_MODEL_PLUGIN(GazeboGraspFix)$/;"	f
+GZ_REGISTER_SYSTEM_PLUGIN	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/src/GazeboPluginLoader.cpp	/^GZ_REGISTER_SYSTEM_PLUGIN(GazeboPluginLoader)$/;"	f
+GZ_REGISTER_WORLD_PLUGIN	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^GZ_REGISTER_WORLD_PLUGIN(GazeboObjectInfo)$/;"	f
+GazeboCubeSpawner	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/gazebo_cube_spawner.h	/^class GazeboCubeSpawner {$/;"	c	namespace:gazebo_test_tools
+GazeboCubeSpawner	gazebo/gazebo-pkgs/gazebo_test_tools/src/cube_spawner.cpp	/^GazeboCubeSpawner::GazeboCubeSpawner(NodeHandle &n) : nh(n){$/;"	f	class:GazeboCubeSpawner
+GazeboGraspFix	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^class GazeboGraspFix : public ModelPlugin {$/;"	c	namespace:gazebo
+GazeboGraspFix	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^GazeboGraspFix::GazeboGraspFix(physics::ModelPtr _model)$/;"	f	class:GazeboGraspFix
+GazeboGraspGripper	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^class GazeboGraspGripper {$/;"	c	namespace:gazebo
+GazeboGraspGripper	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^GazeboGraspGripper::GazeboGraspGripper():$/;"	f	class:GazeboGraspGripper
+GazeboGraspGripper	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^GazeboGraspGripper::GazeboGraspGripper(const GazeboGraspGripper& o):$/;"	f	class:GazeboGraspGripper
+GazeboMapPublisher	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^class GazeboMapPublisher : public WorldPlugin$/;"	c	namespace:gazebo
+GazeboMapPublisher	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^GazeboMapPublisher::GazeboMapPublisher() : WorldPlugin() {$/;"	f	class:GazeboMapPublisher
+GazeboObjectInfo	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^class GazeboObjectInfo : public WorldPlugin$/;"	c	namespace:gazebo
+GazeboPluginLoader	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/include/gazebo_world_plugin_loader/GazeboPluginLoader.h	/^class GazeboPluginLoader : public SystemPlugin$/;"	c	namespace:gazebo
+GetFPS	utils/display/glDisplay.h	/^	inline float GetFPS()	{ return 1000000000.0f \/ mAvgTime; }$/;"	f	class:glDisplay	typeref:typename:float
+GetFlag	utils/commandLine.cpp	/^bool commandLine::GetFlag( const char* string_ref )$/;"	f	class:commandLine	typeref:typename:bool
+GetFloat	utils/commandLine.cpp	/^float commandLine::GetFloat( const char* string_ref, float default_value )$/;"	f	class:commandLine	typeref:typename:float
+GetFormat	utils/display/glTexture.h	/^	inline uint32_t GetFormat() const	{ return mFormat; }$/;"	f	class:glTexture	typeref:typename:uint32_t
+GetHeight	utils/camera/gstCamera.h	/^	inline uint32_t GetHeight() const	  { return mHeight; }$/;"	f	class:gstCamera	typeref:typename:uint32_t
+GetHeight	utils/camera/v4l2Camera.h	/^	inline uint32_t GetHeight() const					{ return mHeight; }$/;"	f	class:v4l2Camera	typeref:typename:uint32_t
+GetHeight	utils/display/glTexture.h	/^	inline uint32_t GetHeight() const	{ return mHeight; }$/;"	f	class:glTexture	typeref:typename:uint32_t
+GetID	utils/display/glTexture.h	/^	inline uint32_t GetID() const		{ return mID; }$/;"	f	class:glTexture	typeref:typename:uint32_t
+GetInt	utils/commandLine.cpp	/^int commandLine::GetInt( const char* string_ref, int default_value )$/;"	f	class:commandLine	typeref:typename:int
+GetJoystick	utils/input/devInput.h	/^	inline JoystickDevice* GetJoystick() const			{ return mJoystick; }$/;"	f	class:InputDevices	typeref:typename:JoystickDevice *
+GetKeyboard	utils/input/devInput.h	/^	inline KeyboardDevice* GetKeyboard() const			{ return mKeyboard; }$/;"	f	class:InputDevices	typeref:typename:KeyboardDevice *
+GetMaxReward	samples/fruit/fruitEnv.h	/^	inline float GetMaxReward() const			{ return MAX_REWARD; }$/;"	f	class:FruitEnv	typeref:typename:float
+GetNumProps	gazebo/PropPlugin.cpp	/^size_t GetNumProps()$/;"	f	namespace:gazebo	typeref:typename:size_t
+GetPitch	utils/camera/v4l2Camera.h	/^	inline uint32_t GetPitch() const					{ return mPitch; }$/;"	f	class:v4l2Camera	typeref:typename:uint32_t
+GetPixelDepth	utils/camera/gstCamera.h	/^	inline uint32_t GetPixelDepth() const { return mDepth; }$/;"	f	class:gstCamera	typeref:typename:uint32_t
+GetPixelDepth	utils/camera/v4l2Camera.h	/^	inline uint32_t GetPixelDepth() const				{ return mPixelDepth; }$/;"	f	class:v4l2Camera	typeref:typename:uint32_t
+GetProp	gazebo/PropPlugin.cpp	/^PropPlugin* GetProp( size_t index )$/;"	f	namespace:gazebo	typeref:typename:PropPlugin *
+GetPropByName	gazebo/PropPlugin.cpp	/^PropPlugin* GetPropByName( const char* name )$/;"	f	namespace:gazebo	typeref:typename:PropPlugin *
+GetRenderHeight	samples/fruit/fruitEnv.h	/^	inline uint32_t GetRenderHeight() const		{ return renderHeight; }$/;"	f	class:FruitEnv	typeref:typename:uint32_t
+GetRenderWidth	samples/fruit/fruitEnv.h	/^	inline uint32_t GetRenderWidth() const		{ return renderWidth; }$/;"	f	class:FruitEnv	typeref:typename:uint32_t
+GetSize	utils/camera/gstCamera.h	/^	inline uint32_t GetSize() const		  { return mSize; }$/;"	f	class:gstCamera	typeref:typename:uint32_t
+GetSize	utils/display/glTexture.h	/^	inline uint32_t GetSize() const	{ return mSize; }$/;"	f	class:glTexture	typeref:typename:uint32_t
+GetString	utils/commandLine.cpp	/^const char* commandLine::GetString( const char* string_ref )$/;"	f	class:commandLine	typeref:typename:const char *
+GetType	c/aiAgent.h	/^	virtual TypeID GetType() const 	{ return TYPE_AI; }$/;"	f	class:aiAgent	typeref:typename:TypeID
+GetType	c/dqnAgent.h	/^	virtual TypeID GetType() const 	{ return TYPE_DQN; }$/;"	f	class:dqnAgent	typeref:typename:TypeID
+GetType	c/rlAgent.h	/^	virtual TypeID GetType() const 	{ return TYPE_RL; }$/;"	f	class:rlAgent	typeref:typename:TypeID
+GetWidth	utils/camera/gstCamera.h	/^	inline uint32_t GetWidth() const	  { return mWidth; }$/;"	f	class:gstCamera	typeref:typename:uint32_t
+GetWidth	utils/camera/v4l2Camera.h	/^	inline uint32_t GetWidth() const					{ return mWidth; }$/;"	f	class:v4l2Camera	typeref:typename:uint32_t
+GetWidth	utils/display/glTexture.h	/^	inline uint32_t GetWidth() const	{ return mWidth; }$/;"	f	class:glTexture	typeref:typename:uint32_t
+GetWorldHeight	samples/fruit/fruitEnv.h	/^	inline uint32_t GetWorldHeight() const		{ return worldHeight; }$/;"	f	class:FruitEnv	typeref:typename:uint32_t
+GetWorldWidth	samples/fruit/fruitEnv.h	/^	inline uint32_t GetWorldWidth() const		{ return worldWidth; }$/;"	f	class:FruitEnv	typeref:typename:uint32_t
+HandleAttach	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^bool GazeboGraspGripper::HandleAttach(const std::string& objName)$/;"	f	class:GazeboGraspGripper	typeref:typename:bool
+HandleDetach	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^void GazeboGraspGripper::HandleDetach(const std::string& objName)$/;"	f	class:GazeboGraspGripper	typeref:typename:void
+INPUT_CHANNELS	gazebo/ArmPlugin.cpp	/^#define INPUT_CHANNELS /;"	d	file:
+INPUT_HEIGHT	gazebo/ArmPlugin.cpp	/^#define INPUT_HEIGHT /;"	d	file:
+INPUT_WIDTH	gazebo/ArmPlugin.cpp	/^#define INPUT_WIDTH /;"	d	file:
+Init	c/rlAgent.cpp	/^bool rlAgent::Init( uint32_t width, uint32_t height, uint32_t channels, uint32_t numActions, con/;"	f	class:rlAgent	typeref:typename:bool
+Init	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^void GazeboGraspFix::Init()$/;"	f	class:GazeboGraspFix	typeref:typename:void
+Init	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^bool GazeboGraspGripper::Init(physics::ModelPtr& _model,$/;"	f	class:GazeboGraspGripper	typeref:typename:bool
+InitValues	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^void GazeboGraspFix::InitValues()$/;"	f	class:GazeboGraspFix	typeref:typename:void
+InputDevices	utils/input/devInput.cpp	/^InputDevices::InputDevices()$/;"	f	class:InputDevices
+InputDevices	utils/input/devInput.h	/^class InputDevices$/;"	c
+IsType	c/aiAgent.h	/^	bool IsType( TypeID type ) const	{ return ((GetType() & type) == type); }$/;"	f	class:aiAgent	typeref:typename:bool
+JOINT_MAX	gazebo/ArmPlugin.cpp	/^#define JOINT_MAX	/;"	d	file:
+JOINT_MIN	gazebo/ArmPlugin.cpp	/^#define JOINT_MIN	/;"	d	file:
+JoystickDevice	utils/input/devJoystick.cpp	/^JoystickDevice::JoystickDevice()$/;"	f	class:JoystickDevice
+JoystickDevice	utils/input/devJoystick.h	/^class JoystickDevice$/;"	c
+KEY_CHAR	utils/display/glDisplay.cpp	/^#define KEY_CHAR	/;"	d	file:
+KEY_STATE	utils/display/glDisplay.cpp	/^#define KEY_STATE	/;"	d	file:
+KeyDown	utils/input/devKeyboard.cpp	/^bool KeyboardDevice::KeyDown( uint32_t code ) const$/;"	f	class:KeyboardDevice	typeref:typename:bool
+KeyboardDevice	utils/input/devKeyboard.cpp	/^KeyboardDevice::KeyboardDevice()$/;"	f	class:KeyboardDevice
+KeyboardDevice	utils/input/devKeyboard.h	/^class KeyboardDevice$/;"	c
+L	c/rlAgent.h	/^	lua_State* L;		\/**< Lua\/Torch7 operating environment *\/$/;"	m	class:rlAgent	typeref:typename:lua_State *
+LEARNING_RATE	gazebo/ArmPlugin.cpp	/^#define LEARNING_RATE /;"	d	file:
+LEARNING_RATE	samples/catch/catch.cpp	/^#define LEARNING_RATE /;"	d	file:
+LEARNING_RATE	samples/fruit/fruit.cpp	/^#define LEARNING_RATE /;"	d	file:
+LOAD_FUNCTION	c/rlAgent.h	/^		LOAD_FUNCTION,$/;"	e	enum:rlAgent::__anon4a935c9a0103
+LOCKBASE	gazebo/ArmPlugin.cpp	/^#define LOCKBASE /;"	d	file:
+LOG_CUDA	utils/cuda/cudaUtility.h	/^#define LOG_CUDA /;"	d
+LOG_GL	utils/display/glUtility.h	/^#define LOG_GL /;"	d
+LOG_GSTREAMER	utils/camera/gstUtility.h	/^#define LOG_GSTREAMER /;"	d
+LSTM_SIZE	gazebo/ArmPlugin.cpp	/^#define LSTM_SIZE /;"	d	file:
+LSTM_SIZE	samples/catch/catch.cpp	/^#define LSTM_SIZE /;"	d	file:
+LSTM_SIZE	samples/fruit/fruit.cpp	/^#define LSTM_SIZE /;"	d	file:
+Load	gazebo/ArmPlugin.cpp	/^void ArmPlugin::Load(physics::ModelPtr _parent, sdf::ElementPtr \/*_sdf*\/) $/;"	f	class:gazebo::ArmPlugin	typeref:typename:void
+Load	gazebo/PropPlugin.cpp	/^void PropPlugin::Load(physics::ModelPtr _parent, sdf::ElementPtr \/*_sdf*\/)$/;"	f	class:gazebo::PropPlugin	typeref:typename:void
+Load	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^void GazeboGraspFix::Load(physics::ModelPtr _parent, sdf::ElementPtr _sdf)$/;"	f	class:GazeboGraspFix	typeref:typename:void
+Load	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^void GazeboMapPublisher::Load(physics::WorldPtr _world, sdf::ElementPtr _sdf){$/;"	f	class:GazeboMapPublisher	typeref:typename:void
+Load	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^void GazeboObjectInfo::Load(physics::WorldPtr _world, sdf::ElementPtr _sdf){$/;"	f	class:GazeboObjectInfo	typeref:typename:void
+Load	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/src/GazeboPluginLoader.cpp	/^void GazeboPluginLoader::Load(int argc, char ** argv){$/;"	f	class:GazeboPluginLoader	typeref:typename:void
+LoadCheckpoint	c/rlAgent.cpp	/^bool rlAgent::LoadCheckpoint( const char* filename )$/;"	f	class:rlAgent	typeref:typename:bool
+LoadInterpreter	c/rlAgent.cpp	/^bool rlAgent::LoadInterpreter()$/;"	f	class:rlAgent	typeref:typename:bool
+LoadModule	c/rlAgent.cpp	/^bool rlAgent::LoadModule( const char* module )$/;"	f	class:rlAgent	typeref:typename:bool
+LoadModule	c/rlAgent.cpp	/^bool rlAgent::LoadModule( const char* module, int argc, char** argv )$/;"	f	class:rlAgent	typeref:typename:bool
+LongTensor	python/DQN.py	/^LongTensor = torch.cuda.LongTensor if use_cuda else torch.LongTensor$/;"	v
+LongTensor	python/RL.py	/^LongTensor = torch.cuda.LongTensor if use_cuda else torch.LongTensor$/;"	v
+LongTensor	python/gym-DQN.py	/^LongTensor = torch.cuda.LongTensor if use_cuda else torch.LongTensor$/;"	v
+LongTensor	python/gym-RL.py	/^LongTensor = torch.cuda.LongTensor if use_cuda else torch.LongTensor$/;"	v
+LongTensor	python/gym-actorCritic.py	/^LongTensor = torch.cuda.LongTensor if use_cuda else torch.LongTensor$/;"	v
+MAP_FRAME	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	std::string MAP_FRAME;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:std::string
+MAP_HEIGHT	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define MAP_HEIGHT /;"	d	file:
+MAP_LEN_X	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define MAP_LEN_X /;"	d	file:
+MAP_LEN_Y	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define MAP_LEN_Y /;"	d	file:
+MAP_OFFSET_X	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define MAP_OFFSET_X /;"	d	file:
+MAP_OFFSET_Y	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define MAP_OFFSET_Y /;"	d	file:
+MAP_PUB_FREQ	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	float MAP_PUB_FREQ;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:float
+MAP_QUEUE_SIZE	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define MAP_QUEUE_SIZE /;"	d	file:
+MAP_RESOLUTION	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define MAP_RESOLUTION /;"	d	file:
+MAP_TOPIC	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	std::string MAP_TOPIC;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:std::string
+MAX_AXIS	utils/input/devJoystick.h	/^	static const int MAX_AXIS = 256;$/;"	m	class:JoystickDevice	typeref:typename:const int
+MAX_KEYS	utils/input/devKeyboard.h	/^	static const int MAX_KEYS = 256;$/;"	m	class:KeyboardDevice	typeref:typename:const int
+MAX_MAP_VAL	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define MAX_MAP_VAL /;"	d	file:
+MAX_OBJECTS	samples/fruit/fruitEnv.h	/^	static const int MAX_OBJECTS = 1;	\/\/ max number of objects in world$/;"	m	class:FruitEnv	typeref:typename:const int
+MAX_REWARD	samples/fruit/fruitEnv.h	/^	static const int MAX_REWARD  = 1;	\/\/ max\/min reward obtainable$/;"	m	class:FruitEnv	typeref:typename:const int
+METADATA_TOPIC	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	std::string METADATA_TOPIC;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:std::string
+MIX_OBJECTS	samples/fruit/fruitEnv.h	/^	static const int MIX_OBJECTS = 50;  \/\/ mix of pos\/neg objects (0-100%)$/;"	m	class:FruitEnv	typeref:typename:const int
+MOUSE_BUTTON	utils/display/glDisplay.cpp	/^#define MOUSE_BUTTON	/;"	d	file:
+MOUSE_DOUBLE	utils/display/glDisplay.cpp	/^#define MOUSE_DOUBLE	/;"	d	file:
+MOUSE_MOVE	utils/display/glDisplay.cpp	/^#define MOUSE_MOVE	/;"	d	file:
+MOUSE_WHEEL	utils/display/glDisplay.cpp	/^#define MOUSE_WHEEL	/;"	d	file:
+MSG_PRINT	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^#define MSG_PRINT(/;"	d	file:
+MUL	utils/cuda/cudaYUV-NV12.cu	/^#define MUL(/;"	d	file:
+Main	lua/DQN.lua	/^function Main()$/;"	f
+Main	lua/catchDQN.lua	/^function Main()$/;"	f
+MapCUDA	utils/display/glTexture.cpp	/^void* glTexture::MapCUDA()$/;"	f	class:glTexture	typeref:typename:void *
+MaxCommands	utils/cuda/cudaFont.h	/^	static const uint32_t MaxCommands = 1024;$/;"	m	class:cudaFont	typeref:typename:const uint32_t
+Memory	lua/DQN.lua	/^function Memory(maxMemory, discount)$/;"	f
+Memory	lua/catchENV.lua	/^function Memory(maxMemory, discount)$/;"	f
+NUM_ACTIONS	samples/catch/catch.cpp	/^	NUM_ACTIONS$/;"	e	enum:catchAction	file:
+NUM_ACTIONS	samples/fruit/fruitEnv.h	/^	NUM_ACTIONS,$/;"	e	enum:AgentAction
+NUM_CHANNELS	samples/catch/catch.cpp	/^#define NUM_CHANNELS /;"	d	file:
+NUM_CHANNELS	samples/fruit/fruit.cpp	/^#define NUM_CHANNELS /;"	d	file:
+NUM_FUNCTIONS	c/rlAgent.h	/^		NUM_FUNCTIONS$/;"	e	enum:rlAgent::__anon4a935c9a0103
+NUM_RINGBUFFERS	utils/camera/gstCamera.h	/^	static const uint32_t NUM_RINGBUFFERS = 16;$/;"	m	class:gstCamera	typeref:typename:const uint32_t
+NV12ToARGB	utils/cuda/cudaYUV-NV12.cu	/^__global__ void NV12ToARGB(uint32_t *srcImage,     size_t nSourcePitch,$/;"	f	typeref:typename:void
+NV12ToRGBAf	utils/cuda/cudaYUV-NV12.cu	/^__global__ void NV12ToRGBAf(uint32_t* srcImage,  size_t nSourcePitch,$/;"	f	typeref:typename:void
+NextAction	c/dqnAgent.cpp	/^bool dqnAgent::NextAction( Tensor* state, int* action )$/;"	f	class:dqnAgent	typeref:typename:bool
+NextAction	c/rlAgent.cpp	/^bool rlAgent::NextAction( Tensor* state, int* action )$/;"	f	class:rlAgent	typeref:typename:bool
+NextReward	c/dqnAgent.cpp	/^bool dqnAgent::NextReward( float reward, bool end_episode )$/;"	f	class:dqnAgent	typeref:typename:bool
+NextReward	c/rlAgent.cpp	/^bool rlAgent::NextReward( float reward, bool end_episode )$/;"	f	class:rlAgent	typeref:typename:bool
+OBJECTS_TOPIC	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    std::string OBJECTS_TOPIC;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:std::string
+OBJECT_QUEUE_SIZE	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^#define OBJECT_QUEUE_SIZE /;"	d	file:
+OPTIMIZER	gazebo/ArmPlugin.cpp	/^#define OPTIMIZER /;"	d	file:
+OPTIMIZER	samples/catch/catch.cpp	/^#define OPTIMIZER /;"	d	file:
+OPTIMIZER	samples/fruit/fruit.cpp	/^#define OPTIMIZER /;"	d	file:
+ObjectContactInfo	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^class GazeboGraspFix::ObjectContactInfo$/;"	c	class:GazeboGraspFix	file:
+ObjectInfoMsg	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	typedef object_msgs::ObjectInfo ObjectInfoMsg;$/;"	t	class:gazebo::GazeboObjectInfo	typeref:typename:object_msgs::ObjectInfo
+ObjectInfoMsg	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    typedef object_msgs::ObjectInfo ObjectInfoMsg;$/;"	t	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:object_msgs::ObjectInfo
+ObjectMsg	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	typedef object_msgs::Object ObjectMsg;$/;"	t	class:gazebo::GazeboObjectInfo	typeref:typename:object_msgs::Object
+ObjectMsg	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    typedef object_msgs::Object ObjectMsg;$/;"	t	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:object_msgs::Object
+Objects	gazebo/gazebo-pkgs/TODO.md	/^# Objects$/;"	c
+OnAttach	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    virtual void OnAttach(const std::string& objectName, const std::string& armName){}$/;"	f	class:gazebo::GazeboGraspFix	typeref:typename:void
+OnContact	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^void GazeboGraspFix::OnContact(const ConstContactsPtr &_msg)$/;"	f	class:GazeboGraspFix	typeref:typename:void
+OnDetach	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    virtual void OnDetach(const std::string& objectName, const std::string& armName){}$/;"	f	class:gazebo::GazeboGraspFix	typeref:typename:void
+OnUpdate	gazebo/ArmPlugin.cpp	/^void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)$/;"	f	class:gazebo::ArmPlugin	typeref:typename:void
+OnUpdate	gazebo/PropPlugin.cpp	/^void PropPlugin::OnUpdate(const common::UpdateInfo & \/*_info*\/)$/;"	f	class:gazebo::PropPlugin	typeref:typename:void
+OnUpdate	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^void GazeboGraspFix::OnUpdate() {$/;"	f	class:GazeboGraspFix	typeref:typename:void
+Open	utils/camera/gstCamera.cpp	/^bool gstCamera::Open()$/;"	f	class:gstCamera	typeref:typename:bool
+Open	utils/camera/v4l2Camera.cpp	/^bool v4l2Camera::Open()$/;"	f	class:v4l2Camera	typeref:typename:bool
+PI	gazebo/ArmPlugin.cpp	/^#define PI /;"	d	file:
+PI	utils/pi.h	/^#define PI /;"	d
+PI_OVER_TWO	utils/pi.h	/^#define PI_OVER_TWO /;"	d
+PLAY_SIZE	samples/catch/catch.cpp	/^#define PLAY_SIZE /;"	d	file:
+PLAY_SIZE2	samples/catch/catch.cpp	/^#define PLAY_SIZE2 /;"	d	file:
+PRINT_CAP	utils/camera/v4l2Camera.cpp	/^	#define PRINT_CAP(/;"	d	file:
+PROJECT_INCLUDE_DIR	CMakeLists.txt	/^set(PROJECT_INCLUDE_DIR ${PROJECT_OUTPUT_DIR}\/include)$/;"	v
+PROJECT_INCLUDE_DIR	utils/CMakeLists.txt	/^	set(PROJECT_INCLUDE_DIR ${PROJECT_OUTPUT_DIR}\/include)$/;"	v
+PROJECT_OUTPUT_DIR	CMakeLists.txt	/^set(PROJECT_OUTPUT_DIR  ${PROJECT_BINARY_DIR}\/${CMAKE_SYSTEM_PROCESSOR})$/;"	v
+PROJECT_OUTPUT_DIR	utils/CMakeLists.txt	/^	set(PROJECT_OUTPUT_DIR  ${PROJECT_BINARY_DIR}\/${CMAKE_SYSTEM_PROCESSOR})$/;"	v
+PROP_NAME	gazebo/ArmPlugin.cpp	/^#define PROP_NAME /;"	d	file:
+PUBLISH_OBJECTS	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	bool PUBLISH_OBJECTS;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:bool
+PUBLISH_RECOGNISED_OBJECT_RATE	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    float PUBLISH_RECOGNISED_OBJECT_RATE;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:float
+Passthru	utils/cuda/cudaYUV-NV12.cu	/^__global__ void Passthru(uint32_t *srcImage,   size_t nSourcePitch,$/;"	f	typeref:typename:void
+Policy	python/RL.py	/^class Policy(nn.Module):$/;"	c
+Policy	python/gym-RL.py	/^class Policy(nn.Module):$/;"	c
+Policy	python/gym-actorCritic.py	/^class Policy(nn.Module):$/;"	c
+Poll	utils/input/devInput.cpp	/^bool InputDevices::Poll( uint32_t timeout )$/;"	f	class:InputDevices	typeref:typename:bool
+Poll	utils/input/devJoystick.cpp	/^bool JoystickDevice::Poll( uint32_t timeout )$/;"	f	class:JoystickDevice	typeref:typename:bool
+Poll	utils/input/devKeyboard.cpp	/^bool KeyboardDevice::Poll( uint32_t timeout )$/;"	f	class:KeyboardDevice	typeref:typename:bool
+Possible future contributions	gazebo/gazebo-pkgs/TODO.md	/^# Possible future contributions$/;"	c
+Project Environment	README.md	/^## Project Environment$/;"	s
+PropPlugin	gazebo/PropPlugin.h	/^class PropPlugin : public ModelPlugin$/;"	c	namespace:gazebo
+PyObject	c/pyTensor.h	/^typedef _object PyObject;$/;"	t	typeref:typename:_object
+RAD_TO_DEG	utils/pi.h	/^#define RAD_TO_DEG /;"	d
+RENDER_ZOOM	samples/fruit/fruit.cpp	/^#define RENDER_ZOOM /;"	d	file:
+REPLAY_MEMORY	gazebo/ArmPlugin.cpp	/^#define REPLAY_MEMORY /;"	d	file:
+REPLAY_MEMORY	samples/catch/catch.cpp	/^#define REPLAY_MEMORY /;"	d	file:
+REPLAY_MEMORY	samples/fruit/fruit.cpp	/^#define REPLAY_MEMORY /;"	d	file:
+REQUESTED_RINGBUFFERS	utils/camera/v4l2Camera.cpp	/^#define REQUESTED_RINGBUFFERS /;"	d	file:
+REQUEST_MAP_SERVICE	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	std::string REQUEST_MAP_SERVICE;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:std::string
+REQUEST_OBJECTS_TOPIC	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	std::string REQUEST_OBJECTS_TOPIC;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:std::string
+REWARD_FUNCTION	c/rlAgent.h	/^		REWARD_FUNCTION,$/;"	e	enum:rlAgent::__anon4a935c9a0103
+REWARD_LOSS	gazebo/ArmPlugin.cpp	/^#define REWARD_LOSS /;"	d	file:
+REWARD_WIN	gazebo/ArmPlugin.cpp	/^#define REWARD_WIN /;"	d	file:
+RGBAPACK_10bit	utils/cuda/cudaYUV-NV12.cu	/^__device__ uint32_t RGBAPACK_10bit(float red, float green, float blue, uint32_t alpha)$/;"	f	typeref:typename:uint32_t
+RGBAPACK_8bit	utils/cuda/cudaYUV-NV12.cu	/^__device__ uint32_t RGBAPACK_8bit(float red, float green, float blue, uint32_t alpha)$/;"	f	typeref:typename:uint32_t
+RGBToRGBAf	utils/cuda/cudaRGB.cu	/^__global__ void RGBToRGBAf(uchar3* srcImage,$/;"	f	typeref:typename:void
+RGB_to_YV12	utils/cuda/cudaYUV-YV12.cu	/^__global__ void RGB_to_YV12( T* src, int srcAlignedWidth, uint8_t* dst, int dstPitch, int width,/;"	f	typeref:typename:template<typename T,bool formatYV12> void
+ROBOT_NAME	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	std::string ROBOT_NAME;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:std::string
+ROOT_FRAME_ID	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	std::string ROOT_FRAME_ID;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:std::string
+Randomize	gazebo/PropPlugin.cpp	/^void PropPlugin::Randomize()$/;"	f	class:gazebo::PropPlugin	typeref:typename:void
+RandomizeProps	gazebo/PropPlugin.cpp	/^void RandomizeProps()$/;"	f	namespace:gazebo	typeref:typename:void
+Render	samples/fruit/fruitEnv.cpp	/^float* FruitEnv::Render()$/;"	f	class:FruitEnv	typeref:typename:float *
+Render	utils/display/glTexture.cpp	/^void glTexture::Render( const float4& rect )$/;"	f	class:glTexture	typeref:typename:void
+Render	utils/display/glTexture.cpp	/^void glTexture::Render( float x, float y )$/;"	f	class:glTexture	typeref:typename:void
+Render	utils/display/glTexture.cpp	/^void glTexture::Render( float x, float y, float width, float height )$/;"	f	class:glTexture	typeref:typename:void
+RenderOverlay	utils/cuda/cudaFont.cu	/^bool cudaFont::RenderOverlay( float4* input, float4* output, uint32_t width, uint32_t height, $/;"	f	typeref:typename:bool cudaFont::
+RenderOverlay	utils/cuda/cudaFont.cu	/^bool cudaFont::RenderOverlay( float4* input, float4* output, uint32_t width, uint32_t height, co/;"	f	typeref:typename:bool cudaFont::
+ReplayMemory	python/DQN.py	/^class ReplayMemory(object):$/;"	c
+ReplayMemory	python/gym-DQN.py	/^class ReplayMemory(object):$/;"	c
+Reset	samples/fruit/fruitEnv.cpp	/^void FruitEnv::Reset()$/;"	f	class:FruitEnv	typeref:typename:void
+ResetDynamics	gazebo/PropPlugin.cpp	/^void PropPlugin::ResetDynamics()$/;"	f	class:gazebo::PropPlugin	typeref:typename:void
+ResetPropDynamics	gazebo/PropPlugin.cpp	/^void ResetPropDynamics()$/;"	f	namespace:gazebo	typeref:typename:void
+SAVE_FUNCTION	c/rlAgent.h	/^		SAVE_FUNCTION,$/;"	e	enum:rlAgent::__anon4a935c9a0103
+SCRIPT_FILENAME	tools/diagnostic/main.lua.cpp	/^#define SCRIPT_FILENAME /;"	d	file:
+SEP	utils/camera/gstUtility.cpp	/^#define SEP /;"	d	file:
+SERVICE_RECOGNISE_OBJECT_TOPIC	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    std::string SERVICE_RECOGNISE_OBJECT_TOPIC;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:std::string
+SERVICE_REGISTER_OBJECT_TF_TOPIC	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    std::string SERVICE_REGISTER_OBJECT_TF_TOPIC;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:std::string
+SERVICE_REQUEST_OBJECT_TOPIC	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    std::string SERVICE_REQUEST_OBJECT_TOPIC;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:std::string
+SPAWN_OBJECT_TOPIC	gazebo/gazebo-pkgs/gazebo_test_tools/src/cube_spawner.cpp	/^#define SPAWN_OBJECT_TOPIC /;"	d	file:
+SaveCheckpoint	c/rlAgent.cpp	/^bool rlAgent::SaveCheckpoint( const char* filename )$/;"	f	class:rlAgent	typeref:typename:bool
+SavedAction	python/gym-actorCritic.py	/^SavedAction = namedtuple('SavedAction', ['action', 'value'])$/;"	v
+SetBackgroundColor	utils/display/glDisplay.h	/^	inline void SetBackgroundColor( float r, float g, float b, float a )	{ mBgColor[0] = r; mBgColo/;"	f	class:glDisplay	typeref:typename:void
+SetPhysicsProperties	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^bool SetPhysicsProperties(ros::NodeHandle& nh,$/;"	f	typeref:typename:bool
+SetTitle	utils/display/glDisplay.cpp	/^void glDisplay::SetTitle( const char* str )$/;"	f	class:glDisplay	typeref:typename:void
+T	python/gym-DQN.py	/^import torchvision.transforms as T$/;"	I
+TEXTURE_HEIGHT	utils/display/gl-display-test/gl-display-test.cpp	/^#define TEXTURE_HEIGHT /;"	d	file:
+TEXTURE_WIDTH	utils/display/gl-display-test/gl-display-test.cpp	/^#define TEXTURE_WIDTH /;"	d	file:
+THC	c/rlAgent.h	/^	THCState*  THC;	\/**< cutorch state *\/$/;"	m	class:rlAgent	typeref:typename:THCState *
+THFloatVector_add_NEON	lua/NEON.c	/^static void THFloatVector_add_NEON(float *y, const float *x, const float c, const ptrdiff_t n) {$/;"	f	typeref:typename:void	file:
+THFloatVector_diff_NEON	lua/NEON.c	/^static void THFloatVector_diff_NEON(float *z, const float *x, const float *y, const ptrdiff_t n)/;"	f	typeref:typename:void	file:
+THFloatVector_fill_NEON	lua/NEON.c	/^static void THFloatVector_fill_NEON(float *x, const float c, const ptrdiff_t n) {$/;"	f	typeref:typename:void	file:
+THFloatVector_mul_NEON	lua/NEON.c	/^static void THFloatVector_mul_NEON(float *y, const float *x, const ptrdiff_t n) {$/;"	f	typeref:typename:void	file:
+THFloatVector_scale_NEON	lua/NEON.c	/^static void THFloatVector_scale_NEON(float *y, const float c, const ptrdiff_t n) {$/;"	f	typeref:typename:void	file:
+TWO_PI	utils/pi.h	/^#define TWO_PI /;"	d
+TYPE_AI	c/aiAgent.h	/^	const TypeID TYPE_AI = (1 << 0);$/;"	m	class:aiAgent	typeref:typename:const TypeID
+TYPE_DQN	c/dqnAgent.h	/^	const TypeID TYPE_DQN = TYPE_RL | (1 << 2);$/;"	m	class:dqnAgent	typeref:typename:const TypeID
+TYPE_RL	c/rlAgent.h	/^	const TypeID TYPE_RL = TYPE_AI | (1 << 1);$/;"	m	class:rlAgent	typeref:typename:const TypeID
+Tensor	c/pyTensor.h	/^typedef pyTensor Tensor;$/;"	t	typeref:typename:pyTensor
+Tensor	python/DQN.py	/^Tensor = FloatTensor$/;"	v
+Tensor	python/RL.py	/^Tensor = FloatTensor$/;"	v
+Tensor	python/gym-DQN.py	/^Tensor = FloatTensor$/;"	v
+Tensor	python/gym-RL.py	/^Tensor = FloatTensor$/;"	v
+Tensor	python/gym-actorCritic.py	/^Tensor = FloatTensor$/;"	v
+Testing the API	README.md	/^## Testing the API$/;"	s
+Transition	python/DQN.py	/^Transition = namedtuple('Transition',$/;"	v
+Transition	python/gym-DQN.py	/^Transition = namedtuple('Transition',$/;"	v
+TypeID	c/aiAgent.h	/^typedef uint64_t TypeID;$/;"	t	typeref:typename:uint64_t
+UPDATE_RATE	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^#define UPDATE_RATE /;"	d	file:
+USE_LSTM	gazebo/ArmPlugin.cpp	/^#define USE_LSTM /;"	d	file:
+USE_LSTM	samples/catch/catch.cpp	/^#define USE_LSTM /;"	d	file:
+USE_LSTM	samples/fruit/fruit.cpp	/^#define USE_LSTM /;"	d	file:
+USE_LUA	CMakeLists.txt	/^set(USE_LUA "NO" CACHE BOOL "If YES, will build LUA, Torch, and Torch examples")$/;"	v
+USE_PYTHON	CMakeLists.txt	/^set(USE_PYTHON "YES" CACHE BOOL "If YES, will build PyTorch and PyTorch examples")$/;"	v
+Unmap	utils/display/glTexture.cpp	/^void glTexture::Unmap()$/;"	f	class:glTexture	typeref:typename:void
+UploadCPU	utils/display/glTexture.cpp	/^bool glTexture::UploadCPU( void* data )$/;"	f	class:glTexture	typeref:typename:bool
+UserEvents	utils/display/glDisplay.cpp	/^void glDisplay::UserEvents()$/;"	f	class:glDisplay	typeref:typename:void
+VELOCITY_CONTROL	gazebo/ArmPlugin.cpp	/^#define VELOCITY_CONTROL /;"	d	file:
+VELOCITY_MAX	gazebo/ArmPlugin.cpp	/^#define VELOCITY_MAX /;"	d	file:
+VELOCITY_MIN	gazebo/ArmPlugin.cpp	/^#define VELOCITY_MIN /;"	d	file:
+WORLD_NAME	gazebo/ArmPlugin.cpp	/^#define WORLD_NAME /;"	d	file:
+WORLD_OBJECTS_TOPIC	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	std::string WORLD_OBJECTS_TOPIC;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:std::string
+YUV2RGB	utils/cuda/cudaYUV-NV12.cu	/^__device__ void YUV2RGB(uint32_t *yuvi, float *red, float *green, float *blue)$/;"	f	typeref:typename:void
+_	python/gym-DQN.py	/^        _, reward, done, _ = env.step(action[0, 0])$/;"	v
+_	python/gym-RL.py	/^        state, reward, done, _ = env.step(action[0,0])$/;"	v
+_	python/gym-actorCritic.py	/^        state, reward, done, _ = env.step(action[0,0])$/;"	v
+__AI_AGENT_H_	c/aiAgent.h	/^#define __AI_AGENT_H_$/;"	d
+__COMMAND_LINE_H_	utils/commandLine.h	/^#define __COMMAND_LINE_H_$/;"	d
+__CUDA_FONT_H__	utils/cuda/cudaFont.h	/^#define __CUDA_FONT_H__$/;"	d
+__CUDA_MAPPED_MEMORY_H_	utils/cuda/cudaMappedMemory.h	/^#define __CUDA_MAPPED_MEMORY_H_$/;"	d
+__CUDA_NORMALIZE_H__	utils/cuda/cudaNormalize.h	/^#define __CUDA_NORMALIZE_H__$/;"	d
+__CUDA_OVERLAY_H__	utils/cuda/cudaOverlay.h	/^#define __CUDA_OVERLAY_H__$/;"	d
+__CUDA_PLANAR_IMAGE_H_	cuda/cudaPlanar.h	/^#define __CUDA_PLANAR_IMAGE_H_$/;"	d
+__CUDA_RESIZE_H__	utils/cuda/cudaResize.h	/^#define __CUDA_RESIZE_H__$/;"	d
+__CUDA_RGB_CONVERT_H	utils/cuda/cudaRGB.h	/^#define __CUDA_RGB_CONVERT_H$/;"	d
+__CUDA_UTILITY_H_	utils/cuda/cudaUtility.h	/^#define __CUDA_UTILITY_H_$/;"	d
+__CUDA_YUV_CONVERT_H	utils/cuda/cudaYUV.h	/^#define __CUDA_YUV_CONVERT_H$/;"	d
+__DEEP_Q_LEARNING_AGENT_H_	c/dqnAgent.h	/^#define __DEEP_Q_LEARNING_AGENT_H_$/;"	d
+__DEEP_REINFORCEMENT_LEARNER_H_	c/deepRL.h	/^#define __DEEP_REINFORCEMENT_LEARNER_H_$/;"	d
+__DEV_INPUT_H__	utils/input/devInput.h	/^#define __DEV_INPUT_H__$/;"	d
+__DEV_JOYSTICK_H__	utils/input/devJoystick.h	/^#define __DEV_JOYSTICK_H__$/;"	d
+__DEV_KEYBOARD_H__	utils/input/devKeyboard.h	/^#define __DEV_KEYBOARD_H__$/;"	d
+__FRUIT_ENVIRONMENT_H__	samples/fruit/fruitEnv.h	/^#define __FRUIT_ENVIRONMENT_H__$/;"	d
+__GAZEBO_ARM_PLUGIN_H__	gazebo/ArmPlugin.h	/^#define __GAZEBO_ARM_PLUGIN_H__$/;"	d
+__GAZEBO_PROP_PLUGIN_H__	gazebo/PropPlugin.h	/^#define __GAZEBO_PROP_PLUGIN_H__$/;"	d
+__GL_TEXTURE_H__	utils/display/glTexture.h	/^#define __GL_TEXTURE_H__$/;"	d
+__GL_VIEWPORT_H__	utils/display/glDisplay.h	/^#define __GL_VIEWPORT_H__$/;"	d
+__GSTREAMER_CAMERA_H__	utils/camera/gstCamera.h	/^#define __GSTREAMER_CAMERA_H__$/;"	d
+__GSTREAMER_UTILITY_H__	utils/camera/gstUtility.h	/^#define __GSTREAMER_UTILITY_H__$/;"	d
+__IMAGE_LOADER_H_	utils/loadImage.h	/^#define __IMAGE_LOADER_H_$/;"	d
+__OPENGL_UTILITY_H	utils/display/glUtility.h	/^#define __OPENGL_UTILITY_H$/;"	d
+__PI_UTILS_H_	utils/pi.h	/^#define __PI_UTILS_H_$/;"	d
+__PY_TENSOR_H_	c/pyTensor.h	/^#define __PY_TENSOR_H_$/;"	d
+__PY_TORCH_H_	c/pyTorch.h	/^#define __PY_TORCH_H_$/;"	d
+__RANDOM_UTILS_H_	utils/rand.h	/^#define __RANDOM_UTILS_H_$/;"	d
+__REINFORCEMENT_LEARNING_AGENT_H_	c/rlAgent.h	/^#define __REINFORCEMENT_LEARNING_AGENT_H_$/;"	d
+__V4L2_CAPTURE_H	utils/camera/v4l2Camera.h	/^#define __V4L2_CAPTURE_H$/;"	d
+__anon4a935c9a0103	c/rlAgent.h	/^	{$/;"	g	class:rlAgent
+__init__	python/CRNN.py	/^    def __init__(self, imgH, nc, nclass, nh, n_rnn=2, leakyRelu=False):$/;"	m	class:CRNN
+__init__	python/CRNN.py	/^    def __init__(self, nIn, nHidden, nOut):$/;"	m	class:BidirectionalLSTM
+__init__	python/DQN.py	/^	def __init__(self):$/;"	m	class:DQN
+__init__	python/DQN.py	/^	def __init__(self):$/;"	m	class:DRQN
+__init__	python/DQN.py	/^    def __init__(self, capacity):$/;"	m	class:ReplayMemory
+__init__	python/RL.py	/^	def __init__(self):$/;"	m	class:Policy
+__init__	python/gym-DQN.py	/^    def __init__(self):$/;"	m	class:DQN
+__init__	python/gym-DQN.py	/^    def __init__(self, capacity):$/;"	m	class:ReplayMemory
+__init__	python/gym-RL.py	/^    def __init__(self):$/;"	m	class:Policy
+__init__	python/gym-actorCritic.py	/^    def __init__(self):$/;"	m	class:Policy
+__len__	python/DQN.py	/^    def __len__(self):$/;"	m	class:ReplayMemory
+__len__	python/gym-DQN.py	/^    def __len__(self):$/;"	m	class:ReplayMemory
+a	python/test-torch.py	/^a = torch.cuda.FloatTensor(2).zero_()$/;"	v
+a0	utils/cuda/cudaYUV-YUYV.cu	/^   uint8_t a0, a1, a2, a3, a4, a5, a6, a7;$/;"	m	struct:uchar8	typeref:typename:uint8_t	file:
+a1	utils/cuda/cudaYUV-YUYV.cu	/^   uint8_t a0, a1, a2, a3, a4, a5, a6, a7;$/;"	m	struct:uchar8	typeref:typename:uint8_t	file:
+a2	utils/cuda/cudaYUV-YUYV.cu	/^   uint8_t a0, a1, a2, a3, a4, a5, a6, a7;$/;"	m	struct:uchar8	typeref:typename:uint8_t	file:
+a3	utils/cuda/cudaYUV-YUYV.cu	/^   uint8_t a0, a1, a2, a3, a4, a5, a6, a7;$/;"	m	struct:uchar8	typeref:typename:uint8_t	file:
+a4	utils/cuda/cudaYUV-YUYV.cu	/^   uint8_t a0, a1, a2, a3, a4, a5, a6, a7;$/;"	m	struct:uchar8	typeref:typename:uint8_t	file:
+a5	utils/cuda/cudaYUV-YUYV.cu	/^   uint8_t a0, a1, a2, a3, a4, a5, a6, a7;$/;"	m	struct:uchar8	typeref:typename:uint8_t	file:
+a6	utils/cuda/cudaYUV-YUYV.cu	/^   uint8_t a0, a1, a2, a3, a4, a5, a6, a7;$/;"	m	struct:uchar8	typeref:typename:uint8_t	file:
+a7	utils/cuda/cudaYUV-YUYV.cu	/^   uint8_t a0, a1, a2, a3, a4, a5, a6, a7;$/;"	m	struct:uchar8	typeref:typename:uint8_t	file:
+action	python/gym-DQN.py	/^        action = select_action(state)$/;"	v
+action	python/gym-RL.py	/^        action = select_action(state)$/;"	v
+action	python/gym-actorCritic.py	/^        action = select_action(state)$/;"	v
+actionJointDelta	gazebo/ArmPlugin.h	/^	float    actionJointDelta;	\/\/ amount of offset caused to a joint by an action$/;"	m	class:gazebo::ArmPlugin	typeref:typename:float
+actionVelDelta	gazebo/ArmPlugin.h	/^	float    actionVelDelta;		\/\/ amount of velocity offset caused to a joint by an action$/;"	m	class:gazebo::ArmPlugin	typeref:typename:float
+add	python/test-interop.py	/^def add( x, y ):$/;"	f
+addedObjects	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    std::set<std::string> addedObjects;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:std::set<std::string>
+addedObjectsMtx	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    boost::mutex addedObjectsMtx;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:boost::mutex
+advertEvent	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^void GazeboMapPublisher::advertEvent(const ros::TimerEvent& e) {$/;"	f	class:GazeboMapPublisher	typeref:typename:void
+advertEvent	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^void GazeboObjectInfo::advertEvent(const ros::TimerEvent& e) {$/;"	f	class:GazeboObjectInfo	typeref:typename:void
+agent	gazebo/ArmPlugin.h	/^	rlAgent* agent;			\/\/ AI learning agent instance$/;"	m	class:gazebo::ArmPlugin	typeref:typename:rlAgent *
+agentColor	samples/fruit/fruitEnv.h	/^	float agentColor[4]; \/\/    color of the agent (RGBA)$/;"	m	class:FruitEnv	typeref:typename:float[4]
+agentDir	samples/fruit/fruitEnv.h	/^	float agentDir;	 	 \/\/  heading of the agent (0-359 degrees)$/;"	m	class:FruitEnv	typeref:typename:float
+agentRad	samples/fruit/fruitEnv.h	/^	float agentRad;		 \/\/   radius of the agent (in pixels)$/;"	m	class:FruitEnv	typeref:typename:float
+agentVelX	samples/fruit/fruitEnv.h	/^	float agentVelX;	 	 \/\/ velocity of the agent (-N to N)$/;"	m	class:FruitEnv	typeref:typename:float
+agentVelY	samples/fruit/fruitEnv.h	/^	float agentVelY;$/;"	m	class:FruitEnv	typeref:typename:float
+agentX	samples/fruit/fruitEnv.h	/^	float agentX;		 \/\/ location of the agent (x-coordinate)$/;"	m	class:FruitEnv	typeref:typename:float
+agentY	samples/fruit/fruitEnv.h	/^	float agentY;		 \/\/ location of the agent (y-coordinate)$/;"	m	class:FruitEnv	typeref:typename:float
+aiAgent	c/aiAgent.cpp	/^aiAgent::aiAgent()$/;"	f	class:aiAgent
+aiAgent	c/aiAgent.h	/^class aiAgent$/;"	c
+allow_random	python/DQN.py	/^allow_random 	= args.allow_random$/;"	v
+angularDistance	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^double angularDistance(const gazebo::math::Vector3& _v1, const gazebo::math::Vector3& _v2) {$/;"	f	typeref:typename:double
+animationStep	gazebo/ArmPlugin.h	/^	uint32_t animationStep;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:uint32_t
+appliedForces	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    std::vector<gazebo::math::Vector3> appliedForces;$/;"	m	class:GazeboGraspFix::ObjectContactInfo	typeref:typename:std::vector<gazebo::math::Vector3>	file:
+argc	utils/commandLine.h	/^	int argc;$/;"	m	class:commandLine	typeref:typename:int
+args	python/DQN.py	/^args = parser.parse_args()$/;"	v
+args	python/RL.py	/^args = parser.parse_args()$/;"	v
+args	python/gym-RL.py	/^args = parser.parse_args()$/;"	v
+args	python/gym-actorCritic.py	/^args = parser.parse_args()$/;"	v
+args	python/test-interop.py	/^args = parser.parse_args()$/;"	v
+argv	utils/commandLine.h	/^	char** argv;$/;"	m	class:commandLine	typeref:typename:char **
+attachGripContacts	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    std::map<std::string, std::map<std::string, CollidingPoint> > attachGripContacts; $/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:std::map<std::string,std::map<std::string,CollidingPoint>>
+attached	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^    bool attached;$/;"	m	class:gazebo::GazeboGraspGripper	typeref:typename:bool
+attachedObjName	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^    std::string attachedObjName;    $/;"	m	class:gazebo::GazeboGraspGripper	typeref:typename:std::string
+attachedObject	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^const std::string& GazeboGraspGripper::attachedObject() const$/;"	f	class:GazeboGraspGripper	typeref:typename:const std::string &
+autograd	python/RL.py	/^import torch.autograd as autograd$/;"	I
+autograd	python/gym-RL.py	/^import torch.autograd as autograd$/;"	I
+autograd	python/gym-actorCritic.py	/^import torch.autograd as autograd$/;"	I
+avgGoalDelta	gazebo/ArmPlugin.h	/^	float    avgGoalDelta;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:float
+b	python/test-torch.py	/^b = torch.randn(2).cuda()$/;"	v
+batch_size	python/DQN.py	/^batch_size 	= args.batch_size$/;"	v
+bgColor	samples/fruit/fruitEnv.h	/^	float bgColor[4];	 \/\/ color of the background (RGBA)$/;"	m	class:FruitEnv	typeref:typename:float[4]
+buf	utils/camera/v4l2Camera.h	/^	struct v4l2_buffer buf;$/;"	m	struct:v4l2_mmap	typeref:struct:v4l2_buffer
+buildLaunchStr	utils/camera/gstCamera.cpp	/^bool gstCamera::buildLaunchStr()$/;"	f	class:gstCamera	typeref:typename:bool
+c	python/test-torch.py	/^c = a + b$/;"	v
+cameraNode	gazebo/ArmPlugin.h	/^	gazebo::transport::NodePtr cameraNode;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:gazebo::transport::NodePtr
+cameraSub	gazebo/ArmPlugin.h	/^	gazebo::transport::SubscriberPtr cameraSub;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:gazebo::transport::SubscriberPtr
+catch	samples/catch/CMakeLists.txt	/^add_executable(catch ${catchSources})$/;"	t
+catchAction	samples/catch/catch.cpp	/^enum catchAction$/;"	g	file:
+catchStr	samples/catch/catch.cpp	/^static const char* catchStr( int action )$/;"	f	typeref:typename:const char *	file:
+checkBuffer	utils/camera/gstCamera.cpp	/^void gstCamera::checkBuffer()$/;"	f	class:gstCamera	typeref:typename:void
+checkCollision	samples/fruit/fruitEnv.h	/^		inline bool checkCollision( float obj_x, float obj_y, float obj_radius )	$/;"	f	struct:FruitEnv::fruitObject	typeref:typename:bool
+checkGrip	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^bool GazeboGraspFix::checkGrip(const std::vector<gazebo::math::Vector3>& forces, float minAngleD/;"	f	class:GazeboGraspFix	typeref:typename:bool
+checkMsgBus	utils/camera/gstCamera.cpp	/^void gstCamera::checkMsgBus()$/;"	f	class:gstCamera	typeref:typename:void
+check_inside	samples/fruit/fruitEnv.cpp	/^static inline bool check_inside( float x, float y, float cx, float cy, float radius )$/;"	f	typeref:typename:bool	file:
+clamp	utils/cuda/cudaYUV-YUYV.cu	/^inline __device__ __host__ float clamp(float f, float a, float b)$/;"	f	typeref:typename:float
+collLink	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    physics::CollisionPtr collLink, collObj;$/;"	m	class:GazeboGraspFix::CollidingPoint	typeref:typename:physics::CollisionPtr	file:
+collObj	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    physics::CollisionPtr collLink, collObj;$/;"	m	class:GazeboGraspFix::CollidingPoint	typeref:typename:physics::CollisionPtr	file:
+collisionElems	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^    std::map<std::string, physics::CollisionPtr> collisionElems;$/;"	m	class:gazebo::GazeboGraspGripper	typeref:typename:std::map<std::string,physics::CollisionPtr>
+collisionNode	gazebo/ArmPlugin.h	/^	gazebo::transport::NodePtr collisionNode;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:gazebo::transport::NodePtr
+collisionSub	gazebo/ArmPlugin.h	/^	gazebo::transport::SubscriberPtr collisionSub;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:gazebo::transport::SubscriberPtr
+collisions	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    std::map<std::string, std::string> collisions;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:std::map<std::string,std::string>
+color	samples/fruit/fruitEnv.h	/^		float color[4];$/;"	m	struct:FruitEnv::fruitObject	typeref:typename:float[4]
+commandLine	utils/commandLine.cpp	/^commandLine::commandLine( const int pArgc, char** pArgv )$/;"	f	class:commandLine
+commandLine	utils/commandLine.h	/^class commandLine$/;"	c
+constAlpha	utils/cuda/cudaYUV-NV12.cu	/^__constant__ uint32_t constAlpha;$/;"	v	typeref:typename:uint32_t
+constHueColorSpaceMat	utils/cuda/cudaYUV-NV12.cu	/^__constant__ float  constHueColorSpaceMat[9];$/;"	v	typeref:typename:float[9]
+contactSub	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    transport::SubscriberPtr contactSub; \/\/subscriber to contact updates$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:transport::SubscriberPtr
+contacts	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    std::map<std::string, std::map<std::string, CollidingPoint> > contacts; $/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:std::map<std::string,std::map<std::string,CollidingPoint>>
+convRelu	python/CRNN.py	/^        def convRelu(i, batchNormalization=False):$/;"	f	member:CRNN.__init__	file:
+copy_color	samples/fruit/fruitEnv.cpp	/^inline static void copy_color( float* src, float* dst )	$/;"	f	typeref:typename:void	file:
+cpuPtr	c/pyTensor.h	/^	float* cpuPtr;$/;"	m	struct:pyTensor	typeref:typename:float *
+cpuTensor	c/pyTensor.h	/^	THFloatTensor* cpuTensor;$/;"	m	struct:pyTensor	typeref:typename:THFloatTensor *
+createAgent	gazebo/ArmPlugin.cpp	/^bool ArmPlugin::createAgent()$/;"	f	class:gazebo::ArmPlugin	typeref:typename:bool
+createBoundingBoxObject	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^GazeboObjectInfo::ObjectMsg GazeboObjectInfo::createBoundingBoxObject(physics::ModelPtr& model, /;"	f	class:GazeboObjectInfo	typeref:typename:GazeboObjectInfo::ObjectMsg
+createMap	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^bool GazeboMapPublisher::createMap(const CollisionMapRequest &msg, const std::string& map_frame,/;"	f	class:GazeboMapPublisher	typeref:typename:bool
+cube_spawner	gazebo/gazebo-pkgs/gazebo_test_tools/CMakeLists.txt	/^add_executable(cube_spawner src\/cube_spawner_node.cpp)$/;"	t
+cudaAllocMapped	utils/cuda/cudaMappedMemory.h	/^inline bool cudaAllocMapped( void** cpuPtr, void** gpuPtr, size_t size )$/;"	f	typeref:typename:bool
+cudaCheckError	utils/cuda/cudaUtility.h	/^inline cudaError_t cudaCheckError(cudaError_t retval, const char* txt, const char* file, int lin/;"	f	typeref:typename:cudaError_t
+cudaFont	utils/cuda/cudaFont.cu	/^cudaFont::cudaFont()$/;"	f	typeref:typename:cudaFont::
+cudaFont	utils/cuda/cudaFont.h	/^class cudaFont$/;"	c
+cudaNV12SetupColorspace	utils/cuda/cudaYUV-NV12.cu	/^cudaError_t cudaNV12SetupColorspace( float hue )$/;"	f	typeref:typename:cudaError_t
+cudaNV12ToRGBA	utils/cuda/cudaYUV-NV12.cu	/^cudaError_t cudaNV12ToRGBA( uint8_t* srcDev, size_t srcPitch, uchar4* destDev, size_t destPitch,/;"	f	typeref:typename:cudaError_t
+cudaNV12ToRGBA	utils/cuda/cudaYUV-NV12.cu	/^cudaError_t cudaNV12ToRGBA( uint8_t* srcDev, uchar4* destDev, size_t width, size_t height )$/;"	f	typeref:typename:cudaError_t
+cudaNV12ToRGBAf	utils/cuda/cudaYUV-NV12.cu	/^cudaError_t cudaNV12ToRGBAf( uint8_t* srcDev, float4* destDev, size_t width, size_t height )$/;"	f	typeref:typename:cudaError_t
+cudaNV12ToRGBAf	utils/cuda/cudaYUV-NV12.cu	/^cudaError_t cudaNV12ToRGBAf( uint8_t* srcDev, size_t srcPitch, float4* destDev, size_t destPitch/;"	f	typeref:typename:cudaError_t
+cudaNormalizeRGBA	utils/cuda/cudaNormalize.cu	/^cudaError_t cudaNormalizeRGBA( float4* input, const float2& input_range,$/;"	f	typeref:typename:cudaError_t
+cudaOverlayText	utils/cuda/cudaFont.cu	/^cudaError_t cudaOverlayText( T* font, const int2& fontCellSize, size_t fontMapWidth,$/;"	f	typeref:typename:template<typename T> cudaError_t
+cudaPackedToPlanarBGR	cuda/cudaPlanar.cu	/^cudaError_t cudaPackedToPlanarBGR( uchar3* input, size_t inputWidth, size_t inputHeight,$/;"	f	typeref:typename:cudaError_t
+cudaRGBAToI420	utils/cuda/cudaYUV-YV12.cu	/^cudaError_t cudaRGBAToI420( uchar4* input, size_t inputPitch, uint8_t* output, size_t outputPitc/;"	f	typeref:typename:cudaError_t
+cudaRGBAToI420	utils/cuda/cudaYUV-YV12.cu	/^cudaError_t cudaRGBAToI420( uchar4* input, uint8_t* output, size_t width, size_t height )$/;"	f	typeref:typename:cudaError_t
+cudaRGBAToPlanarBGR	cuda/cudaPlanar.cu	/^cudaError_t cudaRGBAToPlanarBGR( float4* input, size_t inputWidth, size_t inputHeight, const flo/;"	f	typeref:typename:cudaError_t
+cudaRGBAToPlanarBGR	cuda/cudaPlanar.cu	/^cudaError_t cudaRGBAToPlanarBGR( float4* input, size_t inputWidth, size_t inputHeight,$/;"	f	typeref:typename:cudaError_t
+cudaRGBAToYV12	utils/cuda/cudaYUV-YV12.cu	/^cudaError_t cudaRGBAToYV12( uchar4* input, size_t inputPitch, uint8_t* output, size_t outputPitc/;"	f	typeref:typename:cudaError_t
+cudaRGBAToYV12	utils/cuda/cudaYUV-YV12.cu	/^cudaError_t cudaRGBAToYV12( uchar4* input, uint8_t* output, size_t width, size_t height )$/;"	f	typeref:typename:cudaError_t
+cudaRGBToRGBAf	utils/cuda/cudaRGB.cu	/^cudaError_t cudaRGBToRGBAf( uchar3* srcDev, float4* destDev, size_t width, size_t height )$/;"	f	typeref:typename:cudaError_t
+cudaRectOutlineOverlay	utils/cuda/cudaOverlay.cu	/^cudaError_t cudaRectOutlineOverlay( float4* input, float4* output, uint32_t width, uint32_t heig/;"	f	typeref:typename:cudaError_t
+cudaResize	utils/cuda/cudaResize.cu	/^cudaError_t cudaResize( float* input, size_t inputWidth, size_t inputHeight,$/;"	f	typeref:typename:cudaError_t
+cudaResizeRGBA	utils/cuda/cudaResize.cu	/^cudaError_t cudaResizeRGBA( float4* input,  size_t inputWidth, size_t inputHeight,$/;"	f	typeref:typename:cudaError_t
+cudaUYVYToGray	utils/cuda/cudaYUV-YUYV.cu	/^cudaError_t cudaUYVYToGray( uchar2* input, float* output, size_t width, size_t height )$/;"	f	typeref:typename:cudaError_t
+cudaUYVYToGray	utils/cuda/cudaYUV-YUYV.cu	/^cudaError_t cudaUYVYToGray( uchar2* input, size_t inputPitch, float* output, size_t outputPitch,/;"	f	typeref:typename:cudaError_t
+cudaUYVYToRGBA	utils/cuda/cudaYUV-YUYV.cu	/^cudaError_t cudaUYVYToRGBA( uchar2* input, size_t inputPitch, uchar4* output, size_t outputPitch/;"	f	typeref:typename:cudaError_t
+cudaUYVYToRGBA	utils/cuda/cudaYUV-YUYV.cu	/^cudaError_t cudaUYVYToRGBA( uchar2* input, uchar4* output, size_t width, size_t height )$/;"	f	typeref:typename:cudaError_t
+cudaYUYVToGray	utils/cuda/cudaYUV-YUYV.cu	/^cudaError_t cudaYUYVToGray( uchar2* input, float* output, size_t width, size_t height )$/;"	f	typeref:typename:cudaError_t
+cudaYUYVToGray	utils/cuda/cudaYUV-YUYV.cu	/^cudaError_t cudaYUYVToGray( uchar2* input, size_t inputPitch, float* output, size_t outputPitch,/;"	f	typeref:typename:cudaError_t
+cudaYUYVToRGBA	utils/cuda/cudaYUV-YUYV.cu	/^cudaError_t cudaYUYVToRGBA( uchar2* input, size_t inputPitch, uchar4* output, size_t outputPitch/;"	f	typeref:typename:cudaError_t
+cudaYUYVToRGBA	utils/cuda/cudaYUV-YUYV.cu	/^cudaError_t cudaYUYVToRGBA( uchar2* input, uchar4* output, size_t width, size_t height )$/;"	f	typeref:typename:cudaError_t
+curr_diff	python/DQN.py	/^curr_diff = None$/;"	v
+curr_state	python/DQN.py	/^curr_state = None$/;"	v
+current_screen	python/gym-DQN.py	/^        current_screen = get_screen()$/;"	v
+current_screen	python/gym-DQN.py	/^    current_screen = get_screen()$/;"	v
+dT	gazebo/ArmPlugin.h	/^	float dT[3];				\/\/ IK delta theta$/;"	m	class:gazebo::ArmPlugin	typeref:typename:float[3]
+debug_mode	python/DQN.py	/^debug_mode 	= args.debug_mode$/;"	v
+deepRL-console	tools/console/CMakeLists.txt	/^add_executable(deepRL-console ${consoleSources})$/;"	t
+deepRL-diagnostic	tools/diagnostic/CMakeLists.txt	/^add_executable(deepRL-diagnostic ${diagSources})$/;"	t
+deepRL-input	tools/input/CMakeLists.txt	/^add_executable(deepRL-input ${inputSources})$/;"	t
+depth	c/pyTensor.h	/^	uint32_t depth;$/;"	m	struct:pyTensor	typeref:typename:uint32_t
+disableCollisionsOnAttach	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    bool disableCollisionsOnAttach;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:bool
+disableCollisionsOnAttach	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^    bool disableCollisionsOnAttach;$/;"	m	class:gazebo::GazeboGraspGripper	typeref:typename:bool
+distanceSq	samples/fruit/fruitEnv.h	/^		inline float distanceSq( float obj_x, float obj_y )$/;"	f	struct:FruitEnv::fruitObject	typeref:typename:float
+done	python/gym-DQN.py	/^        _, reward, done, _ = env.step(action[0, 0])$/;"	v
+done	python/gym-RL.py	/^        state, reward, done, _ = env.step(action[0,0])$/;"	v
+done	python/gym-actorCritic.py	/^        state, reward, done, _ = env.step(action[0,0])$/;"	v
+dqnAgent	c/dqnAgent.cpp	/^dqnAgent::dqnAgent()$/;"	f	class:dqnAgent
+dqnAgent	c/dqnAgent.h	/^class dqnAgent : public rlAgent$/;"	c
+elements	c/pyTensor.h	/^	size_t elements;$/;"	m	struct:pyTensor	typeref:typename:size_t
+endEpisode	gazebo/ArmPlugin.h	/^	bool     endEpisode;		\/\/ true if this episode is over$/;"	m	class:gazebo::ArmPlugin	typeref:typename:bool
+env	python/gym-DQN.py	/^env = gym.make('CartPole-v0').unwrapped$/;"	v
+env	python/gym-RL.py	/^env = gym.make(args.env)$/;"	v
+env	python/gym-actorCritic.py	/^env = gym.make(args.env)$/;"	v
+env.act	lua/catchENV.lua	/^    function env.act(action)$/;"	f
+env.drawState	lua/catchENV.lua	/^    function env.drawState()$/;"	f
+env.getReward	lua/catchENV.lua	/^    function env.getReward()$/;"	f
+env.getState	lua/catchENV.lua	/^    function env.getState()$/;"	f
+env.isGameOver	lua/catchENV.lua	/^    function env.isGameOver()$/;"	f
+env.observe	lua/catchENV.lua	/^    function env.observe()$/;"	f
+env.reset	lua/catchENV.lua	/^    function env.reset()$/;"	f
+env.updateState	lua/catchENV.lua	/^    function env.updateState(action)$/;"	f
+epFrameCount	samples/fruit/fruitEnv.h	/^	uint32_t epFrameCount;	\/\/ frame counter for current episode$/;"	m	class:FruitEnv	typeref:typename:uint32_t
+epMaxFrames	samples/fruit/fruitEnv.h	/^	uint32_t epMaxFrames;	\/\/ maximum number of frames per episode$/;"	m	class:FruitEnv	typeref:typename:uint32_t
+episodeFrames	gazebo/ArmPlugin.h	/^	int      episodeFrames;		\/\/ frame counter for the current episode	$/;"	m	class:gazebo::ArmPlugin	typeref:typename:int
+episode_durations	python/DQN.py	/^episode_durations = []$/;"	v
+episode_durations	python/gym-DQN.py	/^episode_durations = []$/;"	v
+epsilon_decay	python/DQN.py	/^epsilon_decay 	= args.epsilon_decay$/;"	v
+epsilon_end	python/DQN.py	/^epsilon_end 	= args.epsilon_end$/;"	v
+epsilon_start	python/DQN.py	/^epsilon_start 	= args.epsilon_start$/;"	v
+eq_less	utils/cuda/cudaOverlay.cu	/^static inline __device__ __host__ bool eq_less( float a, float b, float epsilon )$/;"	f	typeref:typename:bool	file:
+fake_object_recognizer	gazebo/gazebo-pkgs/gazebo_test_tools/CMakeLists.txt	/^add_library(fake_object_recognizer$/;"	t
+fake_object_recognizer_cmd	gazebo/gazebo-pkgs/gazebo_test_tools/CMakeLists.txt	/^add_executable(fake_object_recognizer_cmd test\/fake_object_recognizer_cmd.cpp)$/;"	t
+fake_object_recognizer_node	gazebo/gazebo-pkgs/gazebo_test_tools/CMakeLists.txt	/^add_executable(fake_object_recognizer_node src\/fake_object_recognizer_node.cpp)$/;"	t
+feval	lua/DQN.lua	/^    local function feval(x_new)$/;"	f
+feval	lua/catchDQN.lua	/^    local function feval(x_new)$/;"	f
+findClosest	samples/fruit/fruitEnv.cpp	/^FruitEnv::fruitObject* FruitEnv::findClosest( float* distanceOut ) const$/;"	f	class:FruitEnv	typeref:typename:FruitEnv::fruitObject *
+finish_episode	python/RL.py	/^def finish_episode():					# training at the end of an episode$/;"	f
+finish_episode	python/gym-RL.py	/^def finish_episode():$/;"	f
+finish_episode	python/gym-actorCritic.py	/^def finish_episode():$/;"	f
+fixedJoint	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^    physics::JointPtr fixedJoint;$/;"	m	class:gazebo::GazeboGraspGripper	typeref:typename:physics::JointPtr
+foo	python/test-torch.py	/^def foo( x ):$/;"	f
+force	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    gazebo::math::Vector3 force;$/;"	m	class:GazeboGraspFix::CollidingPoint	typeref:typename:gazebo::math::Vector3	file:
+forcesAngleTolerance	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    float forcesAngleTolerance;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:float
+forward	python/CRNN.py	/^    def forward(self, input):$/;"	m	class:BidirectionalLSTM
+forward	python/CRNN.py	/^    def forward(self, input):$/;"	m	class:CRNN
+forward	python/DQN.py	/^	def forward(self, inputs):$/;"	m	class:DRQN
+forward	python/DQN.py	/^	def forward(self, x):$/;"	m	class:DQN
+forward	python/RL.py	/^	def forward(self, x):$/;"	m	class:Policy
+forward	python/gym-DQN.py	/^    def forward(self, x):$/;"	m	class:DQN
+forward	python/gym-RL.py	/^    def forward(self, x):$/;"	m	class:Policy
+forward	python/gym-actorCritic.py	/^    def forward(self, x):$/;"	m	class:Policy
+fruit	samples/fruit/CMakeLists.txt	/^add_executable(fruit ${fruitSources})$/;"	t
+fruitObject	samples/fruit/fruitEnv.h	/^		inline fruitObject()$/;"	f	struct:FruitEnv::fruitObject
+fruitObject	samples/fruit/fruitEnv.h	/^	struct fruitObject$/;"	s	class:FruitEnv
+fruitObjects	samples/fruit/fruitEnv.h	/^	std::vector<fruitObject*> fruitObjects;	   \/\/ list of objects in the environment$/;"	m	class:FruitEnv	typeref:typename:std::vector<fruitObject * >
+gameHistory	samples/catch/catch.cpp	/^bool gameHistory[GAME_HISTORY];$/;"	v	typeref:typename:bool[]
+gameHistory	samples/fruit/fruit.cpp	/^bool gameHistory[GAME_HISTORY];$/;"	v	typeref:typename:bool[]
+gameHistoryIdx	samples/catch/catch.cpp	/^int  gameHistoryIdx = 0;$/;"	v	typeref:typename:int
+gameHistoryIdx	samples/fruit/fruit.cpp	/^int  gameHistoryIdx = 0;$/;"	v	typeref:typename:int
+gameHistoryMax	samples/catch/catch.cpp	/^int  gameHistoryMax = 0;$/;"	v	typeref:typename:int
+gameHistoryMax	samples/fruit/fruit.cpp	/^int  gameHistoryMax = 0;$/;"	v	typeref:typename:int
+gamma	python/DQN.py	/^gamma 		= args.gamma$/;"	v
+gazebo	gazebo/ArmPlugin.cpp	/^namespace gazebo$/;"	n	file:
+gazebo	gazebo/ArmPlugin.h	/^namespace gazebo$/;"	n
+gazebo	gazebo/PropPlugin.cpp	/^namespace gazebo$/;"	n	file:
+gazebo	gazebo/PropPlugin.h	/^namespace gazebo$/;"	n
+gazebo	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^namespace gazebo {$/;"	n
+gazebo	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^namespace gazebo {$/;"	n
+gazebo	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^namespace gazebo$/;"	n
+gazebo	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^namespace gazebo$/;"	n
+gazebo	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/include/gazebo_world_plugin_loader/GazeboPluginLoader.h	/^namespace gazebo$/;"	n
+gazebo-pkgs	gazebo/gazebo-pkgs/README.md	/^# gazebo-pkgs$/;"	c
+gazeboArmPlugin	gazebo/CMakeLists.txt	/^add_library(gazeboArmPlugin SHARED ArmPlugin.cpp)$/;"	t
+gazeboGraspPlugin	gazebo/CMakeLists.txt	/^add_library(gazeboGraspPlugin SHARED gazebo-pkgs\/gazebo_grasp_plugin\/src\/GazeboGraspFix.cpp g/;"	t
+gazeboPropPlugin	gazebo/CMakeLists.txt	/^add_library(gazeboPropPlugin SHARED PropPlugin.cpp)$/;"	t
+gazebo_grasp_fix	gazebo/gazebo-pkgs/gazebo_grasp_plugin/CMakeLists.txt	/^add_library(gazebo_grasp_fix SHARED src\/GazeboGraspFix.cpp src\/GazeboGraspGripper.cpp)$/;"	t
+gazebo_grasp_plugin	gazebo/gazebo-pkgs/gazebo_grasp_plugin/CMakeLists.txt	/^project(gazebo_grasp_plugin)$/;"	p
+gazebo_map_publisher	gazebo/gazebo-pkgs/gazebo_state_plugins/CMakeLists.txt	/^add_library(gazebo_map_publisher$/;"	t
+gazebo_object_info	gazebo/gazebo-pkgs/gazebo_state_plugins/CMakeLists.txt	/^add_library(gazebo_object_info$/;"	t
+gazebo_request_object_info	gazebo/gazebo-pkgs/gazebo_state_plugins/CMakeLists.txt	/^add_executable(gazebo_request_object_info test\/object_info_request.cpp)$/;"	t
+gazebo_state_plugins	gazebo/gazebo-pkgs/gazebo_state_plugins/CMakeLists.txt	/^project(gazebo_state_plugins)$/;"	p
+gazebo_test_tools	gazebo/gazebo-pkgs/gazebo_test_tools/CMakeLists.txt	/^add_library(gazebo_test_tools$/;"	t
+gazebo_test_tools	gazebo/gazebo-pkgs/gazebo_test_tools/CMakeLists.txt	/^project(gazebo_test_tools)$/;"	p
+gazebo_test_tools	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^namespace gazebo_test_tools$/;"	n
+gazebo_test_tools	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/gazebo_cube_spawner.h	/^namespace gazebo_test_tools {$/;"	n
+gazebo_world_plugin_loader	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/CMakeLists.txt	/^add_library(gazebo_world_plugin_loader$/;"	t
+gazebo_world_plugin_loader	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/CMakeLists.txt	/^project(gazebo_world_plugin_loader)$/;"	p
+getAttachedObjects	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^std::map<std::string, std::string> GazeboGraspFix::getAttachedObjects() const$/;"	f	class:GazeboGraspFix	typeref:typename:std::map<std::string,std::string>
+getCollisionRequest	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^GazeboMapPublisher::CollisionMapRequest GazeboMapPublisher::getCollisionRequest(){$/;"	f	class:GazeboMapPublisher	typeref:typename:GazeboMapPublisher::CollisionMapRequest
+getGripperName	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^const std::string& GazeboGraspGripper::getGripperName() const$/;"	f	class:GazeboGraspGripper	typeref:typename:const std::string &
+getMap	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^nav_msgs::OccupancyGrid GazeboMapPublisher::getMap() {$/;"	f	class:GazeboMapPublisher	typeref:typename:nav_msgs::OccupancyGrid
+getMetaData	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^nav_msgs::MapMetaData GazeboMapPublisher::getMetaData() {$/;"	f	class:GazeboMapPublisher	typeref:typename:nav_msgs::MapMetaData
+getSolidPrimitive	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^shape_msgs::SolidPrimitive * GazeboObjectInfo::getSolidPrimitive(physics::CollisionPtr& c) {$/;"	f	class:GazeboObjectInfo	typeref:typename:shape_msgs::SolidPrimitive *
+get_cart_location	python/gym-DQN.py	/^def get_cart_location():$/;"	f
+get_screen	python/gym-DQN.py	/^def get_screen():$/;"	f
+gl-display-test	utils/display/gl-display-test/CMakeLists.txt	/^add_executable(gl-display-test ${glDisplayTestSources})$/;"	t
+glCheckError	utils/display/glUtility.h	/^inline bool glCheckError(const char* msg)$/;"	f	typeref:typename:bool
+glCheckError	utils/display/glUtility.h	/^inline bool glCheckError(const char* msg, const char* file, int line)$/;"	f	typeref:typename:bool
+glDisplay	utils/display/glDisplay.cpp	/^glDisplay::glDisplay()$/;"	f	class:glDisplay
+glDisplay	utils/display/glDisplay.h	/^class glDisplay$/;"	c
+glPrintFreeMem	utils/display/glUtility.h	/^inline void glPrintFreeMem()$/;"	f	typeref:typename:void
+glTexture	utils/display/glTexture.cpp	/^glTexture::glTexture()$/;"	f	class:glTexture
+glTexture	utils/display/glTexture.h	/^class glTexture$/;"	c
+glTextureLayout	utils/display/glTexture.cpp	/^inline uint32_t glTextureLayout( uint32_t format )$/;"	f	typeref:typename:uint32_t
+glTextureLayoutChannels	utils/display/glTexture.cpp	/^inline uint32_t glTextureLayoutChannels( uint32_t format )$/;"	f	typeref:typename:uint32_t
+glTextureType	utils/display/glTexture.cpp	/^inline uint32_t glTextureType( uint32_t format )$/;"	f	typeref:typename:uint32_t
+glTextureTypeSize	utils/display/glTexture.cpp	/^inline uint glTextureTypeSize( uint32_t format )$/;"	f	typeref:typename:uint
+gpuNormalize	utils/cuda/cudaNormalize.cu	/^__global__ void gpuNormalize( T* input, T* output, int width, int height, float scaling_factor )$/;"	f	typeref:typename:template<typename T> void
+gpuOverlayText	utils/cuda/cudaFont.cu	/^__global__ void gpuOverlayText( T* font, int fontWidth, short4* text,$/;"	f	typeref:typename:template<typename T> void
+gpuPackedToPlanarBGR	cuda/cudaPlanar.cu	/^template <typename T> __global__ void gpuPackedToPlanarBGR( T* input, int iWidth, float* output,/;"	f	typeref:typename:template<typename T> void
+gpuPtr	c/pyTensor.h	/^	float* gpuPtr;$/;"	m	struct:pyTensor	typeref:typename:float *
+gpuRectOutlines	utils/cuda/cudaOverlay.cu	/^__global__ void gpuRectOutlines( T* input, T* output, int width, int height,$/;"	f	typeref:typename:template<typename T> void
+gpuResize	utils/cuda/cudaResize.cu	/^__global__ void gpuResize( float2 scale, T* input, int iWidth, T* output, int oWidth, int oHeigh/;"	f	typeref:typename:template<typename T> void
+gpuTensor	c/pyTensor.h	/^	THCudaTensor*  gpuTensor;	\/\/ (THCudaTensor defined as THCudaFloatTensor in THCGenerateAllType/;"	m	struct:pyTensor	typeref:typename:THCudaTensor *
+gripCountThreshold	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    int gripCountThreshold;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:int
+gripCounts	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    std::map<std::string, int> gripCounts; $/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:std::map<std::string,int>
+gripperName	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^    std::string gripperName;$/;"	m	class:gazebo::GazeboGraspGripper	typeref:typename:std::string
+gripperName	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    std::string gripperName;$/;"	m	class:GazeboGraspFix::CollidingPoint	typeref:typename:std::string	file:
+grippers	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    std::map<std::string, GazeboGraspGripper> grippers;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:std::map<std::string,GazeboGraspGripper>
+grippersInvolved	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    std::map<std::string, int> grippersInvolved;$/;"	m	class:GazeboGraspFix::ObjectContactInfo	typeref:typename:std::map<std::string,int>	file:
+gst-camera	utils/camera/gst-camera/CMakeLists.txt	/^add_executable(gst-camera ${gstCameraSources})$/;"	t
+gstCamera	utils/camera/gstCamera.cpp	/^gstCamera::gstCamera()$/;"	f	class:gstCamera
+gstCamera	utils/camera/gstCamera.h	/^class gstCamera$/;"	c
+gst_debug_level_str	utils/camera/gstUtility.cpp	/^inline const char* gst_debug_level_str( GstDebugLevel level )$/;"	f	typeref:typename:const char *
+gst_message_print	utils/camera/gstUtility.cpp	/^gboolean gst_message_print(GstBus* bus, GstMessage* message, gpointer user_data)$/;"	f	typeref:typename:gboolean
+gst_print_one_tag	utils/camera/gstUtility.cpp	/^static void gst_print_one_tag(const GstTagList * list, const gchar * tag, gpointer user_data)$/;"	f	typeref:typename:void	file:
+gst_stream_status_string	utils/camera/gstUtility.cpp	/^static const char* gst_stream_status_string( GstStreamStatusType status )$/;"	f	typeref:typename:const char *	file:
+gstreamerInit	utils/camera/gstUtility.cpp	/^bool gstreamerInit()$/;"	f	typeref:typename:bool
+hasCollisionLink	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^bool GazeboGraspGripper::hasCollisionLink(const std::string& linkName) const$/;"	f	class:GazeboGraspGripper	typeref:typename:bool
+hasLink	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^bool GazeboGraspGripper::hasLink(const std::string& linkName) const$/;"	f	class:GazeboGraspGripper	typeref:typename:bool
+height	c/pyTensor.h	/^	uint32_t height;$/;"	m	struct:pyTensor	typeref:typename:uint32_t
+height	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^    double height;$/;"	m	class:GazeboMapPublisher::CollisionMapRequest	typeref:typename:double	file:
+iDivUp	utils/cuda/cudaUtility.h	/^inline __device__ __host__ int iDivUp( int a, int b )  		{ return (a % b != 0) ? (a \/ b + 1) : /;"	f	typeref:typename:__device__ __host__ int
+init	samples/fruit/fruitEnv.cpp	/^bool FruitEnv::init( uint32_t world_width, uint32_t world_height, uint32_t render_width, uint32_/;"	f	class:FruitEnv	typeref:typename:bool
+init	tools/console/main.lua.cpp	/^bool init( const char* script_filename )$/;"	f	typeref:typename:bool
+init	tools/diagnostic/main.lua.cpp	/^bool init()$/;"	f	typeref:typename:bool
+init	utils/camera/gstCamera.cpp	/^bool gstCamera::init()$/;"	f	class:gstCamera	typeref:typename:bool
+init	utils/camera/v4l2Camera.cpp	/^bool v4l2Camera::init()$/;"	f	class:v4l2Camera	typeref:typename:bool
+init	utils/cuda/cudaFont.cu	/^bool cudaFont::init( const char* bitmap_path )$/;"	f	typeref:typename:bool cudaFont::
+init	utils/display/glTexture.cpp	/^bool glTexture::init( uint32_t width, uint32_t height, uint32_t format, void* data )$/;"	f	class:glTexture	typeref:typename:bool
+initCaps	utils/camera/v4l2Camera.cpp	/^bool v4l2Camera::initCaps()$/;"	f	class:v4l2Camera	typeref:typename:bool
+initFormats	utils/camera/v4l2Camera.cpp	/^bool v4l2Camera::initFormats()$/;"	f	class:v4l2Camera	typeref:typename:bool
+initGL	utils/display/glDisplay.cpp	/^bool glDisplay::initGL()$/;"	f	class:glDisplay	typeref:typename:bool
+initMMap	utils/camera/v4l2Camera.cpp	/^bool v4l2Camera::initMMap()$/;"	f	class:v4l2Camera	typeref:typename:bool
+initStream	utils/camera/v4l2Camera.cpp	/^bool v4l2Camera::initStream()$/;"	f	class:v4l2Camera	typeref:typename:bool
+initUserPtr	utils/camera/v4l2Camera.cpp	/^bool v4l2Camera::initUserPtr()$/;"	f	class:v4l2Camera	typeref:typename:bool
+initWindow	utils/display/glDisplay.cpp	/^bool glDisplay::initWindow()$/;"	f	class:glDisplay	typeref:typename:bool
+init_network	lua/DQN.lua	/^function init_network( num_inputs, num_actions )$/;"	f
+init_states	python/DQN.py	/^	def init_states(self, batch_dim):$/;"	m	class:DRQN
+inputBuffer	gazebo/ArmPlugin.h	/^	void*    inputBuffer[2];		\/\/ [0] for CPU and [1] for GPU$/;"	m	class:gazebo::ArmPlugin	typeref:typename:void * [2]
+inputBufferSize	gazebo/ArmPlugin.h	/^	size_t   inputBufferSize;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:size_t
+inputRawHeight	gazebo/ArmPlugin.h	/^	size_t   inputRawHeight;	$/;"	m	class:gazebo::ArmPlugin	typeref:typename:size_t
+inputRawWidth	gazebo/ArmPlugin.h	/^	size_t   inputRawWidth;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:size_t
+inputState	gazebo/ArmPlugin.h	/^	Tensor*  inputState;		\/\/ pyTorch input object to the agent$/;"	m	class:gazebo::ArmPlugin	typeref:typename:Tensor *
+input_channels	python/DQN.py	/^input_channels = args.channels$/;"	v
+input_height	python/DQN.py	/^input_height   = args.height$/;"	v
+input_width	python/DQN.py	/^input_width    = args.width$/;"	v
+isGripperLink	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^bool GazeboGraspFix::isGripperLink(const std::string& linkName, std::string& gripperName) const$/;"	f	class:GazeboGraspFix	typeref:typename:bool
+isObjectAttached	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^bool GazeboGraspGripper::isObjectAttached() const$/;"	f	class:GazeboGraspGripper	typeref:typename:bool
+is_event_device	utils/input/devInput.cpp	/^static int is_event_device(const struct dirent *dir) $/;"	f	typeref:typename:int	file:
+is_ipython	python/gym-DQN.py	/^is_ipython = 'inline' in matplotlib.get_backend()$/;"	v
+j2_controller	gazebo/ArmPlugin.h	/^	physics::JointController* j2_controller;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:physics::JointController *
+jetson-reinforcement	CMakeLists.txt	/^project(jetson-reinforcement)$/;"	p
+jetson-utils	utils/CMakeLists.txt	/^	project(jetson-utils)$/;"	p
+jetson-utils	utils/README.md	/^# jetson-utils$/;"	c
+jointRange	gazebo/ArmPlugin.h	/^	float    jointRange[DOF][2];	\/\/ min\/max range of each arm joint$/;"	m	class:gazebo::ArmPlugin	typeref:typename:float[][2]
+lastDistanceSq	samples/fruit/fruitEnv.h	/^	float lastDistanceSq;$/;"	m	class:FruitEnv	typeref:typename:float
+lastGeneratedObjects	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	std::vector<ObjectMsg> lastGeneratedObjects;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:std::vector<ObjectMsg>
+lastGoalDistance	gazebo/ArmPlugin.h	/^	float    lastGoalDistance;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:float
+last_action	python/DQN.py	/^last_action = None$/;"	v
+last_diff	python/DQN.py	/^last_diff = None$/;"	v
+last_screen	python/gym-DQN.py	/^        last_screen = current_screen$/;"	v
+last_screen	python/gym-DQN.py	/^    last_screen = get_screen()$/;"	v
+last_state	python/DQN.py	/^last_state = None$/;"	v
+last_sync	python/DQN.py	/^last_sync = 0$/;"	v
+last_sync	python/gym-DQN.py	/^last_sync = 0$/;"	v
+launch420	utils/cuda/cudaYUV-YV12.cu	/^cudaError_t launch420( T* input, size_t inputPitch, uint8_t* output, size_t outputPitch, size_t /;"	f	typeref:typename:template<typename T,bool formatYV12> cudaError_t
+launchGrayYUYV	utils/cuda/cudaYUV-YUYV.cu	/^cudaError_t launchGrayYUYV( uchar2* input, size_t inputPitch, float* output, size_t outputPitch,/;"	f	typeref:typename:template<bool formatUYVY> cudaError_t
+launchYUYV	utils/cuda/cudaYUV-YUYV.cu	/^cudaError_t launchYUYV( uchar2* input, size_t inputPitch, uchar4* output, size_t outputPitch, si/;"	f	typeref:typename:template<bool formatUYVY> cudaError_t
+learning_rate	python/DQN.py	/^learning_rate 	= args.learning_rate$/;"	v
+linkNames	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^    std::vector<std::string> linkNames;$/;"	m	class:gazebo::GazeboGraspGripper	typeref:typename:std::vector<std::string>
+loadImageBGR	utils/loadImage.cpp	/^bool loadImageBGR( const char* filename, float3** cpu, float3** gpu, int* width, int* height, co/;"	f	typeref:typename:bool
+loadImageRGB	utils/loadImage.cpp	/^bool loadImageRGB( const char* filename, float3** cpu, float3** gpu, int* width, int* height, co/;"	f	typeref:typename:bool
+loadImageRGBA	utils/loadImage.cpp	/^bool loadImageRGBA( const char* filename, float4** cpu, float4** gpu, int* width, int* height )$/;"	f	typeref:typename:bool
+load_model	python/DQN.py	/^def load_model(filename):$/;"	f
+loopAnimation	gazebo/ArmPlugin.h	/^	bool     loopAnimation;		\/\/ loop the test animation while true$/;"	m	class:gazebo::ArmPlugin	typeref:typename:bool
+lowerLeft	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^    Eigen::Vector2i  lowerLeft;$/;"	m	class:GazeboMapPublisher::CollisionMapRequest	typeref:typename:Eigen::Vector2i	file:
+lowerRight	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^    Eigen::Vector2i  lowerRight;$/;"	m	class:GazeboMapPublisher::CollisionMapRequest	typeref:typename:Eigen::Vector2i	file:
+lstm_actor_cx	python/DQN.py	/^	lstm_actor_hx, lstm_actor_cx = model.init_states(1)$/;"	v
+lstm_actor_hx	python/DQN.py	/^	lstm_actor_hx, lstm_actor_cx = model.init_states(1)$/;"	v
+lstm_actor_hx	python/DQN.py	/^lstm_actor_hx = lstm_actor_cx = None$/;"	v
+lstm_batch_cx	python/DQN.py	/^	lstm_batch_hx, lstm_batch_cx = model.init_states(batch_size)$/;"	v
+lstm_batch_hx	python/DQN.py	/^	lstm_batch_hx, lstm_batch_cx = model.init_states(batch_size)$/;"	v
+lstm_batch_hx	python/DQN.py	/^lstm_batch_hx = lstm_batch_cx = None$/;"	v
+lstm_final_cx	python/DQN.py	/^	lstm_final_hx, lstm_final_cx = model.init_states(batch_size)$/;"	v
+lstm_final_hx	python/DQN.py	/^	lstm_final_hx, lstm_final_cx = model.init_states(batch_size)$/;"	v
+lstm_final_hx	python/DQN.py	/^lstm_final_hx = lstm_final_cx = None$/;"	v
+lstm_size	python/DQN.py	/^lstm_size      = args.lstm_size$/;"	v
+mActionTensor	c/rlAgent.h	/^	Tensor* mActionTensor;$/;"	m	class:rlAgent	typeref:typename:Tensor *
+mAppSink	utils/camera/gstCamera.h	/^	_GstAppSink* mAppSink;$/;"	m	class:gstCamera	typeref:typename:_GstAppSink *
+mAvgTime	utils/display/glDisplay.h	/^	float    mAvgTime;$/;"	m	class:glDisplay	typeref:typename:float
+mAxisNorm	utils/input/devJoystick.h	/^	float mAxisNorm[MAX_AXIS];$/;"	m	class:JoystickDevice	typeref:typename:float[]
+mAxisRaw	utils/input/devJoystick.h	/^	int   mAxisRaw[MAX_AXIS];	$/;"	m	class:JoystickDevice	typeref:typename:int[]
+mBgColor	utils/display/glDisplay.h	/^	float    mBgColor[4];$/;"	m	class:glDisplay	typeref:typename:float[4]
+mBufferCountMMap	utils/camera/v4l2Camera.h	/^	size_t mBufferCountMMap;$/;"	m	class:v4l2Camera	typeref:typename:size_t
+mBuffersMMap	utils/camera/v4l2Camera.h	/^	v4l2_mmap* mBuffersMMap;$/;"	m	class:v4l2Camera	typeref:typename:v4l2_mmap *
+mBus	utils/camera/gstCamera.h	/^	_GstBus*     mBus;$/;"	m	class:gstCamera	typeref:typename:_GstBus *
+mCmdEntries	utils/cuda/cudaFont.h	/^	int     mCmdEntries;$/;"	m	class:cudaFont	typeref:typename:int
+mCommandCPU	utils/cuda/cudaFont.h	/^	short4* mCommandCPU;$/;"	m	class:cudaFont	typeref:typename:short4 *
+mCommandGPU	utils/cuda/cudaFont.h	/^	short4* mCommandGPU;$/;"	m	class:cudaFont	typeref:typename:short4 *
+mContextGL	utils/display/glDisplay.h	/^	GLXContext   mContextGL;$/;"	m	class:glDisplay	typeref:typename:GLXContext
+mDMA	utils/display/glTexture.h	/^	uint32_t mDMA;$/;"	m	class:glTexture	typeref:typename:uint32_t
+mDebug	utils/input/devInput.h	/^	bool mDebug;$/;"	m	class:InputDevices	typeref:typename:bool
+mDebug	utils/input/devJoystick.h	/^	bool  mDebug;$/;"	m	class:JoystickDevice	typeref:typename:bool
+mDebug	utils/input/devKeyboard.h	/^	bool mDebug;$/;"	m	class:KeyboardDevice	typeref:typename:bool
+mDepth	utils/camera/gstCamera.h	/^	uint32_t mDepth;$/;"	m	class:gstCamera	typeref:typename:uint32_t
+mDevicePath	utils/camera/v4l2Camera.h	/^	std::string mDevicePath;$/;"	m	class:v4l2Camera	typeref:typename:std::string
+mDisplayX	utils/display/glDisplay.h	/^	Display*     mDisplayX;$/;"	m	class:glDisplay	typeref:typename:Display *
+mFD	utils/camera/v4l2Camera.h	/^	int 	mFD;$/;"	m	class:v4l2Camera	typeref:typename:int
+mFD	utils/input/devJoystick.h	/^	int   mFD;$/;"	m	class:JoystickDevice	typeref:typename:int
+mFD	utils/input/devKeyboard.h	/^	int  mFD;$/;"	m	class:KeyboardDevice	typeref:typename:int
+mFontCellSize	utils/cuda/cudaFont.h	/^	int2 mFontCellSize;$/;"	m	class:cudaFont	typeref:typename:int2
+mFontMapCPU	utils/cuda/cudaFont.h	/^	float4* mFontMapCPU;$/;"	m	class:cudaFont	typeref:typename:float4 *
+mFontMapGPU	utils/cuda/cudaFont.h	/^	float4* mFontMapGPU;$/;"	m	class:cudaFont	typeref:typename:float4 *
+mFontMapHeight	utils/cuda/cudaFont.h	/^	int mFontMapHeight;$/;"	m	class:cudaFont	typeref:typename:int
+mFontMapWidth	utils/cuda/cudaFont.h	/^	int mFontMapWidth;$/;"	m	class:cudaFont	typeref:typename:int
+mFormat	utils/display/glTexture.h	/^	uint32_t mFormat;$/;"	m	class:glTexture	typeref:typename:uint32_t
+mFormats	utils/camera/v4l2Camera.h	/^	std::vector<v4l2_fmtdesc> mFormats;$/;"	m	class:v4l2Camera	typeref:typename:std::vector<v4l2_fmtdesc>
+mFunction	c/rlAgent.h	/^	void* 	  mFunction[NUM_FUNCTIONS];$/;"	m	class:rlAgent	typeref:typename:void * []
+mFunctionArgs	c/rlAgent.h	/^	void*	  mFunctionArgs[NUM_FUNCTIONS];$/;"	m	class:rlAgent	typeref:typename:void * []
+mFunctionName	c/rlAgent.h	/^	std::string mFunctionName[NUM_FUNCTIONS];$/;"	m	class:rlAgent	typeref:typename:std::string[]
+mHeight	utils/camera/gstCamera.h	/^	uint32_t mHeight;$/;"	m	class:gstCamera	typeref:typename:uint32_t
+mHeight	utils/camera/v4l2Camera.h	/^	uint32_t mHeight;$/;"	m	class:v4l2Camera	typeref:typename:uint32_t
+mHeight	utils/display/glDisplay.h	/^	uint32_t mHeight;$/;"	m	class:glDisplay	typeref:typename:uint32_t
+mHeight	utils/display/glTexture.h	/^	uint32_t mHeight;$/;"	m	class:glTexture	typeref:typename:uint32_t
+mID	utils/display/glTexture.h	/^	uint32_t mID;$/;"	m	class:glTexture	typeref:typename:uint32_t
+mInputHeight	c/rlAgent.h	/^	uint32_t mInputHeight;$/;"	m	class:rlAgent	typeref:typename:uint32_t
+mInputWidth	c/rlAgent.h	/^	uint32_t mInputWidth;$/;"	m	class:rlAgent	typeref:typename:uint32_t
+mInteropCUDA	utils/display/glTexture.h	/^	cudaGraphicsResource* mInteropCUDA;$/;"	m	class:glTexture	typeref:typename:cudaGraphicsResource *
+mInteropDevice	utils/display/glTexture.h	/^	void* mInteropDevice;$/;"	m	class:glTexture	typeref:typename:void *
+mInteropHost	utils/display/glTexture.h	/^	void* mInteropHost;$/;"	m	class:glTexture	typeref:typename:void *
+mJoystick	utils/input/devInput.h	/^	JoystickDevice* mJoystick;$/;"	m	class:InputDevices	typeref:typename:JoystickDevice *
+mKeyMap	utils/input/devKeyboard.h	/^	int  mKeyMap[MAX_KEYS];$/;"	m	class:KeyboardDevice	typeref:typename:int[]
+mKeyboard	utils/input/devInput.h	/^	KeyboardDevice* mKeyboard;$/;"	m	class:InputDevices	typeref:typename:KeyboardDevice *
+mLastTime	utils/display/glDisplay.h	/^	timespec mLastTime;$/;"	m	class:glDisplay	typeref:typename:timespec
+mLatestRGBA	utils/camera/gstCamera.h	/^	uint32_t mLatestRGBA;$/;"	m	class:gstCamera	typeref:typename:uint32_t
+mLatestRetrieved	utils/camera/gstCamera.h	/^	bool     mLatestRetrieved;$/;"	m	class:gstCamera	typeref:typename:bool
+mLatestRingbuffer	utils/camera/gstCamera.h	/^	uint32_t mLatestRingbuffer;$/;"	m	class:gstCamera	typeref:typename:uint32_t
+mLaunchStr	utils/camera/gstCamera.h	/^	std::string  mLaunchStr;$/;"	m	class:gstCamera	typeref:typename:std::string
+mModuleName	c/rlAgent.h	/^	std::string mModuleName;$/;"	m	class:rlAgent	typeref:typename:std::string
+mModuleObj	c/rlAgent.h	/^	void*	  mModuleObj;$/;"	m	class:rlAgent	typeref:typename:void *
+mNumActions	c/rlAgent.h	/^	uint32_t mNumActions;$/;"	m	class:rlAgent	typeref:typename:uint32_t
+mNumInputs	c/rlAgent.h	/^	uint32_t mNumInputs;$/;"	m	class:rlAgent	typeref:typename:uint32_t
+mPath	utils/input/devJoystick.h	/^	std::string mPath;$/;"	m	class:JoystickDevice	typeref:typename:std::string
+mPath	utils/input/devKeyboard.h	/^	std::string mPath;$/;"	m	class:KeyboardDevice	typeref:typename:std::string
+mPipeline	utils/camera/gstCamera.h	/^	_GstElement* mPipeline;$/;"	m	class:gstCamera	typeref:typename:_GstElement *
+mPitch	utils/camera/v4l2Camera.h	/^	uint32_t mPitch;$/;"	m	class:v4l2Camera	typeref:typename:uint32_t
+mPixelDepth	utils/camera/v4l2Camera.h	/^	uint32_t mPixelDepth;$/;"	m	class:v4l2Camera	typeref:typename:uint32_t
+mRGBA	utils/camera/gstCamera.h	/^	void* mRGBA[NUM_RINGBUFFERS];$/;"	m	class:gstCamera	typeref:typename:void * []
+mRequestFormat	utils/camera/v4l2Camera.h	/^	int	    mRequestFormat;$/;"	m	class:v4l2Camera	typeref:typename:int
+mRequestHeight	utils/camera/v4l2Camera.h	/^	uint32_t mRequestHeight;$/;"	m	class:v4l2Camera	typeref:typename:uint32_t
+mRequestWidth	utils/camera/v4l2Camera.h	/^	uint32_t mRequestWidth;$/;"	m	class:v4l2Camera	typeref:typename:uint32_t
+mRewardTensor	c/rlAgent.h	/^	Tensor* mRewardTensor;$/;"	m	class:rlAgent	typeref:typename:Tensor *
+mRingMutex	utils/camera/gstCamera.h	/^	QMutex* mRingMutex;$/;"	m	class:gstCamera	typeref:typename:QMutex *
+mRingbufferCPU	utils/camera/gstCamera.h	/^	void* mRingbufferCPU[NUM_RINGBUFFERS];$/;"	m	class:gstCamera	typeref:typename:void * []
+mRingbufferGPU	utils/camera/gstCamera.h	/^	void* mRingbufferGPU[NUM_RINGBUFFERS];$/;"	m	class:gstCamera	typeref:typename:void * []
+mScreenX	utils/display/glDisplay.h	/^	Screen*      mScreenX;$/;"	m	class:glDisplay	typeref:typename:Screen *
+mSize	utils/camera/gstCamera.h	/^	uint32_t mSize;$/;"	m	class:gstCamera	typeref:typename:uint32_t
+mSize	utils/display/glTexture.h	/^	uint32_t mSize;$/;"	m	class:glTexture	typeref:typename:uint32_t
+mV4L2Device	utils/camera/gstCamera.h	/^	int   mV4L2Device;	\/\/ -1 for onboard, >=0 for V4L2 device$/;"	m	class:gstCamera	typeref:typename:int
+mVisualX	utils/display/glDisplay.h	/^	XVisualInfo* mVisualX;$/;"	m	class:glDisplay	typeref:typename:XVisualInfo *
+mWaitEvent	utils/camera/gstCamera.h	/^	QWaitCondition* mWaitEvent;$/;"	m	class:gstCamera	typeref:typename:QWaitCondition *
+mWaitMutex	utils/camera/gstCamera.h	/^	QMutex* mWaitMutex;$/;"	m	class:gstCamera	typeref:typename:QMutex *
+mWidth	utils/camera/gstCamera.h	/^	uint32_t mWidth;$/;"	m	class:gstCamera	typeref:typename:uint32_t
+mWidth	utils/camera/v4l2Camera.h	/^	uint32_t mWidth;$/;"	m	class:v4l2Camera	typeref:typename:uint32_t
+mWidth	utils/display/glDisplay.h	/^	uint32_t mWidth;$/;"	m	class:glDisplay	typeref:typename:uint32_t
+mWidth	utils/display/glTexture.h	/^	uint32_t mWidth;$/;"	m	class:glTexture	typeref:typename:uint32_t
+mWindowX	utils/display/glDisplay.h	/^	Window       mWindowX;$/;"	m	class:glDisplay	typeref:typename:Window
+main	gazebo/gazebo-pkgs/gazebo_state_plugins/test/object_info_request.cpp	/^int main (int argc, char **argv)$/;"	f	typeref:typename:int
+main	gazebo/gazebo-pkgs/gazebo_test_tools/src/SetGazeboPhysicsClient.cpp	/^int main(int argc, char **argv)$/;"	f	typeref:typename:int
+main	gazebo/gazebo-pkgs/gazebo_test_tools/src/cube_spawner_node.cpp	/^int main(int argc, char** argv) {$/;"	f	typeref:typename:int
+main	gazebo/gazebo-pkgs/gazebo_test_tools/src/fake_object_recognizer_node.cpp	/^int main(int argc, char** argv)$/;"	f	typeref:typename:int
+main	gazebo/gazebo-pkgs/gazebo_test_tools/test/fake_object_recognizer_cmd.cpp	/^int main(int argc, char** argv)$/;"	f	typeref:typename:int
+main	samples/catch/catch.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+main	samples/fruit/fruit.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+main	tools/console/main.lua.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+main	tools/console/main.py.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+main	tools/diagnostic/main.lua.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+main	tools/diagnostic/main.py.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+main	tools/input/main.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+main	utils/camera/gst-camera/gst-camera.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+main	utils/camera/v4l2-console/v4l2-console.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+main	utils/camera/v4l2-display/v4l2-display.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+main	utils/display/gl-display-test/gl-display-test.cpp	/^int main( int argc, char** argv )$/;"	f	typeref:typename:int
+make_uchar8	utils/cuda/cudaYUV-YUYV.cu	/^static __host__ __device__ __forceinline__ uchar8 make_uchar8(uint8_t a0, uint8_t a1, uint8_t a2/;"	f	typeref:typename:uchar8	file:
+map_height	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	float map_height;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:float
+map_len_x	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	double map_len_x;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:double
+map_len_y	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	double map_len_y;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:double
+map_offset_x	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	double map_offset_x;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:double
+map_offset_y	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	double map_offset_y;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:double
+map_pub	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	ros::Publisher map_pub;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:ros::Publisher
+map_resolution	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	float map_resolution;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:float
+maxContactGripper	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    std::string maxContactGripper;$/;"	m	class:GazeboGraspFix::ObjectContactInfo	typeref:typename:std::string	file:
+maxEpisodeLength	gazebo/ArmPlugin.h	/^	int	    maxEpisodeLength;	\/\/ maximum number of frames to win episode (or <= 0 for unlimited)$/;"	m	class:gazebo::ArmPlugin	typeref:typename:int
+maxGripCount	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    int maxGripCount;    $/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:int
+maxGripperContactCnt	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    int maxGripperContactCnt;$/;"	m	class:GazeboGraspFix::ObjectContactInfo	typeref:typename:int	file:
+max_episodes	python/RL.py	/^max_episodes = 10000$/;"	v
+memory	python/DQN.py	/^memory = ReplayMemory(replay_mem)$/;"	v
+memory	python/gym-DQN.py	/^memory = ReplayMemory(10000)$/;"	v
+memory.getBatch	lua/DQN.lua	/^    function memory.getBatch(model, batchSize, nbActions, nbStates)$/;"	f
+memory.getBatch	lua/catchENV.lua	/^    function memory.getBatch(model, batchSize, nbActions, nbStates)$/;"	f
+memory.remember	lua/DQN.lua	/^    function memory.remember(memoryInput)$/;"	f
+memory.remember	lua/catchENV.lua	/^    function memory.remember(memoryInput)$/;"	f
+meta_pub	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	ros::Publisher meta_pub;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:ros::Publisher
+model	gazebo/ArmPlugin.h	/^	physics::ModelPtr model;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:physics::ModelPtr
+model	gazebo/PropPlugin.h	/^	physics::ModelPtr model;	\/\/ Pointer to the model$/;"	m	class:gazebo::PropPlugin	typeref:typename:physics::ModelPtr
+model	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^    physics::ModelPtr model;$/;"	m	class:gazebo::GazeboGraspGripper	typeref:typename:physics::ModelPtr
+model	python/DQN.py	/^	model = DRQN()$/;"	v
+model	python/gym-DQN.py	/^model = DQN()$/;"	v
+model	python/gym-actorCritic.py	/^model = Policy()$/;"	v
+mul	python/test-interop.py	/^def mul( x, y ):$/;"	f
+multiply	lua/hello.lua	/^function multiply(a, b)$/;"	f
+multiply	lua/test-lua.lua	/^function multiply(a, b)$/;"	f
+mutexContacts	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    boost::mutex mutexContacts; \/\/mutex protects contacts$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:boost::mutex
+newReward	gazebo/ArmPlugin.h	/^	bool     newReward;			\/\/ true if a new reward's been issued$/;"	m	class:gazebo::ArmPlugin	typeref:typename:bool
+newState	gazebo/ArmPlugin.h	/^	bool     newState;			\/\/ true if a new frame needs processed$/;"	m	class:gazebo::ArmPlugin	typeref:typename:bool
+new_pyTensor	c/pyTensor.cpp	/^static pyTensor* new_pyTensor()$/;"	f	typeref:typename:pyTensor *	file:
+next_action	python/DQN.py	/^def next_action(state_in):$/;"	f
+next_action	python/RL.py	/^def next_action(state):					# inference only$/;"	f
+next_reward	python/DQN.py	/^def next_reward(reward, end_episode):$/;"	f
+next_reward	python/RL.py	/^def next_reward(state, reward, new_episode):	# next reward is available$/;"	f
+next_state	python/gym-DQN.py	/^            next_state = current_screen - last_screen$/;"	v
+nh	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/gazebo_cube_spawner.h	/^    ros::NodeHandle nh;$/;"	m	class:gazebo_test_tools::GazeboCubeSpawner	typeref:typename:ros::NodeHandle
+nn	python/CRNN.py	/^import torch.nn as nn$/;"	I
+nn	python/DQN.py	/^import torch.nn as nn$/;"	I
+nn	python/RL.py	/^import torch.nn as nn$/;"	I
+nn	python/gym-DQN.py	/^import torch.nn as nn$/;"	I
+nn	python/gym-RL.py	/^import torch.nn as nn$/;"	I
+nn	python/gym-actorCritic.py	/^import torch.nn as nn$/;"	I
+node	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    transport::NodePtr node;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:transport::NodePtr
+node	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^    ros::NodeHandle node;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:ros::NodeHandle
+node	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    ros::NodeHandle node;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:ros::NodeHandle
+np	python/DQN.py	/^import numpy as np$/;"	I
+np	python/RL.py	/^import numpy as np$/;"	I
+np	python/gym-DQN.py	/^import numpy as np$/;"	I
+np	python/gym-RL.py	/^import numpy as np$/;"	I
+np	python/gym-actorCritic.py	/^import numpy as np$/;"	I
+num_actions	python/DQN.py	/^num_actions    = args.actions$/;"	v
+num_actions	python/RL.py	/^num_actions = args.actions$/;"	v
+num_actions	python/gym-RL.py	/^num_actions = env.action_space.n$/;"	v
+num_actions	python/gym-actorCritic.py	/^num_actions = env.action_space.n$/;"	v
+num_episodes	python/RL.py	/^num_episodes = 0$/;"	v
+num_episodes	python/gym-DQN.py	/^num_episodes = 1000$/;"	v
+num_hidden	python/RL.py	/^num_hidden = args.hidden$/;"	v
+num_inputs	python/RL.py	/^num_inputs = args.inputs$/;"	v
+nv12ColorspaceSetup	utils/cuda/cudaYUV-NV12.cu	/^bool nv12ColorspaceSetup = false;$/;"	v	typeref:typename:bool
+objPos	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    gazebo::math::Vector3 objPos;$/;"	m	class:GazeboGraspFix::CollidingPoint	typeref:typename:gazebo::math::Vector3	file:
+objectAttachedToGripper	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^bool GazeboGraspFix::objectAttachedToGripper(const ObjectContactInfo& objContInfo, std::string& /;"	f	class:GazeboGraspFix	typeref:typename:bool
+objectAttachedToGripper	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^bool GazeboGraspFix::objectAttachedToGripper(const std::string& gripperName, std::string& attach/;"	f	class:GazeboGraspFix	typeref:typename:bool
+object_info_client	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    ros::ServiceClient object_info_client;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:ros::ServiceClient
+object_pub	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	ros::Publisher object_pub;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:ros::Publisher
+object_pub	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    ros::Publisher object_pub;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:ros::Publisher
+observation_dim	python/gym-RL.py	/^observation_dim = env.observation_space.shape[0]$/;"	v
+observation_dim	python/gym-actorCritic.py	/^observation_dim = env.observation_space.shape[0]$/;"	v
+onBuffer	utils/camera/gstCamera.cpp	/^GstFlowReturn gstCamera::onBuffer(_GstAppSink* sink, void* user_data)$/;"	f	class:gstCamera	typeref:typename:GstFlowReturn
+onCameraMsg	gazebo/ArmPlugin.cpp	/^void ArmPlugin::onCameraMsg(ConstImageStampedPtr &_msg)$/;"	f	class:gazebo::ArmPlugin	typeref:typename:void
+onCollisionMsg	gazebo/ArmPlugin.cpp	/^void ArmPlugin::onCollisionMsg(ConstContactsPtr &contacts)$/;"	f	class:gazebo::ArmPlugin	typeref:typename:void
+onEOS	utils/camera/gstCamera.cpp	/^void gstCamera::onEOS(_GstAppSink* sink, void* user_data)$/;"	f	class:gstCamera	typeref:typename:void
+onEvent	utils/display/glDisplay.cpp	/^void glDisplay::onEvent( uint msg, int a, int b )$/;"	f	class:glDisplay	typeref:typename:void
+onPreroll	utils/camera/gstCamera.cpp	/^GstFlowReturn gstCamera::onPreroll(_GstAppSink* sink, void* user_data)$/;"	f	class:gstCamera	typeref:typename:GstFlowReturn
+onWorldCreate	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/src/GazeboPluginLoader.cpp	/^void GazeboPluginLoader::onWorldCreate(){$/;"	f	class:GazeboPluginLoader	typeref:typename:void
+onWorldUpdate	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^void GazeboMapPublisher::onWorldUpdate() {$/;"	f	class:GazeboMapPublisher	typeref:typename:void
+onWorldUpdate	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^void GazeboObjectInfo::onWorldUpdate() {$/;"	f	class:GazeboObjectInfo	typeref:typename:void
+onboardCamera	utils/camera/gstCamera.h	/^	inline bool onboardCamera() const		{ return (mV4L2Device < 0); }$/;"	f	class:gstCamera	typeref:typename:bool
+optim	python/DQN.py	/^import torch.optim as optim$/;"	I
+optim	python/RL.py	/^import torch.optim as optim$/;"	I
+optim	python/gym-DQN.py	/^import torch.optim as optim$/;"	I
+optim	python/gym-RL.py	/^import torch.optim as optim$/;"	I
+optim	python/gym-actorCritic.py	/^import torch.optim as optim$/;"	I
+optimize_model	python/DQN.py	/^def optimize_model():$/;"	f
+optimize_model	python/gym-DQN.py	/^def optimize_model():$/;"	f
+optimizer	python/DQN.py	/^	optimizer = optim.Adam(model.parameters(), lr=learning_rate)$/;"	v
+optimizer	python/DQN.py	/^	optimizer = optim.RMSprop(model.parameters(), lr=learning_rate)$/;"	v
+optimizer	python/DQN.py	/^optimizer 	= args.optimizer$/;"	v
+optimizer	python/RL.py	/^optimizer = optim.Adam(policy.parameters(), lr=1e-2)$/;"	v
+optimizer	python/gym-DQN.py	/^optimizer = optim.RMSprop(model.parameters())$/;"	v
+optimizer	python/gym-RL.py	/^optimizer = optim.Adam(policy.parameters(), lr=1e-2)$/;"	v
+optimizer	python/gym-actorCritic.py	/^optimizer = optim.Adam(model.parameters(), lr=3e-2)$/;"	v
+originalPose	gazebo/PropPlugin.h	/^	math::Pose originalPose;$/;"	m	class:gazebo::PropPlugin	typeref:typename:math::Pose
+palmLink	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h	/^    physics::LinkPtr palmLink;$/;"	m	class:gazebo::GazeboGraspGripper	typeref:typename:physics::LinkPtr
+parser	python/DQN.py	/^parser = argparse.ArgumentParser(description='PyTorch DQN runtime')$/;"	v
+parser	python/RL.py	/^parser = argparse.ArgumentParser(description='PyTorch REINFORCE example')$/;"	v
+parser	python/gym-RL.py	/^parser = argparse.ArgumentParser(description='PyTorch REINFORCE example')$/;"	v
+parser	python/gym-actorCritic.py	/^parser = argparse.ArgumentParser(description='PyTorch actor-critic example')$/;"	v
+parser	python/test-interop.py	/^parser = argparse.ArgumentParser(description='test-interop')$/;"	v
+plot_durations	python/gym-DQN.py	/^def plot_durations():$/;"	f
+plt	python/gym-DQN.py	/^import matplotlib.pyplot as plt$/;"	I
+policy	python/RL.py	/^policy = Policy()$/;"	v
+policy	python/gym-RL.py	/^policy = Policy()$/;"	v
+pos	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    gazebo::math::Vector3 pos;$/;"	m	class:GazeboGraspFix::CollidingPoint	typeref:typename:gazebo::math::Vector3	file:
+prevUpdateTime	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    common::Time prevUpdateTime;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:common::Time
+printEnv	lua/catchENV.lua	/^function printEnv( nextState, gridSize )$/;"	f
+ptr	utils/camera/v4l2Camera.h	/^	void*  ptr;$/;"	m	struct:v4l2_mmap	typeref:typename:void *
+publishRecognitionEvent	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^void FakeObjectRecognizer::publishRecognitionEvent(const ros::TimerEvent& e) {$/;"	f	class:FakeObjectRecognizer	typeref:typename:void
+publishTimer	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	ros::Timer publishTimer;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:ros::Timer
+publishTimer	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	ros::Timer publishTimer;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:ros::Timer
+publishTimer	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    ros::Timer publishTimer;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:ros::Timer
+push	python/DQN.py	/^    def push(self, *args):$/;"	m	class:ReplayMemory
+push	python/gym-DQN.py	/^    def push(self, *args):$/;"	m	class:ReplayMemory
+pyTensor	c/pyTensor.h	/^struct pyTensor$/;"	s
+pyTensorCPU	c/pyTensor.h	/^	PyObject* pyTensorCPU;	\/\/ Python handle to cpuTensor$/;"	m	struct:pyTensor	typeref:typename:PyObject *
+pyTensorGPU	c/pyTensor.h	/^	PyObject* pyTensorGPU;	\/\/ Python handle to gpuTensor$/;"	m	struct:pyTensor	typeref:typename:PyObject *
+qLearning	lua/DQN.lua	/^function qLearning( input_tensor, reward, end_of_episode )$/;"	f
+queryObjectInfo	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^bool FakeObjectRecognizer::queryObjectInfo(const std::string& name, object_msgs::Object& object,/;"	f	class:FakeObjectRecognizer	typeref:typename:bool
+quit_signal	samples/catch/catch.cpp	/^bool quit_signal = false;$/;"	v	typeref:typename:bool
+quit_signal	samples/fruit/fruit.cpp	/^bool quit_signal = false;$/;"	v	typeref:typename:bool
+radius	samples/fruit/fruitEnv.h	/^		float radius;$/;"	m	struct:FruitEnv::fruitObject	typeref:typename:float
+rand	utils/rand.h	/^inline int rand( int range_min, int range_max )							{ const float r = (randf() * (range_max - /;"	f	typeref:typename:int
+randf	gazebo/PropPlugin.cpp	/^inline float randf( float rand_min, float rand_max )$/;"	f	namespace:gazebo	typeref:typename:float
+randf	lua/catchENV.lua	/^function randf(s, e)$/;"	f
+randf	utils/rand.h	/^inline float randf( float range_min=0.0f, float range_max=1.0f )		{ return ((float(rand()) \/ RA/;"	f	typeref:typename:float
+randomize_pos	samples/fruit/fruitEnv.cpp	/^void FruitEnv::randomize_pos( float* x, float* y )$/;"	f	class:FruitEnv	typeref:typename:void
+reGenerateObjects	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	bool reGenerateObjects;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:bool
+recognizeObject	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^bool FakeObjectRecognizer::recognizeObject(gazebo_test_tools::RecognizeGazeboObject::Request &re/;"	f	class:FakeObjectRecognizer	typeref:typename:bool
+recognize_object_srv	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    ros::ServiceServer recognize_object_srv;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:ros::ServiceServer
+ref	gazebo/ArmPlugin.h	/^	float ref[DOF];			\/\/ joint reference positions$/;"	m	class:gazebo::ArmPlugin	typeref:typename:float[]
+register_object_tf_client	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/FakeObjectRecognizer.h	/^    ros::ServiceClient register_object_tf_client;$/;"	m	class:gazebo_test_tools::FakeObjectRecognizer	typeref:typename:ros::ServiceClient
+releaseTolerance	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    float releaseTolerance;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:float
+release_return	utils/camera/gstCamera.cpp	/^#define release_return /;"	d	file:
+renderCPU	samples/fruit/fruitEnv.h	/^	float* renderCPU;$/;"	m	class:FruitEnv	typeref:typename:float *
+renderGPU	samples/fruit/fruitEnv.h	/^	float* renderGPU;$/;"	m	class:FruitEnv	typeref:typename:float *
+renderHeight	samples/fruit/fruitEnv.h	/^	uint32_t renderHeight;	\/\/ height of the output image (in pixels)$/;"	m	class:FruitEnv	typeref:typename:uint32_t
+renderWidth	samples/fruit/fruitEnv.h	/^	uint32_t renderWidth;	\/\/ width of the output image (in pixels)$/;"	m	class:FruitEnv	typeref:typename:uint32_t
+replay_mem	python/DQN.py	/^replay_mem 	= args.replay_mem$/;"	v
+requestMap	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^bool GazeboMapPublisher::requestMap(nav_msgs::GetMap::Request &req, nav_msgs::GetMap::Response &/;"	f	class:GazeboMapPublisher	typeref:typename:bool
+requestObject	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboObjectInfo.cpp	/^bool GazeboObjectInfo::requestObject(object_msgs::ObjectInfo::Request &req, object_msgs::ObjectI/;"	f	class:GazeboObjectInfo	typeref:typename:bool
+request_map_srv	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	ros::ServiceServer request_map_srv;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:ros::ServiceServer
+request_object_srv	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	ros::ServiceServer request_object_srv;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:ros::ServiceServer
+resetPos	gazebo/ArmPlugin.h	/^	float    resetPos[DOF];$/;"	m	class:gazebo::ArmPlugin	typeref:typename:float[]
+resetPosition	gazebo/ArmPlugin.cpp	/^float ArmPlugin::resetPosition( uint32_t dof )$/;"	f	class:gazebo::ArmPlugin	typeref:typename:float
+reset_states	python/DQN.py	/^	def reset_states(self, hx, cx):$/;"	m	class:DRQN
+resize	python/gym-DQN.py	/^resize = T.Compose([T.ToPILImage(),$/;"	v
+resolution	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^    double resolution;$/;"	m	class:GazeboMapPublisher::CollisionMapRequest	typeref:typename:double	file:
+reward	python/gym-DQN.py	/^        _, reward, done, _ = env.step(action[0, 0])$/;"	v
+reward	python/gym-DQN.py	/^        reward = Tensor([reward])$/;"	v
+reward	python/gym-RL.py	/^        state, reward, done, _ = env.step(action[0,0])$/;"	v
+reward	python/gym-actorCritic.py	/^        state, reward, done, _ = env.step(action[0,0])$/;"	v
+reward	samples/fruit/fruitEnv.h	/^		float reward;$/;"	m	struct:FruitEnv::fruitObject	typeref:typename:float
+rewardHistory	gazebo/ArmPlugin.h	/^	float    rewardHistory;		\/\/ value of the last reward issued$/;"	m	class:gazebo::ArmPlugin	typeref:typename:float
+rgb_to_y	utils/cuda/cudaYUV-YV12.cu	/^inline __device__ void rgb_to_y(const uint8_t r, const uint8_t g, const uint8_t b, uint8_t& y)$/;"	f	typeref:typename:void
+rgb_to_yuv	utils/cuda/cudaYUV-YV12.cu	/^inline __device__ void rgb_to_yuv(const uint8_t r, const uint8_t g, const uint8_t b, uint8_t& y,/;"	f	typeref:typename:void
+rilog_debug_function	utils/camera/gstUtility.cpp	/^void rilog_debug_function(GstDebugCategory* category, GstDebugLevel level,$/;"	f	typeref:typename:void
+rlAgent	c/rlAgent.cpp	/^rlAgent::rlAgent()$/;"	f	class:rlAgent
+rlAgent	c/rlAgent.h	/^class rlAgent : public aiAgent$/;"	c
+runHistory	gazebo/ArmPlugin.h	/^	bool     runHistory[20];$/;"	m	class:gazebo::ArmPlugin	typeref:typename:bool[20]
+runHistoryIdx	gazebo/ArmPlugin.h	/^	int      runHistoryIdx;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:int
+runHistoryMax	gazebo/ArmPlugin.h	/^	int	    runHistoryMax;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:int
+running_reward	python/gym-RL.py	/^    running_reward = running_reward * 0.99 + t * 0.01$/;"	v
+running_reward	python/gym-RL.py	/^running_reward = 10$/;"	v
+running_reward	python/gym-actorCritic.py	/^    running_reward = running_reward * 0.99 + t * 0.01$/;"	v
+running_reward	python/gym-actorCritic.py	/^running_reward = 10$/;"	v
+sample	python/DQN.py	/^    def sample(self, batch_size):$/;"	m	class:ReplayMemory
+sample	python/gym-DQN.py	/^    def sample(self, batch_size):$/;"	m	class:ReplayMemory
+saveImageRGBA	utils/loadImage.cpp	/^bool saveImageRGBA( const char* filename, float4* cpu, int width, int height, float max_pixel )$/;"	f	typeref:typename:bool
+save_model	python/DQN.py	/^def save_model(filename):$/;"	f
+screenIdx	utils/display/glDisplay.h	/^	static const int screenIdx = 0;$/;"	m	class:glDisplay	typeref:typename:const int
+screen_width	python/gym-DQN.py	/^screen_width = 600$/;"	v
+scriptingLoaded	c/rlAgent.cpp	/^bool rlAgent::scriptingLoaded = false;$/;"	m	class:rlAgent	typeref:typename:bool
+scriptingLoaded	c/rlAgent.h	/^	static bool scriptingLoaded;$/;"	m	class:rlAgent	typeref:typename:bool
+select_action	python/DQN.py	/^def select_action(state, allow_rand):$/;"	f
+select_action	python/RL.py	/^def select_action(state, save):			# use DNN to select action from current state$/;"	f
+select_action	python/gym-DQN.py	/^def select_action(state):$/;"	f
+select_action	python/gym-RL.py	/^def select_action(state):$/;"	f
+select_action	python/gym-actorCritic.py	/^def select_action(state):$/;"	f
+set_gazebo_physics_client	gazebo/gazebo-pkgs/gazebo_test_tools/CMakeLists.txt	/^add_executable(set_gazebo_physics_client src\/SetGazeboPhysicsClient.cpp)$/;"	t
+sig_handler	samples/catch/catch.cpp	/^void sig_handler(int signo)$/;"	f	typeref:typename:void
+sig_handler	samples/fruit/fruit.cpp	/^void sig_handler(int signo)$/;"	f	typeref:typename:void
+sig_handler	utils/camera/gst-camera/gst-camera.cpp	/^void sig_handler(int signo)$/;"	f	typeref:typename:void
+sig_handler	utils/camera/v4l2-console/v4l2-console.cpp	/^void sig_handler(int signo)$/;"	f	typeref:typename:void
+sig_handler	utils/display/gl-display-test/gl-display-test.cpp	/^void sig_handler(int signo)$/;"	f	typeref:typename:void
+signal_recieved	utils/camera/gst-camera/gst-camera.cpp	/^bool signal_recieved = false;$/;"	v	typeref:typename:bool
+signal_recieved	utils/camera/v4l2-console/v4l2-console.cpp	/^bool signal_recieved = false;$/;"	v	typeref:typename:bool
+signal_recieved	utils/display/gl-display-test/gl-display-test.cpp	/^bool signal_recieved = false;$/;"	v	typeref:typename:bool
+size	c/pyTensor.h	/^	size_t size;$/;"	m	struct:pyTensor	typeref:typename:size_t
+spawnCube	gazebo/gazebo-pkgs/gazebo_test_tools/src/cube_spawner.cpp	/^void GazeboCubeSpawner::spawnCube(const std::string& name, const std::string& frame_id,$/;"	f	class:GazeboCubeSpawner	typeref:typename:void
+spawnDistanceSq	samples/fruit/fruitEnv.h	/^	float spawnDistanceSq;$/;"	m	class:FruitEnv	typeref:typename:float
+spawnPrimitive	gazebo/gazebo-pkgs/gazebo_test_tools/src/cube_spawner.cpp	/^void GazeboCubeSpawner::spawnPrimitive(const std::string& name, const bool doCube,$/;"	f	class:GazeboCubeSpawner	typeref:typename:void
+spawn_object	gazebo/gazebo-pkgs/gazebo_test_tools/include/gazebo_test_tools/gazebo_cube_spawner.h	/^    ros::ServiceClient spawn_object;$/;"	m	class:gazebo_test_tools::GazeboCubeSpawner	typeref:typename:ros::ServiceClient
+srand_time	utils/rand.h	/^inline void srand_time()												{ srand(time(NULL)); }$/;"	f	typeref:typename:void
+state	python/gym-DQN.py	/^        state = next_state$/;"	v
+state	python/gym-DQN.py	/^    state = current_screen - last_screen$/;"	v
+state	python/gym-RL.py	/^        state, reward, done, _ = env.step(action[0,0])$/;"	v
+state	python/gym-RL.py	/^    state = env.reset()$/;"	v
+state	python/gym-actorCritic.py	/^        state, reward, done, _ = env.step(action[0,0])$/;"	v
+state	python/gym-actorCritic.py	/^    state = env.reset()$/;"	v
+steps_done	python/DQN.py	/^steps_done = 0$/;"	v
+steps_done	python/gym-DQN.py	/^steps_done = 0$/;"	v
+strRemoveDelimiter	utils/commandLine.cpp	/^static inline int strRemoveDelimiter(char delimiter, const char *string)$/;"	f	typeref:typename:int	file:
+successfulGrabs	gazebo/ArmPlugin.h	/^	int	    successfulGrabs;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:int
+sum	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^    int sum;$/;"	m	class:GazeboGraspFix::CollidingPoint	typeref:typename:int	file:
+testAnimation	gazebo/ArmPlugin.h	/^	bool     testAnimation;		\/\/ true for test animation mode$/;"	m	class:gazebo::ArmPlugin	typeref:typename:bool
+threshold	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^    unsigned int  threshold;$/;"	m	class:GazeboMapPublisher::CollisionMapRequest	typeref:typename:unsigned int	file:
+timeDiff	utils/display/glDisplay.cpp	/^static timespec timeDiff( const timespec& start, const timespec& end)$/;"	f	typeref:typename:timespec	file:
+totalRuns	gazebo/ArmPlugin.h	/^	int	    totalRuns;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:int
+trainNetwork	lua/DQN.lua	/^local function trainNetwork(model, inputs, targets, criterion, sgdParams)$/;"	f
+trainNetwork	lua/catchDQN.lua	/^local function trainNetwork(model, inputs, targets, criterion, sgdParams)$/;"	f
+uchar8	utils/cuda/cudaYUV-YUYV.cu	/^struct __align__(8) uchar8$/;"	s	file:
+updateAgent	gazebo/ArmPlugin.cpp	/^bool ArmPlugin::updateAgent()$/;"	f	class:gazebo::ArmPlugin	typeref:typename:bool
+updateConnection	gazebo/ArmPlugin.h	/^	event::ConnectionPtr updateConnection;$/;"	m	class:gazebo::ArmPlugin	typeref:typename:event::ConnectionPtr
+updateConnection	gazebo/PropPlugin.h	/^	event::ConnectionPtr updateConnection;$/;"	m	class:gazebo::PropPlugin	typeref:typename:event::ConnectionPtr
+updateJoints	gazebo/ArmPlugin.cpp	/^bool ArmPlugin::updateJoints()$/;"	f	class:gazebo::ArmPlugin	typeref:typename:bool
+updateRate	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    common::Time updateRate;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:common::Time
+update_connection	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    event::ConnectionPtr update_connection;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:event::ConnectionPtr
+update_connection	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	event::ConnectionPtr update_connection;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:event::ConnectionPtr
+update_connection	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	event::ConnectionPtr update_connection;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:event::ConnectionPtr
+update_connection	gazebo/gazebo-pkgs/gazebo_world_plugin_loader/include/gazebo_world_plugin_loader/GazeboPluginLoader.h	/^	event::ConnectionPtr update_connection;$/;"	m	class:gazebo::GazeboPluginLoader	typeref:typename:event::ConnectionPtr
+upperLeft	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^    Eigen::Vector2i  upperLeft;$/;"	m	class:GazeboMapPublisher::CollisionMapRequest	typeref:typename:Eigen::Vector2i	file:
+upperRight	gazebo/gazebo-pkgs/gazebo_state_plugins/src/GazeboMapPublisher.cpp	/^    Eigen::Vector2i  upperRight;$/;"	m	class:GazeboMapPublisher::CollisionMapRequest	typeref:typename:Eigen::Vector2i	file:
+use_cuda	python/DQN.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	python/RL.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	python/gym-DQN.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	python/gym-RL.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_cuda	python/gym-actorCritic.py	/^use_cuda = torch.cuda.is_available()$/;"	v
+use_lstm	python/DQN.py	/^use_lstm		= args.use_lstm$/;"	v
+v4l2-console	utils/camera/v4l2-console/CMakeLists.txt	/^add_executable(v4l2-console ${v4l2ConsoleSources})$/;"	t
+v4l2-display	utils/camera/v4l2-display/CMakeLists.txt	/^add_executable(v4l2-display ${v4l2DisplaySources})$/;"	t
+v4l2Camera	utils/camera/v4l2Camera.cpp	/^v4l2Camera::v4l2Camera( const char* device_path ) : mDevicePath(device_path)$/;"	f	class:v4l2Camera
+v4l2Camera	utils/camera/v4l2Camera.h	/^class v4l2Camera$/;"	c
+v4l2_format_str	utils/camera/v4l2Camera.cpp	/^inline const char* v4l2_format_str( uint32_t fmt )$/;"	f	typeref:typename:const char *
+v4l2_mmap	utils/camera/v4l2Camera.h	/^struct v4l2_mmap$/;"	s
+v4l2_print_format	utils/camera/v4l2Camera.cpp	/^inline void v4l2_print_format( const v4l2_format& fmt, const char* text )$/;"	f	typeref:typename:void
+v4l2_print_formatdesc	utils/camera/v4l2Camera.cpp	/^inline void v4l2_print_formatdesc( const v4l2_fmtdesc& desc )$/;"	f	typeref:typename:void
+vel	gazebo/ArmPlugin.h	/^	float vel[DOF];			\/\/ joint velocity control$/;"	m	class:gazebo::ArmPlugin	typeref:typename:float[]
+waitForQueryObjectInfo	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^bool FakeObjectRecognizer::waitForQueryObjectInfo(const std::string& name, object_msgs::Object& /;"	f	class:FakeObjectRecognizer	typeref:typename:bool
+width	c/pyTensor.h	/^	uint32_t width;$/;"	m	struct:pyTensor	typeref:typename:uint32_t
+world	gazebo/gazebo-pkgs/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h	/^    physics::WorldPtr world;$/;"	m	class:gazebo::GazeboGraspFix	typeref:typename:physics::WorldPtr
+world	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	physics::WorldPtr world;$/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:physics::WorldPtr
+world	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboObjectInfo.h	/^	physics::WorldPtr world;$/;"	m	class:gazebo::GazeboObjectInfo	typeref:typename:physics::WorldPtr
+worldChangedSinceLastAdvert	gazebo/gazebo-pkgs/gazebo_state_plugins/include/gazebo_state_plugins/GazeboMapPublisher.h	/^	bool worldChangedSinceLastAdvert; $/;"	m	class:gazebo::GazeboMapPublisher	typeref:typename:bool
+worldHeight	samples/fruit/fruitEnv.h	/^	uint32_t worldHeight; 	\/\/ height of the environment (in pixels)$/;"	m	class:FruitEnv	typeref:typename:uint32_t
+worldWidth	samples/fruit/fruitEnv.h	/^	uint32_t worldWidth; 	\/\/ width of the environment (in pixels)$/;"	m	class:FruitEnv	typeref:typename:uint32_t
+x	samples/fruit/fruitEnv.h	/^		float x;$/;"	m	struct:FruitEnv::fruitObject	typeref:typename:float
+xioctl	utils/camera/v4l2Camera.cpp	/^static int xioctl(int fd, int request, void* arg)$/;"	f	typeref:typename:int	file:
+y	samples/fruit/fruitEnv.h	/^		float y;$/;"	m	struct:FruitEnv::fruitObject	typeref:typename:float
+yuyvToGray	utils/cuda/cudaYUV-YUYV.cu	/^__global__ void yuyvToGray( uchar4* src, int srcAlignedWidth, float2* dst, int dstAlignedWidth, /;"	f	typeref:typename:template<bool formatUYVY> void
+yuyvToRgba	utils/cuda/cudaYUV-YUYV.cu	/^__global__ void yuyvToRgba( uchar4* src, int srcAlignedWidth, uchar8* dst, int dstAlignedWidth, /;"	f	typeref:typename:template<bool formatUYVY> void
+~FakeObjectRecognizer	gazebo/gazebo-pkgs/gazebo_test_tools/src/FakeObjectRecognizer.cpp	/^FakeObjectRecognizer::~FakeObjectRecognizer() {$/;"	f	class:FakeObjectRecognizer
+~FruitEnv	samples/fruit/fruitEnv.cpp	/^FruitEnv::~FruitEnv()$/;"	f	class:FruitEnv
+~GazeboGraspFix	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspFix.cpp	/^GazeboGraspFix::~GazeboGraspFix()$/;"	f	class:GazeboGraspFix
+~GazeboGraspGripper	gazebo/gazebo-pkgs/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp	/^GazeboGraspGripper::~GazeboGraspGripper() {$/;"	f	class:GazeboGraspGripper
+~InputDevices	utils/input/devInput.cpp	/^InputDevices::~InputDevices()$/;"	f	class:InputDevices
+~JoystickDevice	utils/input/devJoystick.cpp	/^JoystickDevice::~JoystickDevice()$/;"	f	class:JoystickDevice
+~KeyboardDevice	utils/input/devKeyboard.cpp	/^KeyboardDevice::~KeyboardDevice()$/;"	f	class:KeyboardDevice
+~aiAgent	c/aiAgent.cpp	/^aiAgent::~aiAgent()$/;"	f	class:aiAgent
+~cudaFont	utils/cuda/cudaFont.cu	/^cudaFont::~cudaFont()$/;"	f	typeref:typename:cudaFont::
+~dqnAgent	c/dqnAgent.cpp	/^dqnAgent::~dqnAgent()$/;"	f	class:dqnAgent
+~glDisplay	utils/display/glDisplay.cpp	/^glDisplay::~glDisplay()$/;"	f	class:glDisplay
+~glTexture	utils/display/glTexture.cpp	/^glTexture::~glTexture()$/;"	f	class:glTexture
+~gstCamera	utils/camera/gstCamera.cpp	/^gstCamera::~gstCamera()$/;"	f	class:gstCamera
+~rlAgent	c/rlAgent.cpp	/^rlAgent::~rlAgent()$/;"	f	class:rlAgent
+~v4l2Camera	utils/camera/v4l2Camera.cpp	/^v4l2Camera::~v4l2Camera()$/;"	f	class:v4l2Camera
