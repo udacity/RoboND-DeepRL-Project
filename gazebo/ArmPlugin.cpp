@@ -43,6 +43,7 @@
 #define BATCH_SIZE 8
 #define USE_LSTM false
 #define LSTM_SIZE 32
+#define NUMBER_OF_ACTIONS DOF * 2
 
 /*
 / TODO - Define Reward Parameters
@@ -163,12 +164,25 @@ bool ArmPlugin::createAgent()
 		return true;
 
 			
-	/*
-	/ TODO - Create DQN Agent
-	/
-	*/
 	
-	agent = NULL;
+	// - Create DQN Agent
+	
+	agent = dqnAgent::Create(INPUT_WIDTH,
+                           INPUT_HEIGHT,
+                           INPUT_CHANNELS,
+                           NUMBER_OF_ACTIONS,
+                           OPTIMIZER,
+                           LEARNING_RATE,
+                           REPLAY_MEMORY,
+                           BATCH_SIZE,
+                           GAMMA,
+                           EPS_START,
+                           EPS_END,
+                           EPS_DECAY,
+                           USE_LSTM,
+                           LSTM_SIZE,
+                           ALLOW_RANDOM,
+                           DEBUG_DQN);
 
 	if( !agent )
 	{
